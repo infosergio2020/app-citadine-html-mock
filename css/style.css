@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* Now 10px = 1rem! */
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url("https://cdn.discordapp.com/attachments/903435316503908382/903436523293261914/cruce_de_inundacion.png");
+    
+    background-size: cover;
+
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px; /* px fallback */
+    font-size: 1.6rem; /* default font-size for document */
+    line-height: 1.5; /* a nice line-height */
+}
+
+img{
+    max-width: 100%;
+}
+
+/* --------------------HEADER------------------------ */
+
+.header-container{
+    background-color: #003D33;
+    color: #ffffff;
+    padding: 0 3rem;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5rem;
+}
+
+.header-nav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-nav h1{
+    margin: 2rem auto;
+}
+
+
+/* --------------------MAIN ------------------------ */
+
+h2{
+    margin: 0;
+}
+
+.main-card{
+    margin: 2rem auto;
+    background-color: #003D33;
+    width: 80%;
+    border: 1px solid #c7c7c767;
+    border-radius: 2.8rem;
+    -webkit-box-shadow: 4px 4px 5px -1px rgba(0,0,0,0.89);
+}
+
+.main-card-body{}
+
+.main-card img{
+    border-radius: 2.8rem;
+    max-width: 100%;
+}
+
+.main-card-info{
+    padding: 0 2rem;
+    color: #ffffff;
+    line-height: 1;
+    text-align: center;
+}
+
+.main-card-info p{
+    line-height: 0.2;
+}
+
+.main-container-btn{
+    margin: 0 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    min-width: 95%;
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border: 1px solid #c7c7c767;
+    border-radius: 1rem;
+    -webkit-box-shadow: 4px 4px 5px -1px rgba(0,0,0,0.89);
+} 
+
+.btn-green{
+    color: #ffffff;
+    background-color: #003D33;
+    transition: transform 400ms ease-in-out,
+    background-color 400ms ease-in-out;
+}
+
+.btn-green:hover{
+    background-color: #003d33ad;
+    transform: scale(1.05);
+}
+
+
+/*----------------------------- SIDEBAR ----------------------------*/
+
+.sideBar{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    max-width: 100%;
+    background-color: #05241E;
+    transition: left 400ms ease-in-out;
+}
+
+@media (min-width: 768px){
+    .sideBar{
+        width: 60%;
+    }
+}
+
+.sideBar-header{
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    background-color: #003D33;
+}
+
+.sideBar-img{
+    flex-basis: calc(33.3% - 1rem);
+}
+
+.sideBar-img img{
+    max-width: 100%;
+    border-radius: 100%;
+}
+
+.sideBar-info{
+    flex-basis: calc( 66.6% - 1rem);
+    text-align: justify;
+}
+
+.sideBar-info h2{
+    text-align: center;
+}
+
+.sideBar-body{
+
+}
+
+.sidebar-body-ul{
+    /* background-color: coral; */
+    margin: 0;
+    padding: 0 .2rem;
+}
+.sidebar-link{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style-type: none;
+    /* border: 1px solid red; */
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.sidebar-link:hover{
+    border-radius: 2rem;
+    background-color: #083d33;
+    border: 1px solid #cccbcb;
+}
+
+.active{
+    left: 0;
+}
