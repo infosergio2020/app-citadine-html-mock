@@ -68,14 +68,25 @@ a{
 
 /* --------------------MAIN ------------------------ */
 
+h1{
+    font-size: 1.9rem;
+}
+
+@media (min-width: 768px){
+    h1{
+        font-size: 2em;
+    }
+}
+
+
 h2{
     margin: 0;
 }
 
 .main-card{
     margin: 2rem auto;
-    background-color: #003D33;
-    width: 80%;
+    background-color: #004D40;
+    width: 90%;
     border: 1px solid #c7c7c767;
     border-radius: 2.8rem;
     -webkit-box-shadow: 4px 4px 5px -1px rgba(0,0,0,0.89);
@@ -90,11 +101,11 @@ h2{
 
 @media (min-width: 768px){
     .main-card{
-        width: 35%;
+        width: 60%;
     }
 
     .main-container-btn{
-        width: 35%;
+        width: 60%;
     }
 }
 
@@ -180,6 +191,7 @@ h2{
     position: absolute;
     top: 0;
     left: -100%;
+    z-index: 999;
     max-width: 100%;
     background-color: #05241E;
     transition: left 400ms ease-in-out;
@@ -265,6 +277,8 @@ h2{
     border-radius: 100%;
 }
 
+
+
 .main-container-btn a {
     display: flex;
     justify-content: space-evenly;
@@ -275,6 +289,7 @@ h2{
 
 .main-sections{
     color: #ffffff;
+    position: relative;
 }
 
 .main-section {
@@ -299,4 +314,10 @@ h2{
 
 .main-section-info{
     flex-basis: calc(80% - 1rem);
+}
+
+.main-card-img-container-section{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
 }
