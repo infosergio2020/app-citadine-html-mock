@@ -18,7 +18,7 @@
         <nav class="header-nav">
             <!-- <img src="./menu.svg" alt=""> -->
             <a id="logo"><img src="./img/Citadine.png" alt="Citadine brand" width="90rem" height="90rem"></a>
-            <h1>Welcome</h1>
+            <h1>About the event</h1>
         </nav>
         <div id="menu" class="sideBar ">
             <div class="sideBar-header">
@@ -37,12 +37,12 @@
                         <li class="sidebar-link"> <img src="./img/schedule.png" width="42px" height="42px"> Schedule <img src="./img/arrow.png" width="42px" height="42px"></li>
                         <li class="sidebar-link"> <img src="./img/monitor.png" width="42px" height="42px"> Announcements <img src="./img/arrow.png" width="42px" height="42px"></li>
                         <li class="sidebar-link"> <img src="./img/virus.png" width="42px" height="42px"> COVID protocols <img src="./img/arrow.png" width="42px" height="42px"></li>
-                        <a href="./about.html"><li class="sidebar-link"> <img src="./img/infor.png" width="42px" height="42px"> About Citadine <img src="./img/arrow.png" width="42px" height="42px"></li></a>
+                        <a href="./about.html"></a><li class="sidebar-link"> <img src="./img/infor.png" width="42px" height="42px"> About Citadine <img src="./img/arrow.png" width="42px" height="42px"></li></a>
                     </ul>
                 </section>
                 <section>
                     <ul class="sidebar-body-ul">
-                        <a href="./languaje.html"><li class="sidebar-link"> <img src="./img/languages.png" width="42px" height="42px"> Languajes <img src="./img/arrow.png" width="42px" height="42px"></li></a>
+                        <li class="sidebar-link"> <img src="./img/languages.png" width="42px" height="42px"> Languajes <img src="./img/arrow.png" width="42px" height="42px"></li>
                         <li class="sidebar-link"> <img src="./img/exit.png" width="42px" height="42px"> Go out <img src="./img/arrow.png" width="42px" height="42px"></li>
                         
                     </ul>
@@ -52,20 +52,24 @@
     </header>
     <main>
         <div class="container">
-            <div class="main-card">
+            <div class="main-card" style="margin: 10rem auto;">
                 <div class="main-card-body">
-                    <img src="https://cultura.laplata.gob.ar/wp-content/uploads/2020/08/Republica_de_los_ninos-scaled.jpg" alt="">
-                    <div class="main-card-info">
-                        <h2>Welcome to Expo Citadine The case of the Flood in La Plata on 04-02-2021</h2>
-                        <p>Place The child's House</p>
-                        <p>Avaible on 21-27 march 2022.</p>
-                        <p>Schedule time from 2 to 6pm</p>
+                    <div class="main-card-img-container">
+                        <img src="./img/learn.png" height="88px" alt="img 1">
+                        <img src="./img/discovery.png" height="88px" alt="img 2">
+                        <img src="./img/joinUs.png" height="88px" alt="img 3">
+                    </div>                    
+                    <div class="main-card-info" style="margin: 5rem 0; font-size: 1.8rem;">
+                        <p>The exhibition has 6 sections</p>
+                        <p>whose route follow a </p> 
+                        <p>chronological order </p>
+                        <p>of the events about the flood in</p>
+                        <p>La Plata on 02-04-2013</p>
                     </div>
                 </div>
             </div>
             <div class="main-container-btn">
-                <a class="btn btn-green" href="#">ENTER TO THE SAMPLE</a>
-                <a class="btn btn-green" href="#">ABOUT THE EVENT</a>
+                <a class="btn btn-green" onclick="history.back()">Go back <img src="./img/backArrow.svg" alt="backArrow"></a>
             </div>
         </div>
     </main>
