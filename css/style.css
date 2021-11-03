@@ -162,6 +162,17 @@ h2{
     transform: scale(1.05);
 }
 
+.btn-green-palic{
+    color: #ffffff;
+    background-color: #00695C;
+    transition: transform 400ms ease-in-out,
+    background-color 400ms ease-in-out;
+}
+
+.btn-green-palic:hover{
+    background-color: #003d33ad;
+    transform: scale(1.05);
+}
 
 /*----------------------------- SIDEBAR ----------------------------*/
 
@@ -258,4 +269,34 @@ h2{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+/* SECTION CSS */
+
+.main-sections{
+    color: #ffffff;
+}
+
+.main-section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.main-section a{
+    padding: .8rem;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.main-section-img{
+    flex-basis: calc(20% - 1rem);
+}
+
+.main-section-info{
+    flex-basis: calc(80% - 1rem);
 }
