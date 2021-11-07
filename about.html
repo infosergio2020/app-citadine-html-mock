@@ -7,7 +7,7 @@
 
     <link rel="shortcut icon" href="./css/tree.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 
     <script src="./js/index.js"></script>
 
@@ -16,10 +16,14 @@
 <body>
     <header class="header-container">
         <nav class="header-nav">
-            <!-- <img src="./menu.svg" alt=""> -->
-            <a id="logo"><img src="./img/Citadine.png" alt="Citadine brand" width="90rem" height="90rem"></a>
-            <h1>About the event</h1>
+            <div class="header-nav-logo">
+                <a id="logo"><img src="./img/Citadine.png" alt="Citadine brand" width="90rem" height="90rem"></a>
+            </div>
+            <div class="header-nav-info">
+                <h2>About the event</h2>
+            </div>
         </nav>
+
         <div id="menu" class="sideBar ">
             <div class="sideBar-header">
                 <div class="sideBar-img">
@@ -37,18 +41,19 @@
                         <li class="sidebar-link"> <img src="./img/schedule.png" width="42px" height="42px"> Schedule <img src="./img/arrow.png" width="42px" height="42px"></li>
                         <li class="sidebar-link"> <img src="./img/monitor.png" width="42px" height="42px"> Announcements <img src="./img/arrow.png" width="42px" height="42px"></li>
                         <li class="sidebar-link"> <img src="./img/virus.png" width="42px" height="42px"> COVID protocols <img src="./img/arrow.png" width="42px" height="42px"></li>
-                        <a href="./about.html"></a><li class="sidebar-link"> <img src="./img/infor.png" width="42px" height="42px"> About Citadine <img src="./img/arrow.png" width="42px" height="42px"></li></a>
+                        <a href="./about.html"><li class="sidebar-link"> <img src="./img/infor.png" width="42px" height="42px"> About Citadine <img src="./img/arrow.png" width="42px" height="42px"></li></a>
                     </ul>
                 </section>
                 <section>
                     <ul class="sidebar-body-ul">
-                        <li class="sidebar-link"> <img src="./img/languages.png" width="42px" height="42px"> Languajes <img src="./img/arrow.png" width="42px" height="42px"></li>
+                        <a href="./languaje.html"><li class="sidebar-link"> <img src="./img/languages.png" width="42px" height="42px"> Languajes <img src="./img/arrow.png" width="42px" height="42px"></li></a>
                         <li class="sidebar-link"> <img src="./img/exit.png" width="42px" height="42px"> Go out <img src="./img/arrow.png" width="42px" height="42px"></li>
                         
                     </ul>
                 </section>
             </div>
         </div>
+
     </header>
     <main>
         <div class="container">
@@ -69,7 +74,11 @@
                 </div>
             </div>
             <div class="main-container-btn">
-                <a class="btn btn-green" onclick="history.back()">Go back <img src="./img/backArrow.svg" alt="backArrow"></a>
+                <a class="btn verde-4" onclick="history.back()">
+                    <div class="btn-info">
+                        <p>Go back</p> <img src="./img/backArrow.svg" alt="backArrow">
+                    </div>
+                </a>
             </div>
         </div>
     </main>

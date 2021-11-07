@@ -7,7 +7,7 @@
 
     <link rel="shortcut icon" href="./css/tree.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 
     <script src="./js/index.js"></script>
 
@@ -16,13 +16,16 @@
 <body>
     <header class="header-container">
         <nav class="header-nav">
-            <!-- <img src="./menu.svg" alt=""> -->
-            <a id="logo"><img src="./img/Citadine.png" alt="Citadine brand" width="90rem" height="90rem"></a>
-            <div style="display: flex; justify-content: center; align-items: center;">
+            <div class="header-nav-logo">
+                <a id="logo"><img src="./img/Citadine.png" alt="Citadine brand" width="90rem" height="90rem"></a>
+            </div>
+            <div class="header-nav-info">
                 <img src="./img/languages.png" alt="" height="48px" style="margin-right: 1rem;">
-                <h1> Languages</h1>
+                <h2>Languages</h2>
             </div>
         </nav>
+
+
         <div id="menu" class="sideBar ">
             <div class="sideBar-header">
                 <div class="sideBar-img">
@@ -40,18 +43,19 @@
                         <li class="sidebar-link"> <img src="./img/schedule.png" width="42px" height="42px"> Schedule <img src="./img/arrow.png" width="42px" height="42px"></li>
                         <li class="sidebar-link"> <img src="./img/monitor.png" width="42px" height="42px"> Announcements <img src="./img/arrow.png" width="42px" height="42px"></li>
                         <li class="sidebar-link"> <img src="./img/virus.png" width="42px" height="42px"> COVID protocols <img src="./img/arrow.png" width="42px" height="42px"></li>
-                        <a href="./about.html"></a><li class="sidebar-link"> <img src="./img/infor.png" width="42px" height="42px"> About Citadine <img src="./img/arrow.png" width="42px" height="42px"></li></a>
+                        <a href="./about.html"><li class="sidebar-link"> <img src="./img/infor.png" width="42px" height="42px"> About Citadine <img src="./img/arrow.png" width="42px" height="42px"></li></a>
                     </ul>
                 </section>
                 <section>
                     <ul class="sidebar-body-ul">
-                        <li class="sidebar-link"> <img src="./img/languages.png" width="42px" height="42px"> Languajes <img src="./img/arrow.png" width="42px" height="42px"></li>
+                        <a href="./languaje.html"><li class="sidebar-link"> <img src="./img/languages.png" width="42px" height="42px"> Languajes <img src="./img/arrow.png" width="42px" height="42px"></li></a>
                         <li class="sidebar-link"> <img src="./img/exit.png" width="42px" height="42px"> Go out <img src="./img/arrow.png" width="42px" height="42px"></li>
                         
                     </ul>
                 </section>
             </div>
         </div>
+
     </header>
     <main>
         <div class="container">
@@ -62,8 +66,8 @@
                         <img src="./img/spain.png" height="88px" alt="img 2">
                     </div>                    
                     <div class="main-card-img-container">
-                        <a class="btn-small btn-green-light" >English</a>
-                        <a class="btn-small btn-green-light" >Spanish</a>
+                        <a class="btn verde-4" >English</a>
+                        <a class="btn verde-4" >Spanish</a>
                     </div>
                     <div class="main-card-info" style="margin: 5rem 0; font-size: 1.8rem;">
                         <p>Click on the button to change </p>
@@ -72,7 +76,11 @@
                 </div>
             </div>
             <div class="main-container-btn">
-                <a class="btn btn-green" onclick="history.back()">Go back <img src="./img/backArrow.svg" alt="backArrow"></a>
+                <a class="btn verde-4" onclick="history.back()">
+                    <div class="btn-info">
+                        <p>Go back</p> <img src="./img/backArrow.svg" alt="backArrow">
+                    </div>
+                </a>
             </div>
         </div>
     </main>
