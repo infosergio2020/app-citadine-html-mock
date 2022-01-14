@@ -16,7 +16,7 @@
 
 .header-nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     column-gap: 1rem;
 }
@@ -26,22 +26,11 @@
     flex: 0 0 calc(40% - 1rem);
 }
 
-.header-nav-info{
-    flex: 0 0 calc(60% - 1rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}   
-
 
 @media (min-width: 768px){
     .header-nav-logo{
         flex: 0 0 calc(8% - 1rem);
     }
-    
-    .header-nav-info{
-        flex: 0 0 calc(92% - 1rem);
-    }    
 }
 
 
