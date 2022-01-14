@@ -1,103 +1,199 @@
-.combo *,
-.combo *::before,
-.combo *::after {
-  box-sizing: border-box;
+@charset "utf-8";
+
+.page header {
+  border: #005a9c solid 2px;
+  background: #005a9c;
+  color: white;
+  text-align: center;
 }
 
-.combo {
-  display: block;
-  margin-bottom: 1.5em;
-  max-width: 400px;
+.page header .title {
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: serif;
+}
+
+.page header .tagline {
+  font-style: italic;
+}
+
+.page .main {
+  padding: 1em 5% 5em;
+  border-left: 2px solid #eee;
+  border-right: 2px solid #eee;
+}
+
+.page footer {
+  border: #005a9c solid 2px;
+  background: #005a9c;
+  font-family: serif;
+  color: white;
+  font-style: italic;
+  padding-left: 1em;
+}
+
+.page nav {
+  margin: 0;
+  padding: 0;
+  border: 2px solid #eee;
+}
+
+.menubar-navigation {
+  margin: 0;
+  padding: 2px;
+  font-size: 110%;
+  list-style: none;
+  background-color: #eee;
+  border: #eee solid 1px;
+}
+
+.menubar-navigation li {
+  margin: 0;
+  padding: 0;
+  border: 0 solid black;
+  list-style: none;
+}
+
+.menubar-navigation > li {
+  display: inline-block;
   position: relative;
 }
 
-.combo::after {
-  border-bottom: 2px solid rgb(0 0 0 / 75%);
-  border-right: 2px solid rgb(0 0 0 / 75%);
-  content: "";
+.menubar-navigation > li li {
   display: block;
-  height: 12px;
-  pointer-events: none;
+}
+
+.menubar-navigation > li > [role="menuitem"] {
+  display: inline-block;
+  margin: 2px;
+  padding: 4px;
+  padding-bottom: 8px;
+  background-color: #eee;
+  border: 0 solid #eee;
+  color: black;
+}
+
+.menubar-navigation [role="separator"] {
+  padding-top: 3px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cline x1='0' y1='6' x2='12' y2='6' style='stroke:black;stroke-width:1' /%3E%3C/svg%3E%0A");
+  background-size: 10px 10px;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+.menubar-navigation [role="menu"] [role="menuitem"],
+.menubar-navigation [role="menu"] [role="separator"] {
+  display: block;
+  width: 12em;
+  margin: 2px;
+  padding: 4px;
+  padding-left: 8px;
+  background-color: #eee;
+  border: 0 solid #eee;
+  color: black;
+}
+
+.menubar-navigation [role="menuitem"] svg {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.menubar-navigation [role="menuitem"] svg.down {
+  padding-left: 0.125em;
+}
+
+.menubar-navigation [role="menuitem"] svg.right {
   position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translate(0, -65%) rotate(45deg);
-  width: 12px;
+  padding-top: 0.35em;
+  right: 0.75em;
 }
 
-.combo-input {
-  background-color: #f5f5f5;
-  border: 2px solid rgb(0 0 0 / 75%);
-  border-radius: 4px;
-  display: block;
-  font-size: 1em;
-  min-height: calc(1.4em + 26px);
-  padding: 12px 16px 14px;
-  text-align: left;
-  width: 100%;
+.menubar-navigation [role="menuitem"][aria-expanded="true"] svg.down {
+  transform: rotate(180deg);
 }
 
-.open .combo-input {
-  border-radius: 4px 4px 0 0;
+.menubar-navigation [role="menuitem"][aria-expanded="true"] svg.right {
+  transform: rotate(90deg) translate(5px, -5px);
 }
 
-.combo-input:focus {
-  border-color: #0067b8;
-  box-shadow: 0 0 4px 2px #0067b8;
-  outline: 4px solid transparent;
-}
-
-.combo-label {
-  display: block;
-  font-size: 20px;
-  font-weight: 100;
-  margin-bottom: 0.25em;
-}
-
-.combo-menu {
-  background-color: #f5f5f5;
-  border: 1px solid rgb(0 0 0 / 75%);
-  border-radius: 0 0 4px 4px;
+.menubar-navigation [role="menu"] {
   display: none;
-  max-height: 300px;
-  overflow-y: scroll;
-  left: 0;
   position: absolute;
-  top: 100%;
-  width: 100%;
-  z-index: 100;
+  margin: 0;
+  padding: 0;
+  padding: 7px 4px;
+  border: 2px solid #034575;
+  background-color: #eee;
 }
 
-.open .combo-menu {
-  display: block;
+.menubar-navigation [role="group"] {
+  margin: 0;
+  padding: 0;
 }
 
-.combo-option {
-  padding: 10px 12px 12px;
+/* aria-current styling */
+
+.menubar-navigation > li > [role="menuitem"][aria-current],
+.menubar-navigation > li > [role="menuitem"].aria-current-path {
+  padding-bottom: 2px;
+  border-bottom: 4px solid #034575;
 }
 
-.combo-option:hover {
-  background-color: rgb(0 0 0 / 10%);
+.menubar-navigation [role="menu"] [role="menuitem"].aria-current-path,
+.menubar-navigation [role="menu"] [role="menuitem"][aria-current] {
+  padding-left: 4px;
+  border-left: 4px solid #034575;
 }
 
-.combo-option.option-current {
-  outline: 3px solid #0067b8;
-  outline-offset: -3px;
+/* focus styling */
+
+.menubar-navigation.focus {
+  padding: 0;
+  border: #034575 solid 3px;
 }
 
-.combo-option[aria-selected="true"] {
-  padding-right: 30px;
-  position: relative;
+.menubar-navigation > li > [aria-expanded="true"],
+.menubar-navigation > li > [role="menuitem"]:focus,
+.menubar-navigation > li > [role="menuitem"]:hover {
+  outline: none;
+  background-color: #ccc;
 }
 
-.combo-option[aria-selected="true"]::after {
-  border-bottom: 2px solid #000;
-  border-right: 2px solid #000;
-  content: "";
-  height: 16px;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translate(0, -50%) rotate(45deg);
-  width: 8px;
+.menubar-navigation > li > [role="menuitem"]:focus,
+.menubar-navigation > li > [role="menuitem"]:hover {
+  padding: 2px;
+  padding-bottom: 4px;
+  border: 2px solid #034575;
+}
+
+.menubar-navigation [role="menu"] [aria-expanded="true"],
+.menubar-navigation [role="menu"] [role="menuitem"]:focus,
+.menubar-navigation [role="menu"] [role="menuitem"]:hover {
+  outline: none;
+  background-color: #ccc;
+}
+
+.menubar-navigation [role="menu"] [role="menuitem"]:focus,
+.menubar-navigation [role="menu"] [role="menuitem"]:hover {
+  padding: 2px;
+  padding-left: 6px;
+  border: 2px solid #034575;
+}
+
+.menubar-navigation > li > [aria-expanded="true"].aria-current-path,
+.menubar-navigation > li > [role="menuitem"].aria-current-path:focus,
+.menubar-navigation > li > [role="menuitem"].aria-current-path:hover,
+.menubar-navigation > li > [role="menuitem"][aria-current]:focus,
+.menubar-navigation > li > [role="menuitem"][aria-current]:hover {
+  padding-bottom: 2px;
+  border-bottom: 4px solid #034575;
+}
+
+.menubar-navigation [role="menu"] [aria-expanded="true"].aria-current-path,
+.menubar-navigation [role="menu"] [role="menuitem"].aria-current-path:focus,
+.menubar-navigation [role="menu"] [role="menuitem"].aria-current-path:hover,
+.menubar-navigation [role="menu"] [role="menuitem"][aria-current]:focus,
+.menubar-navigation [role="menu"] [role="menuitem"][aria-current]:hover {
+  padding-left: 4px;
+  border-left: 4px solid #034575;
 }
