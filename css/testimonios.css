@@ -201,16 +201,30 @@ img {
 
 /** Cursos **/
 .curso {
+    display: grid;
     padding: 3rem 0;
     border-bottom: 1px solid var(--gris);
+    transition: all .3s ease-in-out;
 }
 @media (min-width: 768px) {
     .curso {
-        display: grid;
         grid-template-columns: 1fr 2fr;
         column-gap: 2rem;
     }
 }
+
+.curso:hover {
+    transform: scale(1.05);
+    background-color: #0514071c;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.curso__imagen{
+    display: flex;
+    justify-content: center;
+}
+
 .curso:last-of-type {
    border: none;
 }
