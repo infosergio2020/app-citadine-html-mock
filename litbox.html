@@ -5,147 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/lixtbox.css">
+    <link rel="stylesheet" href="./css/portada.css">
     <title>Document</title>
 </head>
 <body>
-  <div class="page">
+  
     <!-- NOTE: In an actual website, the header element would be a top level element, i.e., it would have the body as its scope.
       If the scope of the header element were body, browsers would automatically treat the header as an ARIA banner,
       so the header would not need the role="banner". -->
-    <header role="banner">
-      <div class="title">Mythical University</div>
-      <div class="tagline">Using a Menubar for navigation links</div>
-    </header>
-    <nav aria-label="Barra de navegacion.">
-      <ul class="menubar-navigation" role="menubar" aria-label="Barra de navegacion.">
-        <li role="none">
-          <a role="menuitem" href="#home" aria-label="Presione enter para ir a la pagina principal.">
-            Home
-          </a>
-        </li>
-       
-        
-        <!-- boton 1 -->
-        <li role="none">
-          <a role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
-            seccion 1
-            <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
-             <polygon points="1 0, 11 0, 6 8"></polygon>
-            </svg>
-          </a>
-          <ul role="menu" id="sub-menu-academics">
-            <li role="none">
-              <a role="menuitem" href="/testimonios.html" aria-label="Presione enter para conocer: ">1- Known our testimonies: Before the flood</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#programs-of-study" aria-label="Presione enter para conocer: ">2- The news of the day</a>
-            </li>
+      <!-- comienzo del header -->
+      <header class="header">
 
-          </ul>
-        </li>
-        <!-- boton 2 -->
-        <li role="none">
-          <a role="menuitem" aria-label="Presione enter para conocer las opciones."  aria-haspopup="true" aria-expanded="false" href="#academics">
-            seccion 2
-            <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
-             <polygon points="1 0, 11 0, 6 8"></polygon>
-            </svg>
-          </a>
-          <ul role="menu" id="sub-menu-academics">
-            <li role="none">
-              <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Interview map</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Water level simulator</a>
-            </li>
+        <div class="contenedor">
+            <div class="barra">
+                <!-- <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a> -->
+                <a class="navegacion__enlace" role="menuitem" href="#home" aria-label="Presione enter para ir a la pagina principal.">
+                  <img src="./img/Citadine.png" alt="Logo de citadine.">
+                </a>
+
+                
+                <nav class="navegacion" aria-label="Barra de navegacion.">
+                  <ul class="menubar-navigation" role="menubar" aria-label="Barra de navegacion.">
+                    <!-- <li role="none">
+                      <a class="navegacion__enlace" role="menuitem" href="#home" aria-label="Presione enter para ir a la pagina principal.">
+                        Home
+                      </a>
+                    </li> -->
+                   
+                    
+                    <!-- boton 1 -->
+                    <li role="none">
+                      <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
+                        seccion 1
+                        <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                         <polygon points="1 0, 11 0, 6 8"></polygon>
+                        </svg>
+                      </a>
+                      <ul role="menu" id="sub-menu-academics">
+                        <li role="none">
+                          <a role="menuitem" href="/testimonios.html" aria-label="Presione enter para conocer: ">1- Known our testimonies: Before the flood</a>
+                        </li>
+                        <li role="none">
+                          <a role="menuitem" href="#programs-of-study" aria-label="Presione enter para conocer: ">2- The news of the day</a>
+                        </li>
             
-          </ul>
-        </li>
-        <!-- boton 3 -->
-        <li role="none">
-          <a role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
-            seccion 3
-            <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
-             <polygon points="1 0, 11 0, 6 8"></polygon>
-            </svg>
-          </a>
-          <ul role="menu" id="sub-menu-academics">
-            <li role="none">
-              <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Known our testimonies: During the flood</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Shocking photos</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">3- Photo album with QR</a>
-            </li>
-          </ul>
-        </li>
-        <!-- boton 4 -->
-        <li role="none">
-          <a role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
-            seccion 4
-            <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
-             <polygon points="1 0, 11 0, 6 8"></polygon>
-            </svg>
-          </a>
-          <ul role="menu" id="sub-menu-academics">
-            <li role="none">
-              <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Urban floods</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Sandbox</a>
-            </li>
+                      </ul>
+                    </li>
+                    <!-- boton 2 -->
+                    <li role="none">
+                      <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."  aria-haspopup="true" aria-expanded="false" href="#academics">
+                        seccion 2
+                        <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                         <polygon points="1 0, 11 0, 6 8"></polygon>
+                        </svg>
+                      </a>
+                      <ul role="menu" id="sub-menu-academics">
+                        <li role="none">
+                          <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Interview map</a>
+                        </li>
+                        <li role="none">
+                          <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Water level simulator</a>
+                        </li>
+                        
+                      </ul>
+                    </li>
+                    <!-- boton 3 -->
+                    <li role="none">
+                      <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
+                        seccion 3
+                        <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                         <polygon points="1 0, 11 0, 6 8"></polygon>
+                        </svg>
+                      </a>
+                      <ul role="menu" id="sub-menu-academics">
+                        <li role="none">
+                          <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Known our testimonies: During the flood</a>
+                        </li>
+                        <li role="none">
+                          <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Shocking photos</a>
+                        </li>
+                        <li role="none">
+                          <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">3- Photo album with QR</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- boton 4 -->
+                    <li role="none">
+                      <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
+                        seccion 4
+                        <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                         <polygon points="1 0, 11 0, 6 8"></polygon>
+                        </svg>
+                      </a>
+                      <ul role="menu" id="sub-menu-academics">
+                        <li role="none">
+                          <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Urban floods</a>
+                        </li>
+                        <li role="none">
+                          <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Sandbox</a>
+                        </li>
+            
+                      </ul>
+                    </li>
+                    <!-- boton 5 -->
+                    <li role="none">
+                      <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
+                        seccion 5
+                        <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                         <polygon points="1 0, 11 0, 6 8"></polygon>
+                        </svg>
+                      </a>
+                      <ul role="menu" id="sub-menu-academics">
+                        <li role="none">
+                          <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Smart survival backpak</a>
+                        </li>
+                        <li role="none">
+                          <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Where to go</a>
+                        </li>
+                       
+                      </ul>
+                    </li>
+                    <!-- botone 6 -->
+            
+                    <li role="none">
+                      <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
+                        seccion 6
+                        <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                         <polygon points="1 0, 11 0, 6 8"></polygon>
+                        </svg>
+                      </a>
+                      <ul role="menu" id="sub-menu-academics">
+                        <li role="none">
+                          <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Known our testimonies: after the flood</a>
+                        </li>
+                        <li role="none">
+                          <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Go citadine page</a>
+                        </li>
+                        <li role="none">
+                          <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">3- Educational games</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- barra deslizante -->
+                    <li role="none">
+                      <a role="menuitem" href="#home" aria-label="Presione enter para desplegar la barra deslizante.">
+                        Mas informacion
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
 
-          </ul>
-        </li>
-        <!-- boton 5 -->
-        <li role="none">
-          <a role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
-            seccion 5
-            <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
-             <polygon points="1 0, 11 0, 6 8"></polygon>
-            </svg>
-          </a>
-          <ul role="menu" id="sub-menu-academics">
-            <li role="none">
-              <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Smart survival backpak</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Where to go</a>
-            </li>
-           
-          </ul>
-        </li>
-        <!-- botone 6 -->
-
-        <li role="none">
-          <a role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
-            seccion 6
-            <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
-             <polygon points="1 0, 11 0, 6 8"></polygon>
-            </svg>
-          </a>
-          <ul role="menu" id="sub-menu-academics">
-            <li role="none">
-              <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Known our testimonies: after the flood</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Go citadine page</a>
-            </li>
-            <li role="none">
-              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">3- Educational games</a>
-            </li>
-          </ul>
-        </li>
-        <!-- barra deslizante -->
-        <li role="none">
-          <a role="menuitem" href="#home" aria-label="Presione enter para desplegar la barra deslizante.">
-            Mas informacion
-          </a>
-        </li>
-      </ul>
-    </nav>
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+    </header>
+    <!-- fin del header -->
+    <div class="page">
+    
     <!--  NOTE: The following SECTION element would be a MAIN element
       in an actual website -->
     <div class="main">
