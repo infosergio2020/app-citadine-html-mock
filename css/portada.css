@@ -5,10 +5,10 @@
 
 /** Header **/
 .webp .header {
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/cruce_de_inundacion_2.png);
 }
 .no-webp .header {
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/cruce_de_inundacion_2.png);
 }
 .header {
     height: 60rem;
@@ -44,8 +44,10 @@
     }
 }
 .navegacion__enlace {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
+    
 }
