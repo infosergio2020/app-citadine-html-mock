@@ -49,5 +49,14 @@
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
-    
+    text-decoration: none;
+}
+
+.navegacion__enlace--info{
+    display: flex;
+    align-items: center;
+}
+
+.navegacion__enlace--info p{
+    margin: 0;
 }
