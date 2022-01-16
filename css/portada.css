@@ -43,14 +43,12 @@
         gap: 2rem;
     }
 }
-.navegacion__enlace {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1.8rem;
-    color: var(--blanco);
+
+.navegacion__enlace{
     text-decoration: none;
+    font-size: 1.8rem;
 }
+
 
 .navegacion__enlace--info{
     display: flex;
@@ -60,3 +58,4 @@
 .navegacion__enlace--info p{
     margin: 0;
 }
+
