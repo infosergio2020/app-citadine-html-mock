@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="./css/tree.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/lixtbox.css">
+    <link rel="stylesheet" href="./css/portada.css">
 
     <script src="./js/index.js"></script>
 
@@ -15,33 +17,202 @@
 </head>
 <body>
 
-    <header class="header-container">
-        <nav class="header-nav">
-            <div class="header-nav-logo">
-                <a id="logo"><img src="./img/menu.svg" alt="Citadine brand" width="90rem" height="90rem"></a>
+    <!-- <header class="header-container"> -->
+        <header class="header header-container">
+
+            <div class="contenedor">
+                <div class="barra">
+                    <!-- <a class="logo" href="index.html">
+                        <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                    </a> -->
+                    <a class="navegacion__enlace" role="menuitem" href="#home" aria-label="Presione enter para ir a la pagina principal.">
+                      <img src="./img/Citadine.png" alt="Logo de citadine.">
+                    </a>
+    
+                    
+                    <nav class="navegacion" aria-label="Barra de navegacion.">
+                      <ul class="menubar-navigation" role="menubar" aria-label="Barra de navegacion.">
+                        <!-- <li role="none">
+                          <a class="navegacion__enlace" role="menuitem" href="#home" aria-label="Presione enter para ir a la pagina principal.">
+                            Home
+                          </a>
+                        </li> -->
+                       
+                        
+                        <!-- boton 1 -->
+                        <li role="none">
+                          <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
+                            
+                              <img src="./img//secciones/1.png" alt="seccion" width="30%" height="30%">
+                              
+                            
+                            <div class="navegacion__enlace--info">
+                                <p>seccion 1</p>
+                                <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                              <polygon points="1 0, 11 0, 6 8"></polygon>
+                            </svg>
+                            </div>
+                          </a>
+                          <ul role="menu" aria-label="1">
+                            <li role="none">
+                              <a role="menuitem" href="/testimonios.html" aria-label="Presione enter para conocer: ">1- Known our testimonies: Before the flood</a>
+                            </li>
+                            <li role="none">
+                              <a role="menuitem" href="#programs-of-study" aria-label="Presione enter para conocer: ">2- The news of the day</a>
+                            </li>
+                
+                          </ul>
+                        </li>
+                        <!-- boton 2 -->
+                        <li role="none">
+                          <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."  aria-haspopup="true" aria-expanded="false" href="#academics">
+                            
+                              <img src="./img//secciones/1.png" alt="seccion" width="30%" height="30%">
+                              
+                            
+                            <div class="navegacion__enlace--info">
+                                <p>seccion 2</p>
+                                <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                              <polygon points="1 0, 11 0, 6 8"></polygon>
+                            </svg>
+                            </div>
+                          </a>
+                          <ul role="menu" aria-label="2">
+                            <li role="none">
+                              <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Interview map</a>
+                            </li>
+                            <li role="none">
+                              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Water level simulator</a>
+                            </li>
+                            
+                          </ul>
+                        </li>
+                        <!-- boton 3 -->
+                        <li role="none">
+                          <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
+                            
+                              <img src="./img//secciones/1.png" alt="seccion" width="30%" height="30%">
+                              
+                            
+                            <div class="navegacion__enlace--info">
+                                <p>seccion 3</p>
+                                <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                              <polygon points="1 0, 11 0, 6 8"></polygon>
+                            </svg>
+                            </div>
+                          </a>
+                          <ul role="menu" aria-label="3">
+                            <li role="none">
+                              <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Known our testimonies: During the flood</a>
+                            </li>
+                            <li role="none">
+                              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Shocking photos</a>
+                            </li>
+                            <li role="none">
+                              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">3- Photo album with QR</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <!-- boton 4 -->
+                        <li role="none">
+                          <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
+                            
+                              <img src="./img//secciones/1.png" alt="seccion" width="30%" height="30%">
+                              
+                            
+                            <div class="navegacion__enlace--info">
+                                <p>seccion 4</p>
+                                <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                              <polygon points="1 0, 11 0, 6 8"></polygon>
+                            </svg>
+                            </div>
+                          </a>
+                          <ul role="menu" aria-label="4">
+                            <li role="none">
+                              <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Urban floods</a>
+                            </li>
+                            <li role="none">
+                              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Sandbox</a>
+                            </li>
+                
+                          </ul>
+                        </li>
+                        <!-- boton 5 -->
+                        <li role="none">
+                          <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
+                            
+                              <img src="./img//secciones/1.png" alt="seccion" width="30%" height="30%">
+                              
+                            
+                            <div class="navegacion__enlace--info">
+                                <p>seccion 5</p>
+                                <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                              <polygon points="1 0, 11 0, 6 8"></polygon>
+                            </svg>
+                            </div>
+                          </a>
+                          <ul role="menu" aria-label="5">
+                            <li role="none">
+                              <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Smart survival backpak</a>
+                            </li>
+                            <li role="none">
+                              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Where to go</a>
+                            </li>
+                           
+                          </ul>
+                        </li>
+                        <!-- botone 6 -->
+                
+                        <li role="none">
+                          <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
+                            
+                              <img src="./img//secciones/1.png" alt="seccion" width="30%" height="30%">
+                              
+                            
+                            <div class="navegacion__enlace--info">
+                                <p>seccion 6</p>
+                                <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                              <polygon points="1 0, 11 0, 6 8"></polygon>
+                            </svg>
+                            </div>
+                          </a>
+                          <ul role="menu" id="sub-menu-academics">
+                            <li role="none">
+                              <a role="menuitem" href="#colleges-and-schools"  aria-label="Presione enter para conocer: ">1- Known our testimonies: after the flood</a>
+                            </li>
+                            <li role="none">
+                              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">2- Go citadine page</a>
+                            </li>
+                            <li role="none">
+                              <a role="menuitem" href="#programs-of-study"  aria-label="Presione enter para conocer: ">3- Educational games</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <!-- barra deslizante -->
+<!--                         
+                        <li>
+                            <a id="logo" role="menuitem" href="#home" aria-label="Presione enter para desplegar la barra deslizante.">
+                                Mas informacion
+                            </a>
+    
+                        </li> -->
+                          
+                        
+                      </ul>
+
+                        <div class="header-nav-logo">
+                            <a aria-label="Presione enter para obtener mas informacion." id="logo"><img src="./img/menu.svg" alt="Citadine brand" width="90rem" height="90rem"></a>
+                        </div>
+                    </nav>
+                </div>
             </div>
-            <div class="header-nav-logo">
-                <a><img src="./img/Citadine.png" alt="Citadine brand" width="90rem" height="90rem"></a>
-            </div>
-            <div class="header-nav-logo">
-                <a><img src="./img/Citadine.png" alt="Citadine brand" width="90rem" height="90rem"></a>
-            </div>
-            <div class="header-nav-logo">
-                <a><img src="./img/Citadine.png" alt="Citadine brand" width="90rem" height="90rem"></a>
-            </div>
-            <div class="header-nav-logo">
-                <a><img src="./img/Citadine.png" alt="Citadine brand" width="90rem" height="90rem"></a>
-            </div>
-            <div class="header-nav-logo">
-                <a><img src="./img/Citadine.png" alt="Citadine brand" width="90rem" height="90rem"></a>
-            </div>
-            <div class="header-nav-logo">
-                <a><img src="./img/Citadine.png" alt="Citadine brand" width="90rem" height="90rem"></a>
-            </div>
-            <div class="header-nav-logo">
-                <a><img src="./img/Citadine.png" alt="Citadine brand" width="90rem" height="90rem"></a>
-            </div>
-        </nav>
+    
+            <!-- <div class="header__texto">
+                <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+                <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+            </div> -->
+        </header>    
+        
         <div id="menu" class="sideBar ">
             <div class="sideBar-header">
                 <div class="sideBar-img">
@@ -91,7 +262,13 @@
                 <a class="btn verde-4" href="./about.html">ABOUT THE EVENT</a>
             </div>
         </div>
+        <div>
+            
+        </div>
     </main>
+    <!-- footer -->
     <footer></footer>
+    <!-- script -->
+    <script src="./js/lixtbox.js"></script>
 </body>
 </html>
