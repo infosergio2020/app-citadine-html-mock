@@ -45,8 +45,8 @@
   padding: 2px;
   font-size: 150%;
   list-style: none;
-  background-color: #eee;
-  border: #eee solid 1px;
+  /* background-color: #eee;
+  border: #eee solid 1px; */
 }
 
 .menubar-navigation li {

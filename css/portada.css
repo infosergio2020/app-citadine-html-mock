@@ -40,11 +40,15 @@
 @media (min-width: 768px) {
     .navegacion {
         display: flex;
+        /* background-color: #003D33; */
+        border: none;
         gap: 2rem;
     }
 }
 
 .navegacion__enlace{
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-size: 1.8rem;
 }

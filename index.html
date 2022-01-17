@@ -44,7 +44,7 @@
                     </a>
     
                     
-                    <nav class="navegacion" aria-label="Barra de navegacion.">
+                    <nav id="nav-id" class="navegacion" aria-label="Barra de navegacion.">
                       <ul class="menubar-navigation" role="menubar" aria-label="Barra de navegacion.">
                         <!-- <li role="none">
                           <a class="navegacion__enlace" role="menuitem" href="#home" aria-label="Presione enter para ir a la pagina principal.">
@@ -312,12 +312,12 @@
                         <div class="m20_0">
 
                           <!-- Start Buttons -->
-                          <a class="waves-effect waves-light btn blue" onclick="$('.tap-target').tapTarget('open')" aria-label="Presione enter para interactuar con el ">Asistente virtual</a> 
+                          <a class="waves-effect waves-light btn blue darken-4" onclick="$('.tap-target').tapTarget('open')" aria-label="Presione enter para interactuar con el ">Asistente virtual</a> 
                           <!-- <a class="waves-effect waves-light btn blue" onclick="$('.tap-target').tapTarget('close')">Close tap target</a> -->
                           <!-- End Buttons -->
                           
                           <!-- Element Showed -->
-                          <div id="menu" class="fixed-action-btn btn btn-floating" style="bottom: 45px; right: 38px;">
+                          <div id="menu" class="fixed-action-btn  btn-floating" style="bottom: 45px; right: 38px; opacity: 0;">
                                 <!-- <a id="menu" class="btn btn-floating btn-large cyan"><i class="material-icons">menu</i></a> -->
                                 <script>
                                   window.watsonAssistantChatOptions = {
@@ -335,7 +335,7 @@
                            </div>
                         
                           <!-- Start Tap Target Structure -->
-                          <div class="tap-target blue" data-activates="menu">
+                          <div class="tap-target teal darken-4" data-activates="menu">
                             <div class="tap-target-content white-text">
                               <h5>Hi! I am here</h5>
                               <p>I can help you if you want.</p>

@@ -1,5 +1,5 @@
 @import url('../_colors.scss');
-.btn {
+.boton {
     display: block;
     color: #fff;
     text-align: center;
@@ -15,7 +15,7 @@
     transition: transform 400ms ease-in-out, background-color 400ms ease-in-out;
 }
 
-.btn:hover {
+.boton:hover {
     cursor: pointer;
     // efectos 
     background-color: #003d33ad;
@@ -23,12 +23,12 @@
 }
 
 @media (min-width: 768px) {
-    .btn {
+    .boton {
         display: inline-block;
     }
 }
 
-.btn-info {
+.boton-info {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
