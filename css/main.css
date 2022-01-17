@@ -113,7 +113,7 @@ nav ul a {
 }
 
 .sideBar-info {
-  flex-basis: calc( 66.6% - 1rem);
+  flex-basis: calc(66.6% - 1rem);
   text-align: justify;
 }
 
