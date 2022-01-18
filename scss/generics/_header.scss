@@ -34,12 +34,22 @@
 }
 
 
+
+
+
 .container{
     width: 95%;
     margin: 0 auto;
 }
 
 @media (min-width: 768px){
+
+    .container__div__card{
+        display: grid; 
+        grid-template-columns: 1.2fr 3fr .8fr; 
+        justify-content: space-between;
+    }
+
     .container{
         display: flex;
         flex-direction: column;

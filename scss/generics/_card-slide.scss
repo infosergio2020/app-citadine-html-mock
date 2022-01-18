@@ -9,7 +9,7 @@
 }
 
 .main-card-body {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .main-card img {
@@ -25,7 +25,8 @@
 }
 
 //no se usa main-container-btn
-.main-container-btn {
+.main-container-boton {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -38,15 +39,15 @@
 
 @media (min-width: 768px) {
     .main-card {
-        width: 60%;
+        width: 80%;
     }
-    .main-container-btn {
-        width: 60%;
+    .main-container-boton {
+        width: 80%;
     }
 }
 
 .main-card-info {
-    padding: 0 2rem;
+    padding: 0 1rem;
     color: #ffffff;
     line-height: 1;
     text-align: center;
