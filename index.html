@@ -12,11 +12,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" crossorigin>
   <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <!--Import jQuery Library-->
-  <script async type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin></script>
-  <!--Import materialize.js-->
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js" crossorigin></script>
-  <!-- watson asistant -->
+
+
 
   <link rel="shortcut icon" href="./css/tree.png" type="image/x-icon">
   <link rel="preload" href="./css/normalize.css" as="style">
@@ -29,9 +26,13 @@
   
   <link rel="preload" href="./css/lixtbox.css" as="style">
   <link rel="stylesheet" href="./css/lixtbox.css">
-  <!-- <link rel="stylesheet" href="./css/portada.css"> -->
 
-  <script async src="./js/materialize.js"></script>
+
+  <!--Import jQuery Library-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!--Import materialize.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
   <script async src="./js/index.js"></script>
 
   <title>Mock</title>
@@ -290,10 +291,7 @@
                 <li>Covid</li>
               </ol>
 
-              <!-- Element Showed -->
-              <a class="waves-effect waves-light btn blue" onclick="$('.tap-target').tapTarget('open')"
-                aria-label="Presione enter para interactuar con el ">Asistente virtual</a>
-
+              <a class="waves-effect waves-light btn blue" onclick="$('.tap-target').tapTarget('open')" aria-label="Presione enter para interactuar con el ">Asistente virtual</a> 
             </div>
           </div>
         </div>
@@ -318,37 +316,43 @@
       </div>
     </div>
 
-    <!-- Element Showed -->
-    <div id="menu" class="fixed-action-btn btn btn-floating" style="bottom: 45px; right: 38px;">
-      <!-- <a id="menu" class="btn btn-floating btn-large cyan"><i class="material-icons">menu</i></a> -->
-      <script async crossorigin>
-        window.watsonAssistantChatOptions = {
-          integrationID: "9464e06d-fb26-49af-9416-5b94ef7e3208", // The ID of this integration.
-          region: "us-south", // The region your integration is hosted in.
-          serviceInstanceID: "1c9f1756-12f6-44df-b4e0-94e86d7b437d", // The ID of your service instance.
-          onLoad: function (instance) { instance.render(); }
-        };
-        setTimeout(function () {
-          const t = document.createElement('script');
-          t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
-          document.head.appendChild(t);
-        });
-      </script>
-    </div>
+    <div>
+        
 
-    <!-- Start Tap Target Structure -->
-    <div class="tap-target blue" data-activates="menu">
-      <div class="tap-target-content white-text">
-        <h5>Hi! I am here</h5>
-        <p>I can help you if you want.</p>
-      </div>
-    </div>
-    <!-- End Tap Target Structure -->
+        <!-- Element Showed -->
+        <div id="menu" class="fixed-action-btn btn btn-floating" style="bottom: 45px; right: 38px;">
+          <!-- <a id="menu" class="btn btn-floating btn-large cyan"><i class="material-icons">menu</i></a> -->
+          <script crossorigin>
+            window.watsonAssistantChatOptions = {
+              integrationID: "9464e06d-fb26-49af-9416-5b94ef7e3208", // The ID of this integration.
+              region: "us-south", // The region your integration is hosted in.
+              serviceInstanceID: "1c9f1756-12f6-44df-b4e0-94e86d7b437d", // The ID of your service instance.
+              onLoad: function (instance) { instance.render(); }
+            };
+            setTimeout(function () {
+              const t = document.createElement('script');
+              t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+              document.head.appendChild(t);
+            });
+          </script>
+        </div>
+
+        <!-- Start Tap Target Structure -->
+        <div class="tap-target blue" data-activates="menu">
+          <div class="tap-target-content white-text">
+            <h5>Hi! I am here</h5>
+            <p>I can help you if you want.</p>
+          </div>
+        </div>
+        <!-- End Tap Target Structure -->
+  </div>
+
   </main>
   <!-- footer -->
   <footer></footer>
   <!-- script -->
   <script src="./js/lixtbox.js"></script>
+
 </body>
 
 </html>
