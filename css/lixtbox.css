@@ -1,52 +1,19 @@
 @charset "utf-8";
 
-.page header {
-  border: #005a9c solid 2px;
-  background: #005a9c;
-  color: white;
-  text-align: center;
+.navegacion__enlace--info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.page header .title {
-  font-size: 2.5em;
-  font-weight: bold;
-  font-family: serif;
-}
-
-.page header .tagline {
-  font-style: italic;
-}
-
-.page .main {
-  padding: 1em 5% 5em;
-  border-left: 2px solid #eee;
-  border-right: 2px solid #eee;
-}
-
-.page footer {
-  border: #005a9c solid 2px;
-  background: #005a9c;
-  font-family: serif;
-  color: white;
-  font-style: italic;
-  padding-left: 1em;
-}
-
-.page nav {
+.navegacion__enlace--info p {
   margin: 0;
   padding: 0;
-  border: 2px solid #eee;
 }
+
 
 .menubar-navigation {
   display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 2px;
-  font-size: 150%;
-  list-style: none;
-  /* background-color: #eee;
-  border: #eee solid 1px; */
 }
 
 .menubar-navigation li {
@@ -65,14 +32,15 @@
   display: block;
 }
 
+/* SE ENCARGA DE MANIPULAR EL CONTENEDOR DEL ICONO Y EL PARRAFO CON EL SVG */
 .menubar-navigation > li > [role="menuitem"] {
   display: flex;
   justify-content: space-around;
-  margin: 3px;
-  padding: 5px;
-  padding-bottom: 8px;
-  background-color: #eee;
-  border: 4px solid #eee;
+  align-items: center;
+  margin: 0 1px;
+  
+  background-color: #479949;
+  border: 4px solid #479949;
   box-shadow: 10px 6px 5px -2px rgba(0,0,0,0.75);
   color: black;
 }
@@ -156,25 +124,22 @@
   border: #034575 solid 3px;
 }
 
-.menubar-navigation > li > [aria-expanded="true"],
-.menubar-navigation > li > [role="menuitem"]:focus,
-.menubar-navigation > li > [role="menuitem"]:hover {
+/* CAMBIA EL COLOR DE LOS CUANDO SE HACE HOVER  O SE ENFOCA EN EL LI*/
+.menubar-navigation li [aria-expanded="true"],
+.menubar-navigation li [role="menuitem"]:focus,
+.menubar-navigation li [role="menuitem"]:hover {
   outline: none;
-  background-color: #ccc;
+  background-color: #003D33;
+  color: #fff;
+  border: none;
 }
 
-.menubar-navigation > li > [role="menuitem"]:focus,
-.menubar-navigation > li > [role="menuitem"]:hover {
-  padding: 2px;
-  padding-bottom: 4px;
-  border: 2px solid #034575;
-}
 
 .menubar-navigation [role="menu"] [aria-expanded="true"],
 .menubar-navigation [role="menu"] [role="menuitem"]:focus,
 .menubar-navigation [role="menu"] [role="menuitem"]:hover {
   outline: none;
-  background-color: #ccc;
+  background-color: #003D33;
 }
 
 .menubar-navigation [role="menu"] [role="menuitem"]:focus,
