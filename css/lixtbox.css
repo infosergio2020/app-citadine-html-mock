@@ -11,13 +11,16 @@
   padding: 0;
 }
 
-
 .menubar-navigation {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
+
 @media (min-width: 768px){
-    
+  .menubar-navigation {
+    display: flex;
+  }
 }
 
 .menubar-navigation li {

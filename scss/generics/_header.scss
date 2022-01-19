@@ -9,16 +9,22 @@
 
 .header-container-nav{
     display: flex; 
-    align-items: center;
+    flex-direction: column;    
 }
 
 .header-container-nav nav {
     line-height: 2;
 }
 
+
 @media (min-width: 768px){
     .header-container{
         padding: 0 3rem;
+    }
+
+    .header-container-nav{
+        align-items: center;
+        flex-direction: row;
     }
 }
 
@@ -42,8 +48,9 @@
 }
 
 
-
-
+.basis-33{
+    flex-basis: calc(33.3% - 1rem);
+}
 
 .container{
     width: 95%;
@@ -64,5 +71,9 @@
         align-items: center;
         width: 100%;
         @include background-template('../img/cruce_de_inundacion_2.png');
+    }
+
+    .basis-33{
+        flex-basis: auto
     }
 }
