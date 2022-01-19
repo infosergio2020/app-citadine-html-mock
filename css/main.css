@@ -151,6 +151,69 @@ nav ul a {
   left: 0;
 }
 
+.body__portada {
+  color: #fff;
+}
+
+.header__portada--container {
+  padding: 0 2rem;
+}
+
+.header__portada {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container__portada {
+  background-image: url();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card__portada {
+  background-color: #003D33;
+  border-radius: 2rem;
+  width: 70%;
+  height: 40vh;
+  text-align: center;
+}
+
+.footer__portada {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 25vh;
+  background-color: #003D33;
+}
+
+.footer__portada--logos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__portada__logo--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__portada__info--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+}
+
+.boton__portada {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
 .boton {
   display: block;
   color: #fff;
