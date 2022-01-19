@@ -56,7 +56,7 @@
             <!-- boton 1 -->
             <li role="none">
               <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones." aria-haspopup="true" aria-expanded="false" href="#academics">
-                <img src="./img//secciones/1.webp" alt="seccion" width="30%" height="30%">
+                <img src="./img//secciones/1.png" alt="seccion" width="30%" height="30%">
                 <div class="navegacion__enlace--info">
                   <p>seccion 1</p>
                   <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
@@ -324,16 +324,16 @@
         <div id="menu" class="fixed-action-btn btn btn-floating" style="bottom: 42px; right: 40px;">
           <!-- <a id="menu" class="btn btn-floating btn-large cyan"><i class="material-icons">menu</i></a> -->
           <!-- <script src=https://assistant-web.watsonplatform.net/loadWatsonAssistantChat.js></script> -->
-          <script crossorigin>
+          <script>
             window.watsonAssistantChatOptions = {
-              integrationID: "9464e06d-fb26-49af-9416-5b94ef7e3208", // The ID of this integration.
-              region: "us-south", // The region your integration is hosted in.
-              serviceInstanceID: "1c9f1756-12f6-44df-b4e0-94e86d7b437d", // The ID of your service instance.
-              onLoad: function (instance) { instance.render(); }
-            };
-            setTimeout(function () {
-              const t = document.createElement('script');
-              t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+                integrationID: "9464e06d-fb26-49af-9416-5b94ef7e3208", // The ID of this integration.
+                region: "us-south", // The region your integration is hosted in.
+                serviceInstanceID: "1c9f1756-12f6-44df-b4e0-94e86d7b437d", // The ID of your service instance.
+                onLoad: function(instance) { instance.render(); }
+              };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
               document.head.appendChild(t);
             });
           </script>
