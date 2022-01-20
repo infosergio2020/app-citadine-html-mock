@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/px-video.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="px-video-container" id="myvid">
+        <div class="px-video-img-captions-container">
+            <div class="px-video-captions hide" aria-hidden="true"></div>
+            <video width="640" height="360" poster="media/foo.jpg" controls>
+                <!-- video files -->
+                <source src="/public/7-1-22.mp4" type="video/mp4" />
+                <source src="foo.webm" type="video/webm" />
+                <!-- text track file -->
+                <track kind="captions" label="English captions" src="media/foo.vtt" srclang="en" default />
+                <!-- fallback for browsers that don't support the video element -->
+                <div>
+                    <a href="foo.mp4">
+                        <img src="media/foo.jpg" width="640" height="360" alt="download video" />
+                    </a>
+                </div>
+            </video>
+        </div>
+        <!-- end container for captions and video -->
+        <div class="px-video-controls"></div>
+    </div>
+    <!-- script -->
+<script src="js/strings.js"></script>
+<script src="js/px-video.js"></script>
+<script>
+// Initialize
+new InitPxVideo({
+    "videoId": "myvid",
+    "captionsOnDefault": true,
+    "seekInterval": 20,
+    "videoTitle": "clips of stand-up comedy",
+    "debug": true
+});
+</script>
+
+</body>
+</html>

@@ -2,12 +2,15 @@
     margin: 2rem auto;
     background-color: #004D40;
     width: 90%;
+    
     border: 1px solid #c7c7c767;
     border-radius: 2.8rem;
     -webkit-box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.89);
 }
 
-.main-card-body {}
+.main-card-body {
+    padding: 0;
+}
 
 .main-card img {
     border-radius: 2.8rem;
@@ -21,23 +24,30 @@
 }
 
 //no se usa main-container-btn
-.main-container-btn {
+.main-container-boton {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 1rem;
+}
+
+.main-card-img-container-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 @media (min-width: 768px) {
     .main-card {
-        width: 60%;
+        width: 80%;
     }
-    .main-container-btn {
-        width: 60%;
+    .main-container-boton {
+        width: 80%;
     }
 }
 
 .main-card-info {
-    padding: 0 2rem;
+    padding: 0 1rem !important;
     color: #ffffff;
     line-height: 1;
     text-align: center;
