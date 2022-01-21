@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- watson asistant -->
+  <link rel="stylesheet" href="./css/chat.css">
   <!--Responsive Meta Tag-->
   <link rel="shortcut icon" href="./img/tree.png" type="image/x-icon">
   <!--Import Google Icon Font-->
@@ -320,17 +321,42 @@
 
     <div>
         
-
         <!-- Element Showed -->
         <div id="menu" class="fixed-action-btn btn btn-floating" style="bottom: 42px; right: 40px;">
           <!-- <a id="menu" class="btn btn-floating btn-large cyan"><i class="material-icons">menu</i></a> -->
           <!-- <script src=https://assistant-web.watsonplatform.net/loadWatsonAssistantChat.js></script> -->
+          <!-- div que contiene el chat -->
+
           <script>
+
             window.watsonAssistantChatOptions = {
                 integrationID: "9464e06d-fb26-49af-9416-5b94ef7e3208", // The ID of this integration.
                 region: "us-south", // The region your integration is hosted in.
                 serviceInstanceID: "1c9f1756-12f6-44df-b4e0-94e86d7b437d", // The ID of your service instance.
-                onLoad: function(instance) { instance.render(); }
+                onLoad: function(instance) { 
+                  instance.updateCSSVariables({
+                    //font-family
+                    'BASE-z-index': '8000',
+                    'BASE-font-size': '30px',
+                    'BASE-font-family': '"Times New Roman", Times, serif',
+                    '$focus': '#ff0000',
+                    'BASE-width':'500px'
+                  });
+                  instance.updateHomeScreenConfig({
+                      
+                      bot_avatar_url: 'img/bot.png'
+
+                      
+                      
+                    });
+                    // web chat makes an asynchronous request to get need data to render in spanish.
+                    instance.updateLocale('es').then(function() {
+                     
+                      instance.render();
+                    });
+                    
+                     instance.render(); },
+                
               };
             setTimeout(function(){
               const t=document.createElement('script');
