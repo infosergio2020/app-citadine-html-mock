@@ -328,17 +328,29 @@
           <!-- div que contiene el chat -->
 
           <script>
+            let scale = 1
 
             window.watsonAssistantChatOptions = {
                 integrationID: "9464e06d-fb26-49af-9416-5b94ef7e3208", // The ID of this integration.
                 region: "us-south", // The region your integration is hosted in.
                 serviceInstanceID: "1c9f1756-12f6-44df-b4e0-94e86d7b437d", // The ID of your service instance.
                 onLoad: function(instance) { 
+    //   BASE-font-size-extra-small: 8px;   se usa en:  -- 
+    //   BASE-font-size-small: 12px;    se usa en:  --  <b>, <div class sugerencias>
+    //   BASE-font-size-med: 14px;    se usa en:  -- li, div
+    //   BASE-font-size-large: 16px;    se usa en:  -- <div header chat> , titulos de sigerencias
+    //   BASE-font-size-xlarge: 20px;   se usa en:  -- i dunno :p
                   instance.updateCSSVariables({
                     //font-family
                     'BASE-z-index': '8000',
-                    'BASE-font-size': '30px',
-                    'BASE-font-family': '"Times New Roman", Times, serif',
+                    
+                    'BASE-font-size-extra-small': `${.8 + scale}rem`,
+                    'BASE-font-size-small': `${1.2 + scale}rem`,
+                    'BASE-font-size-med': `${1.4 + scale}rem`,
+                    'BASE-font-size-large': `${1.6 + scale}rem`,
+                    'BASE-font-size-xlarge': `${2 + scale}rem`,
+
+                    'BASE-font-family': '"Source Sans Pro", Times, serif',
                     '$focus': '#ff0000',
                     'BASE-width':'500px'
                   });
