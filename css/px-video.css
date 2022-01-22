@@ -1,0 +1,26 @@
+.contenedor-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        align-items: center;
+
+}
+.centrar-texto{
+    text-align: center;
+    color: #fff;
+    font-family: 'Open Sans Pro';
+}
+.no-margin{
+
+}
+.video__informacion{
+    color: #ffffff;
+    padding:0 4rem !important;
+    text-align: start;
+}
+
+.video__descripcion{
+    color: #ffffff;
+    padding:0 1rem !important;
+    
+}
