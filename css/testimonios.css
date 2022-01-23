@@ -240,8 +240,14 @@ h4 {
   color: #ffffff;
 }
 .curso__imagen {
+  /* object-fit: cover;
   display: flex;
-  justify-content: center;
+  justify-content: center; */
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .curso:last-of-type {

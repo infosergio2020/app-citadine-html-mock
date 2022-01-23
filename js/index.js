@@ -12,11 +12,9 @@ console.log(imagPop);
 lightGallery(imagPop, { 
     download:false,
     speed: 500,
-    plugins: [lgZoom],
-    thumbnail: true, 
+    addClass: 'lg-custom-thumbnails',
+    plugins: [lgZoom, lgThumbnail],
     mobileSettings:{ 
-        // controls: false, 
         showCloseIcon: true,
-        // download: false, 
     }
  });
