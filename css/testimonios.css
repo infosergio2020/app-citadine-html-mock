@@ -227,14 +227,15 @@ h4 {
     grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
   }
+
+  .curso:hover {
+    transform: scale(1.05);
+    background-color: #0514071c;
+    padding: 3rem;
+  }
 }
 
-.curso:hover {
-  transform: scale(1.05);
-  background-color: #0514071c;
-  padding: 3rem;
-  border-radius: 2rem;
-}
+
 .curso__descripcion {
   color: #ffffff;
 }
@@ -256,7 +257,8 @@ h4 {
 }
 .curso__label,
 .curso__info {
-  font-size: 2rem;
+  font-size: calc(.7em + 1vw);
+  /* font-size: 2rem; */
 }
 
 /** Contacto **/

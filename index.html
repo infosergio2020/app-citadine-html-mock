@@ -328,7 +328,7 @@
           <!-- div que contiene el chat -->
 
           <script>
-            let scale = 1
+            let scale = 0
 
             window.watsonAssistantChatOptions = {
                 integrationID: "9464e06d-fb26-49af-9416-5b94ef7e3208", // The ID of this integration.
@@ -344,11 +344,11 @@
                     //font-family
                     'BASE-z-index': '8000',
                     
-                    'BASE-font-size-extra-small': `${.8 + scale}rem`,
-                    'BASE-font-size-small': `${1.2 + scale}rem`,
-                    'BASE-font-size-med': `${1.4 + scale}rem`,
-                    'BASE-font-size-large': `${1.6 + scale}rem`,
-                    'BASE-font-size-xlarge': `${2 + scale}rem`,
+                    'BASE-font-size-extra-small': `calc( ${.08 + scale}em + 1vw)`,
+                    'BASE-font-size-small': `calc( ${.2 + scale}em + 1vw)`,
+                    'BASE-font-size-med': `calc( ${.4 + scale}em + 1vw)`,
+                    'BASE-font-size-large': `calc( ${.6 + scale}em + 1vw)`,
+                    'BASE-font-size-xlarge': `calc( ${1 + scale}em + 1vw)`,
 
                     'BASE-font-family': '"Source Sans Pro", Times, serif',
                     '$focus': '#ff0000',

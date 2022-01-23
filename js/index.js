@@ -13,9 +13,10 @@ lightGallery(imagPop, {
     download:false,
     speed: 500,
     plugins: [lgZoom],
+    thumbnail: true, 
     mobileSettings:{ 
         // controls: false, 
-        showCloseIcon: true, 
+        showCloseIcon: true,
         // download: false, 
     }
  });

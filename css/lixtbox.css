@@ -1,9 +1,13 @@
 @charset "utf-8";
 
+.navegacion__enlace{
+  padding: 0;
+  border: none!important;
+}
+
 .navegacion__enlace--info{
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .navegacion__enlace--info p {
@@ -17,7 +21,7 @@
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 960px){
   .menubar-navigation {
     display: flex;
   }
@@ -173,4 +177,13 @@
 .menubar-navigation [role="menu"] [role="menuitem"][aria-current]:hover {
   padding-left: 4px;
   border-left: 4px solid #034575;
+}
+
+
+/* nav id */
+
+#nav-id{
+  /* border: 2px solid red; */
+  padding: .5rem;
+  height: fit-content;
 }
