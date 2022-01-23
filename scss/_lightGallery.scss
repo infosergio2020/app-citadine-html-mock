@@ -47,3 +47,38 @@
     grid-column: span 2;
     grid-row: span 2;
 }
+
+
+.lg-custom-thumbnails {
+    // Add hove effect (Optional)
+    .lg-thumb-item {
+        filter: grayscale(100%);
+        will-change: filter;
+        transition: filter 0.12s ease-in, border-color 0.12s ease;
+        &:hover,
+        &.active {
+            filter: grayscale(0);
+            border-color: #545454;
+            border-style: dashed;
+            border: 4px solid #17580a;
+        }
+    }
+
+    .lg-thumb {
+        padding: 5px 0;
+    }
+}
+
+@keyframes greenPulse {
+  0%{}
+//   10%{}
+//   20%{}
+  30%{}
+//   40%{}
+//   50%{}
+  60%{}
+//   70%{}
+//   80%{}
+//   90%{}
+  100%{}
+}
