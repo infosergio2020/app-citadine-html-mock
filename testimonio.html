@@ -28,6 +28,8 @@
   <link rel="stylesheet" href="./css/lixtbox.css">
   <!-- CSS del testimonio -->
   <link rel="stylesheet" href="css/testimonios.css">
+  <!-- CSS del acordeon -->
+  <link rel="stylesheet" href="css/minAcordeon.css">
 
   <!--Import jQuery Library-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -294,16 +296,38 @@
                           “Mi mamá no estaba, se había ido a trabajar…” </p>
                           <!-- leer mas -->
                           
-                          <p class="curso__descripcion"> “Los animales trataban de esconderse. No había mucho movimiento, ni de pájaros, ni de perros en la calle, ni nada”. 
-                            “Era como… si estuviera desolado, cuando en mi barrio es normal que hayan pajaritos, perros en la calle o gatos”.
-                           </p>
-                           <p class="curso__descripcion">
-                          “Era más o menos normal que llueva bastante y que llegue por ejemplo hasta el segundo o tercer escalón del garaje”.
-                        <b><em>“Pero, esta vez ,empezó a subir y no paró más”</em>. 
-                          </p>
-                          <p class="curso__descripcion"> “Tuvimos que subir varias cosas, medio arrancar cables, bajar la térmica”. <strong><em>“En un momento pasó que se cayó la heladera, ¡empezó a flotar!”<em></strong>.
-                            “Varios vidrios de ventanales se rompieron por la presión del agua”. “Pusimos compuertas, un pedazo de madera para bloquear el agua. <strong><em>El agua pasó esa parte de la madera. Y, ¡volvío a entrar a la casa!”</em></strong>.                          
-                         </p>
+
+                          <div  class="accordion">
+                            
+                              <button type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio." aria-expanded="true" class="accordion-trigger boton-acordeon" aria-controls="sect1" id="accordion1id">
+                                <span class="accordion-title">
+                                  Conocer más
+                                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                                  </svg>
+                                </span>
+                              </button>
+                            
+                            <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel">
+                              <div>
+                                <!-- Variable content within section, may include any type of markup or interactive widgets. -->
+                                <fieldset>
+                                  <p class="curso__descripcion"> “Los animales trataban de esconderse. No había mucho movimiento, ni de pájaros, ni de perros en la calle, ni nada”. 
+                                    “Era como… si estuviera desolado, cuando en mi barrio es normal que hayan pajaritos, perros en la calle o gatos”.
+                                   </p>
+                                   <p class="curso__descripcion">
+                                  “Era más o menos normal que llueva bastante y que llegue por ejemplo hasta el segundo o tercer escalón del garaje”.
+                                <b><em>“Pero, esta vez ,empezó a subir y no paró más”</em>. 
+                                  </p>
+                                  <p class="curso__descripcion"> “Tuvimos que subir varias cosas, medio arrancar cables, bajar la térmica”. <strong><em>“En un momento pasó que se cayó la heladera, ¡empezó a flotar!”<em></strong>.
+                                    “Varios vidrios de ventanales se rompieron por la presión del agua”. “Pusimos compuertas, un pedazo de madera para bloquear el agua. <strong><em>El agua pasó esa parte de la madera. Y, ¡volvío a entrar a la casa!”</em></strong>.                          
+                                 </p>                                
+                                </fieldset>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          
                          
                     </div> <!--.curso-informacion-->
                 </div> <!--.curso -->
@@ -424,7 +448,7 @@
   <footer></footer>
   <!-- script -->
   <script src="./js/lixtbox.js"></script>
-
+  <script src="./js/acordeon.js"></script>  
 </body>
 
 </html>
