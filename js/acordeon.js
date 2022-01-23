@@ -58,3 +58,21 @@ const accordions = document.querySelectorAll('.accordion');
 accordions.forEach((accordionEl) => {
   new Accordion(accordionEl);
 });
+
+
+
+// script para detectar si es o no visible
+// window.addEventListener("DOMContentLoaded", () => {
+//   function callback(entries,observer){
+//      if(entries[0].isIntersecting){//verificamos si actualmente es visible
+//        console.log("El elemento ya está visible...");
+//      }else{
+//        console.log("El elemento no es visible.");
+//        console.log(entries[0].target.setAttribute('hidden', ''));
+//      }
+//    }
+//    var observer = new IntersectionObserver(callback, {});
+   
+//    const element = document.querySelector('#sect1');
+//    observer.observe(element);
+//  })

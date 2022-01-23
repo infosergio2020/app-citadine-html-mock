@@ -9,12 +9,14 @@ const toggleMenu = () => {
 // LIGHT GALLERY
 var imagPop = document.getElementById("lightgallery");
 console.log(imagPop);
-lightGallery(imagPop, { 
-    download:false,
-    speed: 500,
-    addClass: 'lg-custom-thumbnails',
-    plugins: [lgZoom, lgThumbnail],
-    mobileSettings:{ 
-        showCloseIcon: true,
-    }
- });
+if (imagPop != null){
+    lightGallery(imagPop, { 
+        download:false,
+        speed: 500,
+        addClass: 'lg-custom-thumbnails',
+        plugins: [lgZoom, lgThumbnail],
+        mobileSettings:{ 
+            showCloseIcon: true,
+        }
+     });
+}
