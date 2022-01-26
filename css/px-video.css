@@ -1,8 +1,6 @@
 .contenedor-video{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-        align-items: center;
 
 }
 .centrar-texto{
@@ -23,4 +21,13 @@
     color: #ffffff;
     padding:0 1rem !important;
     
+}
+
+.a-link{
+    color: #2196F3;
+}
+
+.a-link:hover,.a-link:focus, .a-link:focus-within{
+    color: #5baef1;
+    text-decoration: underline;
 }
