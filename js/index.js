@@ -9,17 +9,17 @@ const toggleMenu = () => {
 // LIGHT GALLERY
 var imagPop = document.getElementById("lightgallery");
 console.log(imagPop);
-// if (imagPop != null){
-//     lightGallery(imagPop, { 
-//         download:false,
-//         speed: 500,
-//         addClass: 'lg-custom-thumbnails',
-//         plugins: [lgZoom, lgThumbnail, lgVideo],      
-//         mobileSettings:{ 
-//             showCloseIcon: true,
-//         }
-//      });
-// }
+if (imagPop != null){
+    lightGallery(imagPop, { 
+        download:false,
+        speed: 500,
+        addClass: 'lg-custom-thumbnails',
+        plugins: [lgZoom, lgThumbnail, lgVideo],      
+        mobileSettings:{ 
+            showCloseIcon: true,
+        }
+     });
+}
 
 let listimgPop = document.getElementsByClassName("gallery__libro");
 console.log(listimgPop);

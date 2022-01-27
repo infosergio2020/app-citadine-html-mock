@@ -207,7 +207,7 @@ img{width: 100%;}
 	height: 400px;  */
 	background: #e0e1dc;
 	transform-style: preserve-3d;
-	/* transform: translate(-50%,-50%) perspective(2000px); */
+	transform: translate(-50%,-50%) perspective(2000px);
 	box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
 	transition: 1s;
 
@@ -256,6 +256,7 @@ img{width: 100%;}
 .card-libro:active, 
 .card-libro:focus{
 	transform: translate(-50%,-50%) perspective(2000px) rotate(15deg) scale(1.2);
+    /* transform: translate(-50%,-20%) perspective(200px) rotate(4deg) scale(1.2); */
 	box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
     
 }
@@ -264,11 +265,13 @@ img{width: 100%;}
 .card-libro .details {
 	position: absolute;
 	top: 0;
-	left: 0;
 	box-sizing: border-box;
 	padding: 0 0 0 10px;
 	z-index: -1;
-	margin-top: 70px;
+    margin-left: 20px;
+	margin-top: 30px;
+    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .card-libro .details p {
@@ -305,9 +308,18 @@ img{width: 100%;}
     justify-content: center;
     background-color: #2196F3;
 } */
- 
+ .margenes{
+     margin-left: 0rem;
+     /* margin-right: 40rem; */
+    
+ }
 /* smartphone */
 @media screen and (max-width: 767px) {
+    .margenes{
+        margin-left: 30rem;
+        /* margin-right: 40rem; */
+        
+    }
     .libro-container{
         display: grid;
         grid-template-columns: 20rem;
@@ -316,9 +328,37 @@ img{width: 100%;}
         margin-top: 20rem; 
         justify-content: center;
     }
+    .card-libro:hover,
+    .card-libro:focus-within,
+    .card-libro:active, 
+    .card-libro:focus{
+        /* transform: translate(-50%,-50%) perspective(2000px) rotate(15deg) scale(1.2); */
+        transform: translate(-50%,-20%) perspective(900px) rotate(4deg) scale(1.2);
+        box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+        
+    }
+    .card-libro {
+        color: #013243;
+         /* position: absolute; */
+        top: 50%;
+        left: 50%; 
+         /* width: 300px;
+        height: 400px;  */
+        background: #e0e1dc;
+        transform-style: preserve-3d;
+        transform: translate(-50%,-30%) perspective(2000px);
+        box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
+        transition: 1s;
+    
+    }
 }
 /* table */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .margenes{
+        margin-left: 30rem;
+        /* margin-right: 40rem; */
+        
+    }
     .libro-container{
         display: grid;
         grid-template-columns: 20rem 20rem;
@@ -327,16 +367,44 @@ img{width: 100%;}
         margin-top: 20rem; 
         justify-content: center;
     }
+    .card-libro:hover,
+    .card-libro:focus-within,
+    .card-libro:active, 
+    .card-libro:focus{
+        /* transform: translate(-50%,-50%) perspective(2000px) rotate(15deg) scale(1.2); */
+        transform: translate(-50%,-20%) perspective(900px) rotate(10deg) scale(1.2);
+        box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+        
+    }
+    .card-libro {
+        color: #013243;
+         /* position: absolute; */
+        top: 50%;
+        left: 50%; 
+         /* width: 300px;
+        height: 400px;  */
+        background: #e0e1dc;
+        transform-style: preserve-3d;
+        transform: translate(-50%,-30%) perspective(2000px);
+        box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
+        transition: 1s;
+    
+    }
 }
 /* desktop */
 @media screen and (min-width: 1024px) {
+    .margenes{
+        /* margin-left: 30rem; */
+        margin-right: 30rem;
+        
+    }
     .libro-container{
         display: grid;
         grid-template-columns: 20rem 20rem 20rem;
         column-gap: 12rem;
         row-gap: 12rem;
-        margin-top: 40rem; 
-        justify-content: center;
+        margin-top: 25rem; 
+        justify-content: flex-end;
     }
 }
 /*
@@ -359,6 +427,15 @@ img{width: 100%;}
 /* imagen de los libros */
 
 .achicar-img{
-	width: 40px;	
-	height: 40px;
+	width: 10px;	
+	height: 10px;
+    cursor: pointer;
+    visibility: hidden;
+}
+.agrandar-img:hover{
+	width: 100%;	
+	height: 100%;
+    justify-content: center;
+    cursor: pointer;
+
 }
