@@ -71,12 +71,6 @@ h4 {
     grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
   }
-
-  /* .curso:hover {
-    transform: scale(1.05);
-    background-color: #0514071c;
-    padding: 3rem;
-  } */
   .curso__descripcion {
     color: #ffffff;
   }
@@ -85,15 +79,20 @@ h4 {
 
 
 .curso__imagen {
-  /* object-fit: cover;
-  display: flex;
-  justify-content: center; */
-  
-    width: 100%;
+    display: flex;
+    /* border: 4px solid black; */
+    border-radius: 2rem;
     height: 100%;
     object-fit: cover;
-    display: block;
+    overflow: hidden;
+    width: 100%;
 }
+
+.curso__imagen img{
+  padding: 0;
+  margin: 0;
+}
+
 
 .curso:last-of-type {
   border: none;
@@ -110,8 +109,4 @@ h4 {
 .curso__info {
   font-size: calc(.4em + 1vw);
   /* font-size: 2rem; */
-}
-
-#sect1{
-
 }
