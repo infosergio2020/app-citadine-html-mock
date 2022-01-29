@@ -50,8 +50,9 @@
         </div>
         
         <nav id="nav-id" aria-label="Barra de navegacion." class="basis-33">
-          <small> Las secciones se recorren en orden debido a que los sucesos ocurren en orden cronológico. Si quieres
-            conocer más, preguntale a nuestro asistente virtual que te dará una mano en tus inquietudes.</small>
+          <small> La muestra contará con 6 áreas o secciones de exhibición, que deben recorrerse en forma secuencial, puesto que aborda la temática en forma cronológica.
+            Además, se analiza la inundación desde la perspectiva de 4 casos diferentes de personas que relatan sus experiencias y lo sucedido antes, durante y después de vivenciarla.
+            </small>
           <ul class="menubar-navigation" role="menubar" aria-label="Barra de navegacion.">
             <!-- boton 1 -->
             <li role="none">
@@ -70,7 +71,7 @@
                     testimonies: Before the flood</a>
                 </li>
                 <li role="none">
-                  <a role="menuitem" href="/videos.html" aria-label="Presione enter para conocer: ">2- The news of the
+                  <a role="menuitem" href="/the-news-of-the-day.html" aria-label="Presione enter para conocer: ">2- The news of the
                     day</a>
                 </li>
     
@@ -99,6 +100,11 @@
                 <li role="none">
                   <a role="menuitem" href="water-level.html" aria-label="Presione enter para conocer: ">2- Water level
                     simulator</a>
+                </li>
+                 
+                <li role="none">
+                  <a role="menuitem" href="http://ifw-raspi.projekt.jade-hs.de/wordpress/" aria-label="Presione enter para conocer: ">2- Go citadine
+                    page</a>
                 </li>
     
               </ul>
@@ -167,32 +173,7 @@
     
               </ul>
             </li>
-            <!-- boton 5
-            <li role="none">
-              <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
-                aria-haspopup="true" aria-expanded="false" href="#academics">
-    
-                <img src="./img//secciones/1.webp" alt="seccion" width="30%" height="30%">
-    
-    
-                <div class="navegacion__enlace--info">
-                  <p>seccion 5</p>
-                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
-                    <polygon points="1 0, 11 0, 6 8"></polygon>
-                  </svg>
-                </div>
-              </a>
-              <ul role="menu" aria-label="5">
-                <li role="none">
-                  <a role="menuitem" href="#colleges-and-schools" aria-label="Presione enter para conocer: ">1- Smart
-                    survival backpak</a>
-                </li>
-                <li role="none">
-                  <a role="menuitem" href="#programs-of-study" aria-label="Presione enter para conocer: ">2- Where to go</a>
-                </li>
-    
-              </ul>
-            </li> -->
+           
             <!-- botone 5 -->
     
             <li role="none">
@@ -219,14 +200,7 @@
                 <li role="none">
                   <a role="menuitem" href="#programs-of-study" aria-label="Presione enter para conocer: ">3- Where to go</a>
                 </li>
-                <!-- <li role="none">
-                  <a role="menuitem" href="testimonio3.html" aria-label="Presione enter para conocer: ">1- Known our
-                    testimonies: after the flood</a>
-                </li> -->
-                <!-- <li role="none">
-                  <a role="menuitem" href="http://ifw-raspi.projekt.jade-hs.de/wordpress/" aria-label="Presione enter para conocer: ">2- Go citadine
-                    page</a>
-                </li> -->
+               
                 <li role="none">
                   <a role="menuitem" href="#programs-of-study" aria-label="Presione enter para conocer: ">4- Educational
                     games</a>
@@ -238,49 +212,59 @@
         </nav>
 
         <div class="header-nav-logo basis-33">
-          <a aria-label="Presione enter para obtener mas informacion." id="logo"><img src="./img/menu.svg" alt="Citadine brand" width="90rem" height="90rem"></a>
+          <button aria-label="Presione enter para obtener mas informacion." id="logo"><img src="./img/menu.svg" alt="Citadine brand" width="90rem" height="90rem"></button>
         </div>
+        <!-- <div class="header-nav-logo">
+          <button aria-label="Presione enter para obtener mas informacion." id="logo"><img src="./img/menu.svg" alt="Citadine brand" width="90rem" height="90rem"></button>
+        </div> -->
       </div>
 
   </header>
+<!-- menu deslizante -->
 
   <div id="menuIcono" class="sideBar">
     <div class="sideBar-header">
-      <div class="sideBar-img">
+      
+      <div class="sideBar-img" aria-labelledby="posts-heading">
         <a href="/"><img src="./img/agua_con_autos.webp" alt="expo citadine logo"></a>
       </div>
-      <div class="sideBar-info">
-        <h2>Expo Citadine</h2>
-        <p>Citizens Science and Nature Based Solutions for improved disaster preparedness. The cas od the Flood in La
-          Plata on 02-04-2013</p>
+      <div class="sideBar-info" tabindex="0" id="posts-heading">
+        <h2>Generar CONCIENCIA</h2>
+        <p>Experiencias y conocimientos sobre la Inundación de La Plata. Fecha de la Exhibición:
+          Desde el 21 al 27 de marzo de 2022.
+          Grupos destinatarios: Abierto a toda la comunidad. Familias, escuelas en particular. 
+          </p>
       </div>
     </div>
-    <div class="sideBar-body">
+    <div class="sideBar-body" role="navigation" >
       <section>
-        <ul class="sidebar-body-ul">
-          <li class="sidebar-link"> <img src="./img/calendar.png" width="42px" height="42px"> Sections <img
-              src="./img/arrow.png" width="42px" height="42px"></li>
-          <li class="sidebar-link"> <img src="./img/schedule.png" width="42px" height="42px"> Schedule <img
-              src="./img/arrow.png" width="42px" height="42px"></li>
-          <li class="sidebar-link"> <img src="./img/monitor.png" width="42px" height="42px"> Announcements <img
-              src="./img/arrow.png" width="42px" height="42px"></li>
-          <li class="sidebar-link"> <img src="./img/virus.png" width="42px" height="42px"> COVID protocols <img
-              src="./img/arrow.png" width="42px" height="42px"></li>
+        <ul class="sidebar-body-ul" role="menu" >
+          <a href="sections.html">
+          <li tabindex="0" class="sidebar-link" role="menuitem" aria-label="haga click si decea entrar a secciones">           
+                <img  src="./img/calendar.webp" alt="" width="42px" height="42px" > Sections 
+                <img src="./img/arrow.png" width="42px" height="42px" alt="">           
+            </li>
+          </a>  
+          <a href="./anounce.html">
+            <li tabindex="0" class="sidebar-link" role="menuitem" aria-label="haga click si decea entrar a Announcements"> 
+              <img src="./img/" alt="" width="42px" height="42px"> Announcements
+              <img src="./img/arrow.png" width="42px" height="42px" alt=""></li> 
+          </a>
+          <a href="./covid.html">
+          <li tabindex="0" class="sidebar-link" role="menuitem" aria-label="haga click si decea entrar a COVID protocols"> 
+            <img src="./img/" alt="" width="42px" height="42px"> COVID protocols 
+            <img src="./img/arrow.png" width="42px" height="42px" alt=""></li>
+          </a>
           <a href="./about.html">
-            <li class="sidebar-link"> <img src="./img/infor.png" width="42px" height="42px"> About Citadine <img
-                src="./img/arrow.png" width="42px" height="42px"></li>
+            <li tabindex="0" class="sidebar-link" role="menuitem" aria-label="haga click si decea entrar a hacerca de citadine"> 
+              <img src="./img/infor.webp" alt="" width="42px" height="42px"> About Citadine 
+              <img src="./img/arrow.png" width="42px" height="42px" alt=""></li>
           </a>
-        </ul>
-      </section>
-      <section>
-        <ul class="sidebar-body-ul">
           <a href="./languaje.html">
-            <li class="sidebar-link"> <img src="./img/languages.png" width="42px" height="42px"> Languajes <img
-                src="./img/arrow.png" width="42px" height="42px"></li>
+            <li tabindex="0" class="sidebar-link" role="menuitem" aria-label="haga click si decea entrar a hacerca de citadine"> 
+              <img src="./img/languages.webp" alt="" width="42px" height="42px"> Languajes 
+              <img src="./img/arrow.png" width="42px" height="42px" alt=""></li>
           </a>
-          <li class="sidebar-link"> <img src="./img/exit.png" width="42px" height="42px"> Go out <img
-              src="./img/arrow.png" width="42px" height="42px"></li>
-
         </ul>
       </section>
     </div>
@@ -293,17 +277,23 @@
           <div class="main-card-body">
             <img src="./img/Republica_de_los_ninos-scaled.webp" alt="image republica de los niños" width="100%">
             <div class="main-card-info">
-              <h3>Welcome to Expo Citadine The case of the Flood in La Plata on 04-02-2021</h3>
-              <p>Place The child's House</p>
-              <p>Avaible on 21-27 march 2022.</p>
-              <p>Schedule time from 2 to 6pm</p>
+              <h3>Bienvenido a la exhibición Generar CONCIENCIA</h3>
+              - Experiencias y conocimientos sobre la Inundación de La Plata, del proyecto Citadine 
+              (Ciencia Ciudadana para la gestión de catástrofes). Que aborda la inundación desde la mirada 
+              y experiencia de los sobrevivientes y testigos. Cuenta con 6 secciones para recorrer en forma 
+              cronológica, con material interactivo educativo, juegos y atracciones, la mayoría realizados 
+              por estudiantes de la UNLP.
+              <p>Lugar: La república de los niños.</p>
+              <p>Fecha de la Exhibición:
+                Desde el 21 al 27 de marzo de 2022.</p>
+              <p>Horario: 2 a 6pm.</p>
             </div>
           </div>
         </div>
-        <div class="main-container-boton">
+        <!-- <div class="main-container-boton">
           <a class="boton verde-4" href="./sections.html">ENTER TO THE SAMPLE</a>
           <a class="boton verde-4" href="./about.html">ABOUT THE EVENT</a>
-        </div>
+        </div> -->
       </div>
 
       <div>
