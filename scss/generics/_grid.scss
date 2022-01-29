@@ -29,11 +29,24 @@ background: linear-gradient(153deg, rgba(69,91,252,1) 8%, rgba(255,255,255,1) 18
 }
 
 .grid__image{
+    position: relative;
     display: flex;
     justify-content: center;
 }
 
+.grid__image small{
+    
+    padding: 0 1rem;
+    background-color: #000000d0;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    z-index: 1;
+}
+
 .grid__image img{
+    object-fit: cover;
     border-radius: 1.5rem;
     border: 1.5px solid #bbbbbbc7;
     -webkit-box-shadow: -6px 6px 5px 0px rgba(0,0,0,0.75);
