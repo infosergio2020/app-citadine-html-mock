@@ -5,53 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="./img/tree.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <!--Responsive Meta Tag-->
+    <link rel="shortcut icon" href="../img/tree.png" type="image/x-icon">
+    <link rel="preload" href="../css/normalize.css" as="style">
+    <link rel="stylesheet" href="../css/normalize.css">
 
-    <script src="./js/index.js"></script>
+    <!-- <link rel="preload" href="./css/main.css" as="style"> -->
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/index.js"></script>
+
 
     <title>Mock</title>
 </head>
 <body>
-    <header class="header-container">
-        <nav class="header-nav">
-            <div class="header-nav-logo">
-                <a id="logo"><img loading="lazy" src="./img/Citadine.webp" alt="Citadine brand" width="90rem" height="90rem"></a>
+    <header class="header header-container">
+        <div class="header-container-nav">
+            <!-- logo de citadine -->
+            <div class="header-nav-logo basis-33" >
+                <a class="navegacion__enlace" role="menuitem" href="../index.html"
+                  aria-label="Presione enter para ir a la pagina principal.">
+                  <img src="../img/Citadine.webp" alt="Logo de citadine.">
+                </a>
             </div>
-            <div class="header-nav-info">
-                <h2>Sections</h2>
+            <!-- titulo del elemento del menu de la barra deslizante -->
+            <div class="main-card-info">
+                <h2>Languaje</h2>
             </div>
-        </nav>
-
-        <div id="menu" class="sideBar ">
-            <div class="sideBar-header">
-                <div class="sideBar-img">
-                    <a href="/"><img loading="lazy" src="./img/agua_con_autos.webp" alt="expo citadine logo"></a>
-                </div>
-                <div class="sideBar-info">
-                    <h2>Expo Citadine</h2>
-                    <p>Citizens Science and Nature Based Solutions for improved disaster preparedness. The cas od the Flood in La Plata on 02-04-2013</p>
-                </div>
+            <!-- boton de la barra deslizante -->
+            <div class="header-nav-logo basis-33">
+                <button aria-label="Presione enter para obtener mas informacion." id="logo"><img src="../img/menu.svg" alt="Citadine brand" width="90rem" height="90rem"></button>
             </div>
-            <div class="sideBar-body">
-                <section>
-                    <ul class="sidebar-body-ul">
-                        <li class="sidebar-link"> <img loading="lazy" src="./img/calendar.webp" width="42px" height="42px"> Sections <img loading="lazy" src="./img/arrow.png" width="42px" height="42px"></li>
-                        <li class="sidebar-link"> <img loading="lazy" src="./img/schedule.webp" width="42px" height="42px"> Schedule <img loading="lazy" src="./img/arrow.png" width="42px" height="42px"></li>
-                        <li class="sidebar-link"> <img loading="lazy" src="./img/monitor.webp" width="42px" height="42px"> Announcements <img loading="lazy" src="./img/arrow.png" width="42px" height="42px"></li>
-                        <li class="sidebar-link"> <img loading="lazy" src="./img/virus.webp" width="42px" height="42px"> COVID protocols <img loading="lazy" src="./img/arrow.png" width="42px" height="42px"></li>
-                        <a href="./about.html"><li class="sidebar-link"> <img loading="lazy" src="./img/infor.webp" width="42px" height="42px"> About Citadine <img loading="lazy" src="./img/arrow.png" width="42px" height="42px"></li></a>
-                    </ul>
-                </section>
-                <section>
-                    <ul class="sidebar-body-ul">
-                        <a href="./languaje.html"><li class="sidebar-link"> <img loading="lazy" src="./img/languages.webp" width="42px" height="42px"> Languajes <img loading="lazy" src="./img/arrow.png" width="42px" height="42px"></li></a>
-                        <li class="sidebar-link"> <img loading="lazy" src="./img/exit.webp" width="42px" height="42px"> Go out <img loading="lazy" src="./img/arrow.png" width="42px" height="42px"></li>
-                        
-                    </ul>
-                </section>
+        </div>
+        
+        <!-- menu deslizante -->
+        <div id="menuIcono" class="sideBar">
+          <div class="sideBar-header">
+            
+            <div class="sideBar-img" aria-labelledby="posts-heading">
+              <a href="/"><img src="../img/agua_con_autos.webp" alt="expo citadine logo"></a>
             </div>
+            <div class="sideBar-info" tabindex="0" id="posts-heading">
+              <h2>Generar CONCIENCIA</h2>
+              <p>Experiencias y conocimientos sobre la Inundación de La Plata. Fecha de la Exhibición:
+                Desde el 21 al 27 de marzo de 2022.
+                Grupos destinatarios: Abierto a toda la comunidad. Familias, escuelas en particular. 
+                </p>
+            </div>
+          </div>
+          <div class="sideBar-body" role="navigation" >
+            <section>
+              <ul class="sidebar-body-ul" role="menu" >
+                <!-- NOTA: Las secciones no estan en la vista del PC -->
+                <!-- <a href="sections.html">
+                <li tabindex="0" class="sidebar-link" role="menuitem" aria-label="haga click si decea entrar a secciones">           
+                      <img  src="./img/calendar.webp" alt="" width="42px" height="42px" > Sections 
+                      <img src="./img/arrow.png" width="42px" height="42px" alt="">           
+                  </li>
+                </a>   -->
+                <a href="../menu-deslizante/anounce.html">
+                  <li tabindex="0" class="sidebar-link" role="menuitem" aria-label="haga click si decea entrar a Announcements"> 
+                    <img src="../img/menu-deslizante/calendar.webp" alt="" width="42px" height="42px"> Announcements
+                    <img src="../img/menu-deslizante/arrow.png" width="42px" height="42px" alt=""></li> 
+                </a>
+                <a href="../menu-deslizante/covid.html">
+                <li tabindex="0" class="sidebar-link" role="menuitem" aria-label="haga click si decea entrar a COVID protocols"> 
+                  <img src="../img/menu-deslizante/virus.webp" alt="" width="42px" height="42px"> COVID protocols 
+                  <img src="../img/menu-deslizante/arrow.png" width="42px" height="42px" alt=""></li>
+                </a>
+                <a href="../menu-deslizante/about.html">
+                  <li tabindex="0" class="sidebar-link" role="menuitem" aria-label="haga click si decea entrar a hacerca de citadine"> 
+                    <img src="../img/menu-deslizante/infor.webp" alt="" width="42px" height="42px"> About Citadine 
+                    <img src="../img/menu-deslizante/arrow.png" width="42px" height="42px" alt=""></li>
+                </a>
+                <a href="../menu-deslizante/languaje.html">
+                  <li tabindex="0" class="sidebar-link" role="menuitem" aria-label="haga click si decea entrar a hacerca de citadine"> 
+                    <img src="../img/menu-deslizante/languages.webp" alt="" width="42px" height="42px"> Languajes 
+                    <img src="../img/menu-deslizante/arrow.png" width="42px" height="42px" alt=""></li>
+                </a>
+              </ul>
+            </section>
+          </div>
         </div>
 
     </header>
