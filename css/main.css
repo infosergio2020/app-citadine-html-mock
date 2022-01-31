@@ -128,14 +128,6 @@ nav {
   margin: 0;
   padding: 0 0.2rem;
 }
-.img-titulo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-  margin: 1rem 0;
-  padding: 1rem;
-}
 .sidebar-link {
   cursor: pointer;
   display: flex;
@@ -319,11 +311,6 @@ nav {
   color: #fff;
   padding: 0 1rem;
   text-align: center;
-}
-.header-container-menu-deslizante {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 .header-container-nav {
   display: flex;
@@ -547,43 +534,10 @@ nav {
 .afiche__head h3 {
   margin: 0;
 }
-.flex__container-column {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 4rem;
-  }
-
-  .grid__container-column {
-    display: grid;
-    grid-template-columns: 80rem 20rem;
-    padding: 1rem 4rem;
-    column-gap: 8rem;
-  }
-  @media (min-width: 768px) {
-    .grid__container-column {
-      display: flex;
-
-    }
-  }
-  .grid__container__3{
-    display: block;
-    padding: 1rem 4rem;
-  }
-  @media (min-width: 680px) {
-    .grid__container__3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 7rem;
-    }
-  }
-.mg-bottom{
-    margin-bottom: 4rem;
-}
 .grid__container {
   display: block;
   padding: 1rem 4rem;
 }
-
 @media (min-width: 680px) {
   .grid__container {
     display: grid;
@@ -626,3 +580,57 @@ nav {
 .px-video-container {
   height: 60vh;
 } /*# sourceMappingURL=main.css.map */
+
+
+.flex__container2{
+    display: flex;
+    padding: 1rem 4rem;
+    gap: 2rem;
+}
+.caja2{
+    max-width: 20%;
+}
+.caja5{
+    max-width: 40%;
+}
+.caja8{
+    max-width: 50%;
+    margin-left: 30rem;
+}
+.caja9{
+    max-width: 20%;
+}
+.mg-top{
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .flex__container2{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 4rem;
+        gap: 2rem;
+        align-items: center;
+    }
+    .caja5{
+        order: 2;
+        max-width: 50%;
+    }
+    .caja8{
+        max-width: 60%;
+        margin: 2rem 10rem;
+    }
+    .caja9{
+        max-width: 60%;
+        margin: 2rem 10rem;
+        order:2;
+    }
+    .caja2{
+        max-width: 50%;
+        /* margin-left: 4rem; */
+        order: 2;
+    }
+    .caja1{
+        order:1;
+    }
+}
