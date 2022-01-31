@@ -22,11 +22,27 @@
 }
 
 .sideBar-header{
+    position: relative;
     padding: 2rem;
     display: flex;
     align-items: center;
     column-gap: 2rem;
 
+}
+
+#close-sideBar{
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+#close-sideBar:hover,
+#close-sideBar:focus,
+#close-sideBar:focus-within{
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: #ffffff3a;
 }
 
 .sideBar-img{
