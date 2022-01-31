@@ -24,8 +24,8 @@
 
     .header-container-nav{
         // align-items: center;
-        flex-direction: row;
         align-items: center;
+        justify-content: space-evenly;
     }
 }
 
@@ -36,22 +36,65 @@
     column-gap: 1rem;
 }
 
+// alinea nav y boton menu hamburguesa
+.header__nav__menu{
+    display: flex;
+    align-items: center;
+}
 
-.header-nav-logo{
-    flex: 0 0 calc(40% - 1rem);
+.header__nav__menu button{
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    border: 2px solid black;
+    width: fit-content;
+    height: fit-content;
+}
+
+@media (min-width: 768px){
+    .header__nav__menu button{
+        position: static;
+    }   
+}
+
+// alinea img y h1 
+.header__img__h1{
+    color: #ffffff;
+    display: block;
+    text-align: justify;
+}
+
+.header__img__h1 small{
+    width: 50%;
+    text-align: justify;
+}
+
+.header__img__h1 span{
+    color: #009b00;
+}
+
+.item__img__h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
+
 @media (min-width: 768px){
+
+    .header__img__h1{
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
     .header-nav-logo{
         flex: 0 0 calc(8% - 1rem);
     }
 }
-
-
-.basis-33{
-    flex-basis: calc(33.3% - 1rem);
-}
+ 
 
 .container{
     width: 95%;
