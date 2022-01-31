@@ -8,7 +8,7 @@
     top: 0;
     left: -100%;
     z-index: 999;
-    max-width: 100%;
+    width: 100%;
     background-color: #05241E;
     color: #fff;
     transition: left 400ms ease-in-out;
@@ -16,16 +16,17 @@
 
 @media (min-width: 768px){
     .sideBar{
-        width: 60%;
+        width: 30%;
+        top: 22%;
     }
 }
 
 .sideBar-header{
-    padding: 5rem;
+    padding: 2rem;
     display: flex;
     align-items: center;
     column-gap: 2rem;
-    background-color: #003D33;
+
 }
 
 .sideBar-img{
@@ -54,6 +55,7 @@
 
 .sidebar-body-ul{
     /* background-color: coral; */
+    background-color: #003D33;
     margin: 0;
     padding: 0 .2rem;
 }
