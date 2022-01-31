@@ -4,7 +4,7 @@
 }
 
 h1 {
-  font-family:"Source Sans Pro";
+  /* font-family:"Source Sans Pro"; */
   /* font-size: 65px; */
   text-align: center;
   text-transform: capitalize;
@@ -24,7 +24,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 
 .containerGaleria a img {

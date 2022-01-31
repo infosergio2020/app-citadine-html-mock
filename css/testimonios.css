@@ -15,9 +15,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--fuenteHeading);
-  line-height: 1.2;
-  color: #ffffff;
+  color: #ffffff!important;
+  
 }
 
 .img-testimonio {
@@ -25,7 +24,6 @@ h4 {
   padding: 0 1rem;
   object-fit: cover;
   max-width: 100%;
-  /* height: 50%; */
   object-fit: cover;
   display: flex;
   align-items: center;
@@ -98,7 +96,7 @@ h4 {
   border: none;
 }
 .curso__label {
-  font-family: var(--fuenteHeading);
+  /* font-family: var(--fuenteHeading); */
   font-weight: bold;
   color: #ffffff;
 }
@@ -107,6 +105,6 @@ h4 {
 }
 .curso__label,
 .curso__info {
-  font-size: calc(.4em + 1vw);
+  /* font-size: calc(.4em + 1vw); */
   /* font-size: 2rem; */
 }
