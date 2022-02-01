@@ -75,14 +75,16 @@
 }
 
 
+.boton__2:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+}
 
 
 // efecto activo para botones
-.boton-close{
 
-}
 
 .boton-active{ 
-    background-color: red;
-    border: 1px solid blueviolet;
+    background-color: var(--primario);
+    border: 2px solid #fff!important;
 }

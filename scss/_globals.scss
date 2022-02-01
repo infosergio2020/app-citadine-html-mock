@@ -11,7 +11,7 @@ html {
   }
 
 body{
-    @include background-template('../img/cruce_de_inundacion_2.webp');
+    @include background-template('../img/general/cruce_de_inundacion_2.webp');
     font-family: 'Source Sans Pro', sans-serif;
     // font-size: 1.8rem;
     font-size: calc(.84em + 1vw);  //font responsive
