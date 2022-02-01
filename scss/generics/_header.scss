@@ -16,6 +16,7 @@
 .header-container-nav nav {
     line-height: 1.2;
 }
+
 .menu-deslizante-realtivo{
     position: relative;
 }
@@ -66,7 +67,6 @@
     color: #ffffff;
     display: block;
     text-align: justify;
-    margin-right: 46rem;
 }
 
 .header__img__h1 small{
@@ -98,25 +98,24 @@
     }
  
 }
+
 .margin-left{
     margin-left: 4rem;
 }
+
 @media (max-width: 768px){
     .header__img__h1{
         margin-right: 0rem;    
     }
 }
 
-@media (min-width: 768px){
-    
+@media (min-width: 768px){ 
+
     .header__img__h1{
         display: flex; 
         align-items: center;
         justify-content: space-between;
-
     }
-    
-
 
     .header-nav-logo{
         flex: 0 0 calc(8% - 1rem);

@@ -66,8 +66,9 @@ h4 {
   }
 @media (min-width: 768px) {
   .curso {
-    grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+    padding: 2rem;
   }
   .curso__descripcion {
     color: #ffffff;
