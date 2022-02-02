@@ -74,6 +74,20 @@
 .text-shadow{
     text-shadow: 3px 0 0 #202020;
 }
+.grid__container__4{
+    display: block;
+    padding: 1rem 4rem;
+  }
+  @media (min-width: 680px) {
+    .grid__container__4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 7rem;
+    }
+  }
+
+
+
 
 .grid__container__3{
     display: block;
