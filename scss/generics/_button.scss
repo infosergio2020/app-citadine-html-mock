@@ -88,3 +88,9 @@
     background-color: var(--primario);
     border: 2px solid #fff!important;
 }
+
+
+// efecto para botones con aria-expand
+.accordion  button[aria-expanded=true] span.accordion-title svg{
+    transform: rotate(180deg);
+}
