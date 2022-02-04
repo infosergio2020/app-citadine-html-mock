@@ -3,47 +3,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- watson asistant -->
-    <link rel="stylesheet" href="./css/chat.css">
-    <!--Responsive Meta Tag-->
-    <link rel="shortcut icon" href="./img/tree.png" type="image/x-icon">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Responsive Meta Tag-->
+  <link rel="shortcut icon" href="./img/tree.png" type="image/x-icon">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" crossorigin>
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
 
-    <link rel="preload" href="./css/normalize.css" as="style">
-    <link rel="stylesheet" href="./css/normalize.css">
 
-    <!-- <link rel="preload" href="./css/main.css" as="style"> -->
-    <link rel="stylesheet" href="./css/main.css">
+  <link rel="shortcut icon" href="./css/tree.png" type="image/x-icon">
+  <link rel="preload" href="./css/normalize.css" as="style">
+  <link rel="stylesheet" href="./css/normalize.css">
 
-    <link rel="preload" href="./css/lixtbox.css" as="style">
-    <link rel="stylesheet" href="./css/lixtbox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin />
 
-    <!--Import jQuery Library-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!--Import materialize.js-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link rel="preload" href="./css/main.css" as="style">
+  <link rel="stylesheet" href="./css/main.css">
 
-    <link rel="preload" href="./css/diario.css" as="style">
-    <link rel="stylesheet" href="./css/diario.css">
-    <title>Mock</title>
+  <link rel="preload" href="./css/lixtbox.css" as="style">
+  <link rel="stylesheet" href="./css/lixtbox.css">
+  <!-- CSS del testimonio -->
+  <link rel="stylesheet" href="css/testimonios.css">
+  <!-- CSS del acordeon -->
+  <link rel="stylesheet" href="css/minAcordeon.css">
+
+  <!--Import jQuery Library-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!--Import materialize.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+
+  <title>Mock</title>
 </head>
 <!-- <body class="animate__animated animate__fadeIn"> -->
 
 <body>
-
-   <!-- <header class="header-container"> -->
+  <!-- <header class="header-container"> -->
     <header class="header header-container">
       <div>
         <!-- logo de citadine -->
         <div class="header__img__h1">
-          <a  role="menuitem" href="index.html" aria-label="Presione enter para ir a la pagina principal.">
+          <a  role="menuitem" href="../index.html" aria-label="Presione enter para ir a la pagina principal.">
             <div class="item__img__h1 txt_white">
-              <img class="wh-88" src="img/general/flooded-house.png" alt="Logo de citadine.">
+              <img class="wh-88" src="../img/general/flooded-house.png" alt="Logo de citadine.">
               <h1>Generar <span>con</span>ciencia</h1>
             </div>
           </a>
@@ -57,7 +64,7 @@
         <!-- barra de secciones y boton -->
         <div class="header__nav__menu">
           <button class="boton__2 verde-4" aria-label="Presione enter para obtener mas informacion." id="logo">
-            <img src="img/general/menu.svg" alt="Citadine brand">
+            <img src="../img/general/menu.svg" alt="Citadine brand">
           </button>
           <nav class="header-container-nav-row" id="nav-id" aria-label="Barra de navegacion.">
   
@@ -66,7 +73,7 @@
               <li role="none">
                 <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
                   aria-haspopup="true" aria-expanded="false" href="#academics">
-                  <img class="wh-30" src="img/general/secciones/1.webp" alt="seccion">
+                  <img class="wh-30" src="../img/general/secciones/1.webp" alt="seccion">
                   <div class="navegacion__enlace--info">
                     <p>seccion 1</p>
                     <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
@@ -76,11 +83,11 @@
                 </a>
                 <ul role="menu" aria-label="1">
                   <li role="none">
-                    <a role="menuitem" href="testimonio1.html" aria-label="Presione enter para conocer: ">1- Known our
+                    <a role="menuitem" href="../testimonio1.html" aria-label="Presione enter para conocer: ">1- Known our
                       testimonies: Before the flood</a>
                   </li>
                   <li role="none">
-                    <a role="menuitem" href="the-news-of-the-day.html" aria-label="Presione enter para conocer: ">2- The
+                    <a role="menuitem" href="../the-news-of-the-day.html" aria-label="Presione enter para conocer: ">2- The
                       news of the
                       day</a>
                   </li>
@@ -92,7 +99,7 @@
                 <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
                   aria-haspopup="true" aria-expanded="false" href="#academics">
   
-                  <img class="wh-30" src="img/general/secciones/2.webp" alt="seccion">
+                  <img class="wh-30" src="../img/general/secciones/2.webp" alt="seccion">
   
   
                   <div class="navegacion__enlace--info">
@@ -108,7 +115,7 @@
                       map</a>
                   </li>
                   <li role="none">
-                    <a role="menuitem" href="water-level-simulator.html" aria-label="Presione enter para conocer: ">2-
+                    <a role="menuitem" href="../water-level-simulator.html" aria-label="Presione enter para conocer: ">2-
                       Water level
                       simulator</a>
                   </li>
@@ -120,7 +127,7 @@
                 <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
                   aria-haspopup="true" aria-expanded="false" href="#academics">
   
-                  <img class="wh-30" src="img/general/secciones/3.webp" alt="seccion">
+                  <img class="wh-30" src="../img/general/secciones/3.webp" alt="seccion">
   
   
                   <div class="navegacion__enlace--info">
@@ -132,20 +139,20 @@
                 </a>
                 <ul role="menu" aria-label="3">
                   <li role="none">
-                    <a role="menuitem" href="diarios.html" aria-label="Presione enter para conocer: ">1- Diarios</a>
+                    <a role="menuitem" href="../diarios.html" aria-label="Presione enter para conocer: ">1- Diarios</a>
                   </li>
                   <li role="none">
-                    <a role="menuitem" href="shocking-photos.html"
+                    <a role="menuitem" href="../shocking-photos.html"
                       aria-label="Presione enter para conocer: ">2- Shocking
                       photos</a>
                   </li>
                   <li role="none">
-                    <a role="menuitem" href="testimonio2.html" aria-label="Presione enter para conocer: ">3- Known our
+                    <a role="menuitem" href="../testimonio2.html" aria-label="Presione enter para conocer: ">3- Known our
                       testimonies: During the flood</a>
                   </li>
   
                   <li role="none">
-                    <a role="menuitem" href="photo-album.html"
+                    <a role="menuitem" href="../photo-album.html"
                       aria-label="Presione enter para conocer: ">4- Photo album
                     </a>
                   </li>
@@ -157,7 +164,7 @@
                 <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
                   aria-haspopup="true" aria-expanded="false" href="#academics">
   
-                  <img class="wh-30" src="img/general/secciones/4.webp" alt="seccion">
+                  <img class="wh-30" src="../img/general/secciones/4.webp" alt="seccion">
   
   
                   <div class="navegacion__enlace--info">
@@ -169,14 +176,14 @@
                 </a>
                 <ul role="menu" aria-label="4">
                   <li role="none">
-                    <a role="menuitem" href="testimonio3.html" aria-label="Presione enter para conocer: ">1- Known our
+                    <a role="menuitem" href="../testimonio3.html" aria-label="Presione enter para conocer: ">1- Known our
                       testimonies: Before the flood</a>
                   </li>
                   <li role="none">
-                    <a role="menuitem" href="sandbox.html" aria-label="Presione enter para conocer: ">2- Sandbox</a>
+                    <a role="menuitem" href="../sandbox.html" aria-label="Presione enter para conocer: ">2- Sandbox</a>
                   </li>
                   <li role="none">
-                    <a role="menuitem" href="Why-do-we-flood.html"
+                    <a role="menuitem" href="../Why-do-we-flood.html"
                       aria-label="Presione enter para conocer: ">3- Why do we flood</a>
                   </li>
   
@@ -189,7 +196,7 @@
                 <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
                   aria-haspopup="true" aria-expanded="false" href="#academics">
   
-                  <img class="wh-30" src="img/general/secciones/5.webp" alt="seccion">
+                  <img class="wh-30" src="../img/general/secciones/5.webp" alt="seccion">
   
                   <div class="navegacion__enlace--info">
                     <p>seccion 5</p>
@@ -226,7 +233,7 @@
                 <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
                   aria-haspopup="true" aria-expanded="false" href="#academics">
   
-                  <img class="wh-30" src="img/general/secciones/6.webp" alt="seccion">
+                  <img class="wh-30" src="../img/general/secciones/6.webp" alt="seccion">
   
                   <div class="navegacion__enlace--info">
                     <p>seccion 6</p>
@@ -247,12 +254,12 @@
                   <li role="none">
                     <!-- polonia alemania chile y republica dominicana
                                       reutilizar la interfaz de los 4 casos -->
-                    <a role="menuitem" href="Inundaciones-en-el-exterior.html" aria-label="Presione enter para conocer: ">3-
+                    <a role="menuitem" href="../Inundaciones-en-el-exterior.html" aria-label="Presione enter para conocer: ">3-
                       Inundaciones en el exterior</a>
                   </li>
                   <li role="none">
                     <!-- es un afiche de como se ayudaron los vecinos- cosas positivas -->
-                    <a role="menuitem" href="Conclusiones-del-evento.html" aria-label="Presione enter para conocer: ">4-
+                    <a role="menuitem" href="../Conclusiones-del-evento.html" aria-label="Presione enter para conocer: ">4-
                       Conclusiones del evento</a>
                   </li>
                 </ul>
@@ -269,9 +276,9 @@
     <div class="menu-deslizante-realtivo">
       <div id="menuIcono" class="sideBar">
         <div class="sideBar-header">
-          <img class="boton-close " tabindex="0" id="close-sideBar" src="./img/general/circle-x.svg" alt="haga click, o presione enter para cerrar el sidebar.">
+          <img class="boton-close " tabindex="0" id="close-sideBar" src="../img/general/circle-x.svg" alt="haga click, o presione enter para cerrar el sidebar.">
           <div class="sideBar-img" aria-labelledby="posts-heading">
-            <img src="../../img/general/menu-deslizante/settings.png" alt="expo citadine logo">
+            <img src="../img/general/menu-deslizante/settings.png" alt="expo citadine logo">
             <!-- <a href="/"><img src="./img/general/menu-deslizante/technical-support.png" alt="expo citadine logo"></a> -->
             <!-- <a href="/"><img src="./img/general/menu-deslizante/options.png" alt="expo citadine logo"></a> -->
             <!-- <a href="/"><img src="./img/general/menu-deslizante/choose.png" alt="expo citadine logo"></a> -->
@@ -285,36 +292,36 @@
           <section>
             <ul class="sidebar-body-ul" role="menu">
               <!-- NOTA: Las secciones no estan en la vista del PC -->
-              <a href="./menu-deslizante/anounce.html">
+              <a href="../menu-deslizante/anounce.html">
                 <li tabindex="0" class="sidebar-link" role="menuitem"
                   aria-label="haga click si decea entrar a Announcements">
-                  <img class="wh-42" src="./img/general/menu-deslizante/calendar.webp" alt="calendario-image">
+                  <img class="wh-42" src="../img/general/menu-deslizante/calendar.webp" alt="calendario-image">
                   <p class="no-margin">Announcements</p>
-                  <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+                  <img class="wh-42" src="../img/general/menu-deslizante/arrow.png" alt="flecha-image">
                 </li>
               </a>
-              <a href="./menu-deslizante/covid.html">
+              <a href="../menu-deslizante/covid.html">
                 <li tabindex="0" class="sidebar-link" role="menuitem"
                   aria-label="haga click si decea entrar a COVID protocols">
-                  <img class="wh-42" src="./img/general/menu-deslizante/virus.webp" alt="virus-image">
+                  <img class="wh-42" src="../img/general/menu-deslizante/virus.webp" alt="virus-image">
                   <p class="no-margin">COVID protocols </p>
-                  <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+                  <img class="wh-42" src="../img/general/menu-deslizante/arrow.png" alt="flecha-image">
                 </li>
               </a>
-              <a href="./menu-deslizante/about.html">
+              <a href="../menu-deslizante/about.html">
                 <li tabindex="0" class="sidebar-link" role="menuitem"
                   aria-label="haga click si decea entrar a hacerca de citadine">
-                  <img class="wh-42" src="./img/general/menu-deslizante/Citadine.webp" alt="informacion-image">
+                  <img class="wh-42" src="../img/general/menu-deslizante/Citadine.webp" alt="informacion-image">
                   <p class="no-margin">About Citadine </p>
-                  <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+                  <img class="wh-42" src="../img/general/menu-deslizante/arrow.png" alt="flecha-image">
                 </li>
               </a>
-              <a href="./menu-deslizante/languaje.html">
+              <a href="../menu-deslizante/languaje.html">
                 <li tabindex="0" class="sidebar-link" role="menuitem"
                   aria-label="haga click si decea entrar a hacerca de citadine">
-                  <img class="wh-42" src="./img/general/menu-deslizante/languages.webp" alt="lenguajes-image">
+                  <img class="wh-42" src="../img/general/menu-deslizante/languages.webp" alt="lenguajes-image">
                   <p class="no-margin">Languajes </p>
-                  <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+                  <img class="wh-42" src="../img/general/menu-deslizante/arrow.png" alt="flecha-image">
                 </li>
               </a>
             </ul>
@@ -323,81 +330,114 @@
       </div>
     </div>
   
+
+  <!-- Contenedor del testimonio -->
+  <main class="contenedor-testimonio">
+
+    <div class="afiche__head">
+      <h3 class="centrar-texto text-shadow"> Reflexiones de las personas entrevistadas.
+      </h3>
+    </div>
+    <div class="flex__container2">
+      <p>Luego de tanto dolor por las vidas perdidas, daños emocionales, psicológicos, físicos y económicos expresados por los entrevistados, varios aún siguen en proceso de recuperación. A todos les dejó marcas imborrables en su memoria, y muchos rescataron lo siguiente.
+      </p>
+    </div>
+    <!-- primera fila -->
+    <div class="grid__texto flex__container2">
+        <div class="caja1"> 
+            <p>
+                “Prestar atención a la naturaleza. Antes de la tormenta vi un montón de rayitas negras sobre la pared del patio. Eran lombrices que subían por el muro”. “….y el tortugo que se movía para todos lados, cuando ya había empezado su invernación”. (Gabriela B.)
+            </p>  
+        </div>
+        
+        <div class="caja2">
+              <img src="./img/afiches/memoria2-Imagen1.png" alt="">
+        </div>  
+    </div>
+    <!-- segunda fila -->
+    <div class="grid__texto flex__container2">
+        <div class="caja2">
+              <img src="./img/afiches/memoria2-Imagen2.png" alt="">
+        </div>  
+        <div class="caja1">
+           <p>
+                “La inundación a mí me cambió y me cambió mucho… me acercó también a lugares que yo nunca había ido… Colaboré después de un 
+                año entero con la Facultad de Hidráulica y aprendí mucho, participando en charlas con los profes”. (Azucena) 
+          </p>
+        </div>
+    </div>
+    <!-- tercera fila -->
+    <div class="grid__texto flex__container2">
+      <div class="caja2">
+            <img src="./img/afiches/memoria2-Imagen3.png" alt="">
+      </div>  
+      <div class="caja1">
+          <p>
+              “Me vine a vivir a La Plata para estudiar en la facultad. Estudié, me gradué, me casé y tuve a mis hijas aquí.  Gracias a los vecinos, sobreviví con mi beba de meses a las inundaciones. A partir de entonces me sentí realmente una platense. (Gisela)
+          </p>
+      </div>
+    </div>
+
+    <!-- cuarta fila -->
+    <div class="grid__texto flex__container2">
+      <!-- columna 1 -->
+      <div class="caja2">
+            <img src="./img/afiches/memoria2-Imagen4.png" alt="">
+      </div>  
+      <div class="caja1">
+          <p>
+            “Aprendí que podemos sobrellevar muchas más cosas de las que pensamos éramos capaces”. (Betina Mc A.)
+          </p>
+      </div>
+      <!-- columna 2 -->
+      <div class="caja2">
+        <img src="./img/afiches/memoria2-Imagen5.png" alt="">
+      </div>  
+      <div class="caja1">
+          <p>
+            “Quedó una participación
+            muy fuerte a nivel de 
+            Barrio. Nos unimos mucho con los vecinos a partir de ese episodio”. “Transformarlo en algo positivo”. (Nancy)
+          </p>
+      </div>
+    </div>
+    <!-- quinta fila -->
+    <div class="grid__texto flex__container2">
+      <div class="caja1"> 
+          <p>
+            “Que hay que tener amor hacia el prójimo. Y si vos podes dar algo, hay que darlo, no esconderlo o mirar para un costado. Creo que el ser humano está acá para eso. Tenemos que apoyarnos entre nosotros, sino ¿quién lo va hacer?. Nadie. Si vos pensás en vos, yo pienso en mi y el otro en él, cuando necesites algo vas a estar realmente solo. Es así. (Estefanía C.)
+          </p>  
+      </div>
       
-    <!-- main -->
-    <main>
-        <div class="main-card">
-            <div class="main-card-body">               
-                <div class="afiche__head">
-                    <h3 class="centrar-texto">Inundaciones en el exterior</h3>
-                </div>
-                <div class="main-card-info">
-                    <div class="card-container">
-                        <div class="card blue__grad-1" tabindex="1" aria-labelledby="diario-1">
-                            <img src="./img/diarios/eldia_logo.png" alt="">
-                            <div class="card__info">
-                                <h3>Tsunami Chile 2010</h3>
-                                <p>Hecho por </div>
-                            <div class="button__container hide__only720">
-                                <a href="inundacion-exterior/chile.html" class="button__custom--fit verde-1"> Tsunami Chile 2010.</a>
-                            </div>
-                        </div>
-                        <div class="card blue__grad-2" tabindex="3" aria-labelledby="diario-2">
-                            <img src="./img/diarios/Hoy_logo.png" alt="">
-                            <div class="card__info">
-                                <h3>LA TORMENTA DEL SIGLO EN EL
-                                  MAR DEL NORTE (1962)</h3>
-                                <p>Hecho por </div>
-                            <div class="button__container hide__only720">
-                                <a href="inundacion-exterior/alemania.html".html" class="button__custom--fit verde-1"> LA TORMENTA DEL SIGLO EN EL
-                                  MAR DEL NORTE (1962).</a>
-                            </div>
-                        </div>
-                        <div class="card blue__grad-3" tabindex="5" aria-labelledby="diario-3">
-                            <img src="./img/diarios/Diagoanles_logo.png" alt="">
-                            <div class="card__info">
-                                <h3>INUNDACIONES EN POLONIA 1997</h3>
-                                <p>Hecho por </div>
-                            <div class="button__container hide__only720">
-                                <a href="inundacion-exterior/polonia.html" class="button__custom--fit verde-1"> INUNDACIONES EN POLONIA 1997.</a>
-                            </div>
-                        </div>
-                        
-
-                    </div>
-                    <div class="card-container hide_btn">
-                        <div class="button__container">
-                            <a href="inundacion-exterior/chile.html" tabindex="2" class="button__custom--fit verde-1" id="diario-1"> Tsunami Chile 2010. </a>
-                        </div>
-                        <div class="button__container">
-                            <a href="inundacion-exterior/alemania.html" tabindex="4" class="button__custom--fit verde-1" id="diario-2"> LA TORMENTA DEL SIGLO EN EL
-                              MAR DEL NORTE (1962). </a>
-                        </div>
-                        <div class="button__container">
-                            <a href="inundacion-exterior/polonia.html" tabindex="6" class="button__custom--fit verde-1" id="diario-3"> INUNDACIONES EN POLONIA 1997. </a>
-                        </div>
-                        
-                    </div>
-                </div>
-
-            </div>
-            
-        </div>
-        <div class="main-container-boton">
-          <a class="boton verde-4" onclick="history.back()">
-              <div class="boton-info">
-                  <p>Go back</p> <img src="./img/general/backArrow.svg" alt="backArrow">
-              </div>
-          </a>
-        </div>
-    </main>
-
-    <!-- script -->
-    <!-- barra de secciones -->
-    <script src="./js/lixtbox.js"></script>
-    <!-- menu de barra deslizante -->
-    <script src="./js/index.js"></script>
-
+      <div class="caja2">
+            <img src="./img/afiches/memoria2-Imagen6.png" alt="">
+      </div>  
+    </div>
+    <!-- sexta fila -->
+    <div class="grid__texto flex__container2">
+      <div class="caja2">
+            <img src="./img/afiches/memoria2-Imagen7.webp" alt="">
+      </div>  
+      <div class="caja1">
+          <p>
+            “Nos quedó esa cuestión de aprender sobre las zonas bajas y altas de la ciudad, para dónde baja el agua o para dónde suben las calles.  Incluso a un par de amigos que han tenido la posibilidad de comprar su casa le decíamos _fíjate que no esté cerca de un arroyo, la altura del terreno, que el agua no esté desembocando hacia esa cuadra y todo así…”. (Marily D.)
+          </p>
+      </div>
+    </div>
+  
+    <!-- End Tap Target Structure -->
+    <div class="main-container-boton">
+      <a class="boton verde-4" onclick="history.back()">
+          <div class="boton-info">
+              <p>Go back</p> <img src="../img/backArrow.svg" alt="backArrow">
+          </div>
+      </a>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer></footer>
+  <!-- script -->
+  <script src="./js/lixtbox.js"></script>
 </body>
 
 </html>

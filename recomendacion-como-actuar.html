@@ -3,39 +3,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- watson asistant -->
-    <link rel="stylesheet" href="./css/chat.css">
-    <!--Responsive Meta Tag-->
-    <link rel="shortcut icon" href="./img/tree.png" type="image/x-icon">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Responsive Meta Tag-->
+  <link rel="shortcut icon" href="./img/tree.png" type="image/x-icon">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" crossorigin>
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
 
-    <link rel="preload" href="./css/normalize.css" as="style">
-    <link rel="stylesheet" href="./css/normalize.css">
 
-    <!-- <link rel="preload" href="./css/main.css" as="style"> -->
-    <link rel="stylesheet" href="./css/main.css">
+  <link rel="shortcut icon" href="./css/tree.png" type="image/x-icon">
+  <link rel="preload" href="./css/normalize.css" as="style">
+  <link rel="stylesheet" href="./css/normalize.css">
 
-    <link rel="preload" href="./css/lixtbox.css" as="style">
-    <link rel="stylesheet" href="./css/lixtbox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin />
 
-    <!--Import jQuery Library-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!--Import materialize.js-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link rel="preload" href="./css/main.css" as="style">
+  <link rel="stylesheet" href="./css/main.css">
 
-    <link rel="preload" href="./css/diario.css" as="style">
-    <link rel="stylesheet" href="./css/diario.css">
-    <title>Mock</title>
+  <link rel="preload" href="./css/lixtbox.css" as="style">
+  <link rel="stylesheet" href="./css/lixtbox.css">
+  <!-- CSS del testimonio -->
+  <link rel="stylesheet" href="css/testimonios.css">
+  <!-- CSS del acordeon -->
+  <link rel="stylesheet" href="css/minAcordeon.css">
+
+  <!--Import jQuery Library-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!--Import materialize.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+
+  <title>Mock</title>
 </head>
 <!-- <body class="animate__animated animate__fadeIn"> -->
 
 <body>
-
    <!-- <header class="header-container"> -->
     <header class="header header-container">
       <div>
@@ -323,81 +330,220 @@
       </div>
     </div>
   
-      
-    <!-- main -->
-    <main>
-        <div class="main-card">
-            <div class="main-card-body">               
-                <div class="afiche__head">
-                    <h3 class="centrar-texto">Inundaciones en el exterior</h3>
-                </div>
-                <div class="main-card-info">
-                    <div class="card-container">
-                        <div class="card blue__grad-1" tabindex="1" aria-labelledby="diario-1">
-                            <img src="./img/diarios/eldia_logo.png" alt="">
-                            <div class="card__info">
-                                <h3>Tsunami Chile 2010</h3>
-                                <p>Hecho por </div>
-                            <div class="button__container hide__only720">
-                                <a href="inundacion-exterior/chile.html" class="button__custom--fit verde-1"> Tsunami Chile 2010.</a>
-                            </div>
-                        </div>
-                        <div class="card blue__grad-2" tabindex="3" aria-labelledby="diario-2">
-                            <img src="./img/diarios/Hoy_logo.png" alt="">
-                            <div class="card__info">
-                                <h3>LA TORMENTA DEL SIGLO EN EL
-                                  MAR DEL NORTE (1962)</h3>
-                                <p>Hecho por </div>
-                            <div class="button__container hide__only720">
-                                <a href="inundacion-exterior/alemania.html".html" class="button__custom--fit verde-1"> LA TORMENTA DEL SIGLO EN EL
-                                  MAR DEL NORTE (1962).</a>
-                            </div>
-                        </div>
-                        <div class="card blue__grad-3" tabindex="5" aria-labelledby="diario-3">
-                            <img src="./img/diarios/Diagoanles_logo.png" alt="">
-                            <div class="card__info">
-                                <h3>INUNDACIONES EN POLONIA 1997</h3>
-                                <p>Hecho por </div>
-                            <div class="button__container hide__only720">
-                                <a href="inundacion-exterior/polonia.html" class="button__custom--fit verde-1"> INUNDACIONES EN POLONIA 1997.</a>
-                            </div>
-                        </div>
-                        
+  
+  <!-- Contenedor del testimonio -->
+  <main class="contenedor-testimonio">
 
-                    </div>
-                    <div class="card-container hide_btn">
-                        <div class="button__container">
-                            <a href="inundacion-exterior/chile.html" tabindex="2" class="button__custom--fit verde-1" id="diario-1"> Tsunami Chile 2010. </a>
-                        </div>
-                        <div class="button__container">
-                            <a href="inundacion-exterior/alemania.html" tabindex="4" class="button__custom--fit verde-1" id="diario-2"> LA TORMENTA DEL SIGLO EN EL
-                              MAR DEL NORTE (1962). </a>
-                        </div>
-                        <div class="button__container">
-                            <a href="inundacion-exterior/polonia.html" tabindex="6" class="button__custom--fit verde-1" id="diario-3"> INUNDACIONES EN POLONIA 1997. </a>
-                        </div>
-                        
-                    </div>
-                </div>
-
-            </div>
+    <div class="afiche__head">
+      <h3 class="centrar-texto text-shadow"> 
+        RECOMENDACIONES SOBRE CÓMO ACTUAR.
+      </h3>
+    </div>
+    
+    <!-- segundo componente -->
+     <div class="flex__container-column">
+        <div class="grid__texto">
             
+            <div class="flex__container2">
+              <p>
+                En el Manual del Plan de Reducción del Riesgo por Inundaciones para la Región La Plata se lista una serie de recomendaciones de cómo actuar frente a inundaciones. Aquí te mostramos algunas:
+              </p>
+            </div>
         </div>
-        <div class="main-container-boton">
-          <a class="boton verde-4" onclick="history.back()">
-              <div class="boton-info">
-                  <p>Go back</p> <img src="./img/general/backArrow.svg" alt="backArrow">
-              </div>
-          </a>
+     </div>
+    <!-- tercer componente  -->
+    
+     
+  <!-- fila 1 -->
+  
+  <div class="grid__container__4">
+    
+     
+    
+      <!-- elemento 1 -->
+        <div class="grid__image small">
+            <img src="./img/afiches/quehacer-Imagen1.png" alt="">
         </div>
-    </main>
 
-    <!-- script -->
-    <!-- barra de secciones -->
-    <script src="./js/lixtbox.js"></script>
-    <!-- menu de barra deslizante -->
-    <script src="./js/index.js"></script>
+          <!-- elemento 2 -->
+        <div class="grid__image small">
+            <img src="./img/afiches/quehacer-Imagen2.png" alt="">
+    
+        </div>
+        <!-- elemento 3 -->
+        <div class="grid__image small">
+          <img src="./img/afiches/quehacer-Imagen3.png" alt="">
+        </div>
+        <!-- elemento 4 -->
+        <div class="grid__image small">
+            <img src="./img/afiches/quehacer-Imagen4.png" alt="">
+        </div>
+  </div>
+  <!-- fila 2 -->
+  <div class="grid__container__4"> 
+      <div class="grid__image mg-bottom">
+                    <!-- componente 1 -->
+                    <!-- leer mas -->
+                    <div  class="accordion">
+                                    
+                          <button type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Amina Suarez." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect1" id="accordion1id">
+                            <span class="accordion-title">
+                              Conocer más sobre el testimonio de Amina Suarez
+                              <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                                <polygon points="1 0, 11 0, 6 8"></polygon>
+                              </svg>
+                            </span>
+                          </button>
+                        
+                          <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
+                            <div style="width: 100%;">
+                              <!-- Variable content within section, may include any type of markup or interactive widgets. -->
+                              <fieldset>
+                                <p class="curso__descripcion"> “Los animales trataban de esconderse. No había mucho movimiento, ni de pájaros, ni de perros en la calle, ni nada”. 
+                                  “Era como… si estuviera desolado, cuando en mi barrio es normal que hayan pajaritos, perros en la calle o gatos”.
+                                </p>                             
+                              </fieldset>
+                            </div>
+                          </div>
+                      
+                    </div>
+              
+                    <!-- componente 2 -->
+                    
+                          <div  class="accordion">
+                                                
+                            <button type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Alejandro Fernandez." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect2" id="accordion1id">
+                              <span class="accordion-title">
+                                Conocer más sobre el testimonio de Alejandro Fernandez
+                                <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                                  <polygon points="1 0, 11 0, 6 8"></polygon>
+                                </svg>
+                              </span>
+                            </button>
+                          
+                            <div id="sect2" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
+                              <div>
+                                <!-- Variable content within section, may include any type of markup or interactive widgets. -->
+                                <fieldset>
+                                  <p class="curso__descripcion">
+                                    que «salía a pasear»”.
+                                    “Ni bien encendí la lancha, rápidamente un hombre me pidió que lo llevara a su casa, quería volver con sus hijos y su mujer, y no podía llegar”. 
+                                    “¡Me preguntó cuánto le cobraba!. Le dije que ¡no!,  que estaba para darle una mano”. 
+                                    “Lo trasladé y al arribo, el hombre comenzó a llorar, emocionado”.   
+                                  </p>
+                                  <p class="curso__descripcion">
+                                    “Otros vecinos empezaron a pedir ayuda. Por momentos fue un caos”. 
+                                    “Y ahí empezó la travesía de salir a rescatar gente y traerla a casa, que no paró hasta las  8  horas de la mañana del día siguiente”.  
+                                  </p>                              
+                                </fieldset>
+                              </div>
+                            </div>
+                            
+                          </div> 
+                    <!-- componente 3 -->
+                    
+                    <div  class="accordion">
+                                        
+                      <button type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Romina Carrozas." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect3" id="accordion1id">
+                        <span class="accordion-title">
+                          Conocer más sobre el testimonio de Romina Carrozas
+                          <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                            <polygon points="1 0, 11 0, 6 8"></polygon>
+                          </svg>
+                        </span>
+                      </button>
+                    
+                      <div id="sect3" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
+                        <div>
+                          <!-- Variable content within section, may include any type of markup or interactive widgets. -->
+                          <fieldset>
+                            <p class="curso__descripcion">
+                              “Se pudo llevar a las nenas y a la yegua de tiro”. 
+                              “La yegua se asustaba por tanta correntada”. 
 
+                              “Empecé a juntar ropa y los documentos de los chicos. Ponía las cosas lo más alto que podía… <strong><em>pero ya no se podía más”</em></strong>.
+                            </p>
+                            <p class="curso__descripcion">
+                              “Venía mucha correntada por el zanjón del arroyo Maldonado. Cuando mi marido quiso volver a buscarme a mí, ya no pudo”. 
+                              “Ahí salgo a mirar y veo que ¡el agua se lleva la casa de al lado completa!”.
+                            </p>                           
+                          </fieldset>
+                        </div>
+                      </div>
+                    
+                    </div> 
+
+                    <!-- componente 4 -->
+                    <div  class="accordion">
+                                        
+                        <button type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Silvia Rivas." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect4" id="accordion1id">
+                          <span class="accordion-title">
+                            Conocer más sobre el testimonio de Silvia Rivas
+                            <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                              <polygon points="1 0, 11 0, 6 8"></polygon>
+                            </svg>
+                          </span>
+                        </button>
+                      
+                        <div id="sect4" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
+                          <div>
+                          <!-- Variable content within section, may include any type of markup or interactive widgets. -->
+                                <fieldset>
+                                  <p class="curso__descripcion">
+                                    “Yo vivía sola con mi hijo”.
+                                    “Ese día era un feriado. Yo estaba haciendo una torta y empezó a subir el agua”. 
+                                    “Pusimos unas compuertas que ya teníamos porque una vez entró agua desde la calle”.
+                                    “Pero, llegó un momento en que el agua pasó las compuertas, pasó las ventanas y siguió entrando”.
+                                  </p>
+                                  <p class="curso__descripcion">                         
+                                    “Lo primero que atinamos fue a cortar la luz y a tapar… para que no entrara, pero fue imposible”.
+                                  </p>
+                                  <p class="curso__descripcion">
+                                    “Yo me fui para el lado de mi cocina, donde tengo una puerta que separa cocina y comedor”, comenta Silvia.
+                                    “Resulta ser que subió el nivel del agua y la heladera, se subió y se acostó contra la puerta de salida de la cocina. 
+                                    ¡Quedó trabada!
+                                    Para colmo tengo rejas para el fondo”.
+                                  </p>                           
+                                </fieldset>
+                          </div>
+                        </div>
+                      
+                    </div> 
+
+
+      </div>
+      
+  </div>  
+  <!-- fila 3 -->
+  <div class="flex__container-column">
+    <div class="grid__texto">
+        
+        <div class="flex__container2">
+          <p>
+            - Si estás en una casa y el agua supera las rodillas, aseguráte de tener una abertura disponible para no quedar atrapado. Dejá la heladera abierta para que no flote.
+          </p>
+          <p> 
+            - Si estás en el auto y el agua ya ingresa al habitáculo, conviene salir y buscar refugio.
+          </p>
+        </div>
+    </div>
+ </div>
+    <!-- End Tap Target Structure -->
+    <div class="main-container-boton">
+      <a class="boton verde-4" onclick="history.back()">
+          <div class="boton-info">
+              <p>Go back</p> <img src="../img/backArrow.svg" alt="backArrow">
+          </div>
+      </a>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer></footer>
+  <!-- script -->
+  <!-- barra de navegacion -->
+  <script src="./js/lixtbox.js"></script>
+  <!-- ver mas del testimonio  -->
+  <script src="./js/acordeon.js"></script>
 </body>
 
 </html>
