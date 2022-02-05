@@ -12,6 +12,14 @@
     flex-direction: row;   
     justify-content: center;
 }
+@media (max-width: 768px) {
+    .header-container-nav-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        display: none;
+      } 
+}
 
 .header-container-nav nav {
     line-height: 1.2;
