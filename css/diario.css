@@ -113,19 +113,23 @@
 /* colores gradientes */
 
 .blue__grad-1{
-  background: linear-gradient(to bottom, #373b44, #4286f4);
+  background-image: url("/img/diarios/tapas/EL-DIA.png");
+  background-size: cover;
 }
 
 .blue__grad-2{
-  background: #2980B9;  /* fallback for old browsers */
+  background-image: url("/img/diarios/tapas/Diario-HOY.jpg");
+  background-size: cover;
 }
 
 .blue__grad-3{
-  background: #7F7FD5;  /* fallback for old browsers */
+  background-image: url("/img/diarios/tapas/El-Clarin.jpg");
+  background-size: cover;
 }
 
 .blue__grad-4{
-  background: #00B4DB;  /* fallback for old browsers */
+  background-image: url("/img/diarios/tapas/la-nacion.jpg");
+  background-size: cover;
 }
 
 .verde-1{
