@@ -9,9 +9,13 @@
 .caja5{
     max-width: 40%;
 }
+.caja6{
+    max-width: 40%;
+}
 .caja8{
     max-width: 50%;
-    margin-left: 30rem;
+    // margin-left: 30rem;
+    margin: 0 auto;
 }
 .caja9{
     max-width: 20%;
@@ -32,10 +36,16 @@
         order: 2;
         max-width: 50%;
     }
-    .caja8{
-        max-width: 60%;
-        margin: 2rem 10rem;
+    .caja6{
+        order: 2;
+        max-width: 100%;
     }
+    .caja8{
+        max-width: 100%;
+        // margin-left: 30rem;
+        margin: 0 auto;
+    }
+
     .caja9{
         max-width: 60%;
         margin: 2rem 10rem;
