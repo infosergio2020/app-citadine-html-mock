@@ -1,0 +1,647 @@
+<!-- esta es la version 2 de la rama PC -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Responsive Meta Tag-->
+  <link rel="shortcut icon" href="./img/tree.png" type="image/x-icon">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" crossorigin>
+
+  <link rel="shortcut icon" href="./css/tree.png" type="image/x-icon">
+  
+  <link rel="preload" href="./css/normalize.css" as="style">
+  <link rel="stylesheet" href="./css/normalize.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin/>
+  
+  <link rel="preload" href="./css/main.css" as="style">
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <link rel="preload" href="./css/lixtbox.css" as="style">
+  <link rel="stylesheet" href="./css/lixtbox.css">
+  <!-- CSS del testimonio -->
+  <link rel="stylesheet" href="css/testimonios.css">
+  <!-- CSS del acordeon -->
+  <link rel="stylesheet" href="css/minAcordeon.css">
+
+  <!--Import jQuery Library-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!--Import materialize.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+
+  <title>Mock</title>
+</head>
+<!-- <body class="animate__animated animate__fadeIn"> -->
+
+<body>
+ <!-- <header class="header-container"> -->
+  <header class="header header-container">
+    <div>
+      <!-- logo de citadine -->
+      <div class="header__img__h1">
+        <a  role="menuitem" href="index.html" aria-label="Presione enter para ir a la pagina principal.">
+          <div class="item__img__h1 txt_white">
+            <img class="wh-88" src="img/general/flooded-house.png" alt="Logo de citadine.">
+            <h1>Generar <span>con</span>ciencia</h1>
+          </div>
+        </a>
+        <!-- <small> La muestra contará con 6 áreas o secciones de exhibición, que deben recorrerse en forma secuencial,
+          puesto que aborda la temática en forma cronológica.
+          Además, se analiza la inundación desde la perspectiva de 4 casos diferentes de personas que relatan sus
+          experiencias y lo sucedido antes, durante y después de vivenciarla.
+        </small> -->
+      </div>
+ 
+      <!-- barra de secciones y boton -->
+      <div class="header__nav__menu">
+        <button class="boton__2 verde-4" aria-label="Presione enter para obtener mas informacion." id="logo">
+          <img src="img/general/menu.svg" alt="Citadine brand">
+        </button>
+        <nav class="header-container-nav-row" id="nav-id" aria-label="Barra de navegacion.">
+
+          <ul class="menubar-navigation" role="menubar" aria-label="Barra de navegacion.">
+            <!-- boton 1 -->
+            <li role="none">
+              <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+                aria-haspopup="true" aria-expanded="false" href="#academics">
+                <img class="wh-30" src="img/general/secciones/1.webp" alt="seccion">
+                <div class="navegacion__enlace--info">
+                  <p>seccion 1</p>
+                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                  </svg>
+                </div>
+              </a>
+              <ul role="menu" aria-label="1">
+                <li role="none">
+                  <a role="menuitem" href="testimonio1.html" aria-label="Presione enter para conocer: ">1- Known our
+                    testimonies: Before the flood</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="the-news-of-the-day.html" aria-label="Presione enter para conocer: ">2- The
+                    news of the
+                    day</a>
+                </li>
+
+              </ul>
+            </li>
+            <!-- boton 2 -->
+            <li role="none">
+              <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+                aria-haspopup="true" aria-expanded="false" href="#academics">
+
+                <img class="wh-30" src="img/general/secciones/2.webp" alt="seccion">
+
+
+                <div class="navegacion__enlace--info">
+                  <p>seccion 2</p>
+                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                  </svg>
+                </div>
+              </a>
+              <ul role="menu" aria-label="2">
+                <li role="none">
+                  <a role="menuitem" href="#interview-map.html" aria-label="Presione enter para conocer: ">1- Interview
+                    map</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="water-level-simulator.html" aria-label="Presione enter para conocer: ">2-
+                    Water level
+                    simulator</a>
+                </li>
+
+              </ul>
+            </li>
+            <!-- boton 3 -->
+            <li role="none">
+              <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+                aria-haspopup="true" aria-expanded="false" href="#academics">
+
+                <img class="wh-30" src="img/general/secciones/3.webp" alt="seccion">
+
+
+                <div class="navegacion__enlace--info">
+                  <p>seccion 3</p>
+                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                  </svg>
+                </div>
+              </a>
+              <ul role="menu" aria-label="3">
+                <li role="none">
+                  <a role="menuitem" href="diarios.html" aria-label="Presione enter para conocer: ">1- Diarios</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="shocking-photos.html"
+                    aria-label="Presione enter para conocer: ">2- Shocking
+                    photos</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="testimonio2.html" aria-label="Presione enter para conocer: ">3- Known our
+                    testimonies: During the flood</a>
+                </li>
+
+                <li role="none">
+                  <a role="menuitem" href="photo-album.html"
+                    aria-label="Presione enter para conocer: ">4- Photo album
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+            <!-- boton 4 -->
+            <li role="none">
+              <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+                aria-haspopup="true" aria-expanded="false" href="#academics">
+
+                <img class="wh-30" src="img/general/secciones/4.webp" alt="seccion">
+
+
+                <div class="navegacion__enlace--info">
+                  <p>seccion 4</p>
+                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                  </svg>
+                </div>
+              </a>
+              <ul role="menu" aria-label="4">
+                <li role="none">
+                  <a role="menuitem" href="testimonio3.html" aria-label="Presione enter para conocer: ">1- Known our
+                    testimonies: Before the flood</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="sandbox.html" aria-label="Presione enter para conocer: ">2- Sandbox</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="Why-do-we-flood.html"
+                    aria-label="Presione enter para conocer: ">3- Why do we flood</a>
+                </li>
+
+              </ul>
+            </li>
+
+            <!-- botone 5 -->
+
+            <li role="none">
+              <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+                aria-haspopup="true" aria-expanded="false" href="#academics">
+
+                <img class="wh-30" src="img/general/secciones/5.webp" alt="seccion">
+
+                <div class="navegacion__enlace--info">
+                  <p>seccion 5</p>
+                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                  </svg>
+                </div>
+              </a>
+              <ul role="menu" id="sub-menu-academics">
+                <li role="none">
+                  <a role="menuitem" href="#/be-prepared.html" aria-label="Presione enter para conocer: ">1-
+                    recomendaciones de como actuar.</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#/smart-survival-backpak.html" aria-label="Presione enter para conocer: ">2-
+                    Smart
+                    survival backpak</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#/where-to-go.html" aria-label="Presione enter para conocer: ">3- Where to
+                    go</a>
+                </li>
+
+                <li role="none">
+                  <a role="menuitem" href="#/educational-games.html" aria-label="Presione enter para conocer: ">4-
+                    Educational
+                    games</a>
+                </li>
+              </ul>
+            </li>
+            <!-- botone 6 -->
+
+            <li role="none">
+              <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+                aria-haspopup="true" aria-expanded="false" href="#academics">
+
+                <img class="wh-30" src="img/general/secciones/6.webp" alt="seccion">
+
+                <div class="navegacion__enlace--info">
+                  <p>seccion 6</p>
+                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                  </svg>
+                </div>
+              </a>
+              <ul role="menu" id="sub-menu-academics">
+                <li role="none">
+                  <a role="menuitem" href="#/go citadine blue" aria-label="Presione enter para conocer: ">1- Go citadine
+                    blue.</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#/go citadine green" aria-label="Presione enter para conocer: ">2-
+                    Go citadine green</a>
+                </li>
+                <li role="none">
+                  <!-- polonia alemania chile y republica dominicana
+                                    reutilizar la interfaz de los 4 casos -->
+                  <a role="menuitem" href="Inundaciones-en-el-exterior.html" aria-label="Presione enter para conocer: ">3-
+                    Inundaciones en el exterior</a>
+                </li>
+                <li role="none">
+                  <!-- es un afiche de como se ayudaron los vecinos- cosas positivas -->
+                  <a role="menuitem" href="Conclusiones-del-evento.html" aria-label="Presione enter para conocer: ">4-
+                    Conclusiones del evento</a>
+                </li>
+              </ul>
+            </li>
+            <!-- barra deslizante -->
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+  </header>
+  <!-- menu deslizante -->
+  <div class="menu-deslizante-realtivo">
+    <div id="menuIcono" class="sideBar">
+      <div class="sideBar-header">
+        <img class="boton-close " tabindex="0" id="close-sideBar" src="./img/general/circle-x.svg" alt="haga click, o presione enter para cerrar el sidebar.">
+        <div class="sideBar-img" aria-labelledby="posts-heading">
+          <img src="../../img/general/flooded-house.png" alt="expo citadine logo">
+          <!-- <a href="/"><img src="./img/general/menu-deslizante/technical-support.png" alt="expo citadine logo"></a> -->
+          <!-- <a href="/"><img src="./img/general/menu-deslizante/options.png" alt="expo citadine logo"></a> -->
+          <!-- <a href="/"><img src="./img/general/menu-deslizante/choose.png" alt="expo citadine logo"></a> -->
+        </div>
+        <div class="sideBar-info header__img__h4" tabindex="0" id="posts-heading">
+          <h4>Elija una <span >op</span>ción</h4>
+          <p>Descubra más del evento.</p>
+        </div>
+      </div>
+      <div class="sideBar-body" role="navigation">
+        <section>
+          <ul class="sidebar-body-ul" role="menu">
+            <!-- NOTA: Las secciones no estan en la vista del PC -->
+            <a href="./menu-deslizante/anounce.html">
+              <li tabindex="0" class="sidebar-link" role="menuitem"
+                aria-label="haga click si decea entrar a Announcements">
+                <img class="wh-42" src="./img/general/menu-deslizante/calendar.webp" alt="calendario-image">
+                <p class="no-margin">Announcements</p>
+                <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+              </li>
+            </a>
+            <a href="./menu-deslizante/covid.html">
+              <li tabindex="0" class="sidebar-link" role="menuitem"
+                aria-label="haga click si decea entrar a COVID protocols">
+                <img class="wh-42" src="./img/general/menu-deslizante/virus.webp" alt="virus-image">
+                <p class="no-margin">COVID protocols </p>
+                <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+              </li>
+            </a>
+            <a href="./menu-deslizante/about.html">
+              <li tabindex="0" class="sidebar-link" role="menuitem"
+                aria-label="haga click si decea entrar a hacerca de citadine">
+                <img class="wh-42" src="./img/general/menu-deslizante/Citadine.webp" alt="informacion-image">
+                <p class="no-margin">About Citadine </p>
+                <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+              </li>
+            </a>
+            <a href="./menu-deslizante/languaje.html">
+              <li tabindex="0" class="sidebar-link" role="menuitem"
+                aria-label="haga click si decea entrar a hacerca de citadine">
+                <img class="wh-42" src="./img/general/menu-deslizante/languages.webp" alt="lenguajes-image">
+                <p class="no-margin">Languajes </p>
+                <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+              </li>
+            </a>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor del testimonio -->
+  <main class="contenedor-testimonio">
+  
+            <div class="afiche__head">
+              <h3 class="centrar-texto text-shadow"> Known our testimonies: During the flood.</h3>
+            </div>
+
+                <div class="curso">
+                    <div class="curso__imagen">
+                        <img class="img-testimonio"  src="img/section1/secciones/parte 2/1.webp" alt="Imagen de Amina Suarez">
+                    </div>
+                    <div class="curso__informacion">
+                        <h4 class="no-margin">Amina Suarez</h4>
+                        <p class="curso__label">Edad: 
+                            <span class="curso__info">En la inundación tenía 12 años.</span>
+                        </p>
+                        <p class="curso__label">Testimonio: 
+                            <span class="curso__info">Desde la mirada de una persona menor de edad.</span>
+                        </p>
+                        <p class="curso__descripcion">
+                            “Mi mamá no estaba en la casa. Se había quedado trabajando hasta tarde. No sabíamos dónde estaba, cómo estaba. Tampoco había señal en el celular para llamarla”. 
+                            “Por suerte, no le pasó nada. Apenas pudimos comunicarnos, le dijimos que no venga. Las calles estaban inundadas, no podía pasar ni un auto”.
+                            </p>
+                          <!-- leer mas -->
+                          
+
+                          <div  class="accordion">
+                            
+                              <button type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Amina Suarez." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect1" id="accordion1id">
+                                <span class="accordion-title">
+                                  Conocer más sobre el testimonio de Amina Suarez
+                                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                                  </svg>
+                                </span>
+                              </button>
+                            
+                            <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
+                              <div>
+                                <!-- Variable content within section, may include any type of markup or interactive widgets. -->
+                                <fieldset>
+                                    <p class="curso__descripcion"> “Recuerdo que la calle 9 era un arroyo, tenía corriente y todo”. “Los autos se fueron con el agua”. 
+                                    “En medio de la noche escuchamos una chica gritando. Estaba agarrada de un  árbol de la calle de enfrente. Sale nuestro vecino con un kayak a rescatar a esta chica y cuando llega a la esquina para auxiliarla, ¡se lo lleva la corriente!. Al otro día, vimos al kayak todo destruido. El vecino por suerte estaba vivo. No le pasó nada.”
+                                    </p>
+                                    <p class="curso__descripcion">
+                                  
+                                        ““Fue bastante loco poder ver las cosas desde arriba. Se podía ver los patios inundados, muchos árboles casi tapados, que solo se veía la copa”. 
+                                        “Nosotros por suerte teníamos un segundo piso y pudimos estar ahí, pero abajo era imposible estar”. “…Era bastante peligroso. Había cosas flotando. El agua estaba toda sucia, toda contaminada, llena de petróleo”. “…Fue bastante traumático”.
+                                    </p>
+                                    <p class="curso__descripcion"> ““El agua estaba helada, encima hacía frío. No paró de llover en toda la noche. Creo que llovió durante 12 horas”. 
+                                    “Lo tengo bastante borroso porque era chica. La noción del tiempo no era muy clara”.
+                                    
+                                    </p>   
+                                    <p class="curso__descripcion"> “En mi mente de nena de 12 años, lo primero en salvar, fue a mi perra. La subí a la terraza como pude, para que no se inunde básicamente”. 
+                                        “Y después, va a sonar muy tonto y muy material, pero eran mis CDs de Justin Bieber”. “…Estaba como traumada con que se iban a mojar y no los iba a poder recuperar”.
+                                        
+                                    </p>   
+                                    <p class="curso__descripcion">
+                                        “Me importaba también los álbumes de fotos, tal vez recuerdos de mis abuelos, ropa, no sé, algún colchón. Bueno, la televisión, todas cosas muy materiales”. 
+                                        “También había una preocupación por los que estaban ahí conmigo y por los que no”. “Tengo una amiga que vive a una cuadra. Por suerte estaba bien, pero yo en ese momento no sabía cómo estaba”. “Tal vez en ese momento no era tan conciente de la situación que estaba viviendo. Sí fui más conciente en el después”.  
+                                        
+                                    </p>                                
+                                </fieldset>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          
+                         
+                    </div> <!--.curso-informacion-->
+                </div> <!--.curso -->
+
+                <div class="curso">
+                    <div class="curso__imagen">
+                        <img class="img-testimonio" src="img/section1/secciones/parte 2/2.png" alt="Imagen de Alejandro Fernandez">
+                    </div>
+                    <div class="curso__informacion">
+                        <h4 class="no-margin">Alejandro Fernandez</h4>
+                        <p class="curso__label">Edad: 
+                            <span class="curso__info">26 años.</span>
+                        </p>
+                        <p class="curso__label">Testimonio: 
+                            <span class="curso__info">Convirtiéndose en un rescatista que salvó a más de <b>100</b> vecinos de Tolosa.</span>
+                        </p>
+                        <p class="curso__descripcion">
+                            “Fue muy triste, muy desgarrador. Cuando los vecinos empezaron a escuchar el bote, fue un caos. Era tanto lo que te avasallaban, que te asustaba la situación. Empecé a organizarme como pude, sin experiencia”. 
+                            “Empecé por las casas bajas, rescatando gente que estaba con el agua al cuello”.                               
+                        </p>
+                        <p class="curso__descripcion">
+                            “La gente se acercaba al bote con papelitos que tenían anotadas direcciones de casas. _Por favor ¿podés ir a traerme a mi papá?, o _¿Podés rescatar a mi mamá?, me pedían”.
+                           </p>
+                         <!-- leer mas -->
+                          
+
+                         <div  class="accordion">
+                            
+                          <button type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Alejandro Fernandez." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect2" id="accordion1id">
+                            <span class="accordion-title">
+                              Conocer más sobre el testimonio de Alejandro Fernandez
+                              <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                                <polygon points="1 0, 11 0, 6 8"></polygon>
+                              </svg>
+                            </span>
+                          </button>
+                        
+                        <div id="sect2" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
+                          <div>
+                            <!-- Variable content within section, may include any type of markup or interactive widgets. -->
+                            <fieldset>
+                              <p class="curso__descripcion">
+                                “Era toda una situación difícil. Las horas transcurrían y no amainaba. Cada vez era peor. Donde había 1,40 o 1,60 metros de agua, a la hora, ¡¡ya había 2 metros!!”.                             
+                                “La correntada era tan fuerte que el bote no avanzaba por el peso que tenía. Veníamos 12 personas y mi embarcación es para 6. Encima, se enreda un cable en la hélice del bote y se para el motor. ¡Se para!”. 
+
+                               </p>
+                              <p class="curso__descripcion">
+                                “Se para a 500 metros del arroyo el Gato, que sale directo al Río de La Plata”.
+                                “Lo que se va para allí, hasta el río no para”, dice Alejandro.
+                                “Le pedía a la gente por favor que se agarren de donde puedan, de los árboles, postes, para que el bote no se fuera para allí”. 
+                                
+                                “_Nos  inundamos!, gritaba la gente”.
+                                “Me metí al agua, desenredé el cable y ¡dí arranque de vuelta!”. 
+                                                                  
+                              </p>   
+                              <p class="curso__descripcion">
+                                “Un hombre que encontré en una esquina, parado en el agua, me empezó a ayudar. Era flaco y alto, medía como 1,90 o 2 metros”. 
+                                “Tratábamos de ir casa por casa y que la gente saliera, nos escuchara, porque estaban arriba del ropero, mesa o silla”. “Algunos les quedaban 30 cm para respirar”.
+                                                       
+                              </p>   
+                              <p class="curso__descripcion">
+                                “Él buscaba a la gente y la subíamos al bote”. 
+                                “A la gente mayor costaba subirla. Estaban entumecidas luego de 4 o 5 horas dentro del agua”.
+                                “A algunos se les había volcado la heladera y trabado la puerta. Costaba mucho tratar de abrirla por la fuerza que ejercía el agua”. 
+                                                                   
+                              </p>   
+                              <p class="curso__descripcion">
+                                “Un muchacho que estaba con su familia atrapados detrás de la reja, me dice: 
+                                _Lleváte a los pibes porque no puedo salir, no quiero que se me ahoguen. 
+                                _Esperá, que voy hasta mi casa por herramientas, le digo. 
+                                _No, loco, vos me vas a dejar, no venís más. ¡Lleváte mis hijos, lleváte a mis hijos!, yo ya estoy hecho. Aunque no te conozca, si te los llevás van a estar vivos”. 
+                                “Fui a mi casa, agarré las herramientas y volví. Saqué a todos”.
+                                  
+                              </p>                              
+                            </fieldset>
+                          </div>
+                        </div>
+                        
+                      </div> 
+                        
+                        
+
+                    </div> <!--.curso-informacion-->
+                </div> <!--.curso -->
+
+                <div class="curso">
+                    <div class="curso__imagen">
+                        <img class="img-testimonio" src="img/section1/secciones/parte 2/3.png" alt="Imagen de Romina Carrozas">
+                    </div>
+                    <div class="curso__informacion">
+                        <h4 class="no-margin">Romina Carrozas</h4>
+                        <p class="curso__label">Edad: 
+                            <span class="curso__info">30 años.</span>
+                        </p>
+                        <p class="curso__label">Testimonio: 
+                            <span class="curso__info">Una mujer que en la inundación cursaba 8 meses de embarazo…</span>
+                        </p>
+                        <p class="curso__descripcion">
+                            “Cuando viene mi suegra y su hijo a buscarme, ya el agua me llegaba a la cadera”.
+                            “me vino a buscar porque sabía que yo estaba sola”. 
+                                                        
+                        </p>
+                        <p class="curso__descripcion">
+                            “No podíamos pasar por tanta correntada que venía. ¡Casi más nos lleva a los tres juntos!”. “No sé de qué nos agarramos y empezamos a caminar”.
+                        </p>
+                          <!-- leer mas -->
+                          
+
+                          <div  class="accordion">
+                            
+                            <button type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Romina Carrozas." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect3" id="accordion1id">
+                              <span class="accordion-title">
+                                Conocer más sobre el testimonio de Romina Carrozas
+                                <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                                  <polygon points="1 0, 11 0, 6 8"></polygon>
+                                </svg>
+                              </span>
+                            </button>
+                          
+                          <div id="sect3" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
+                            <div>
+                              <!-- Variable content within section, may include any type of markup or interactive widgets. -->
+                              <fieldset>
+                                <p class="curso__descripcion">
+                                    “Ellos me sostenían y yo llorando porque parecía que iba a tener al bebé en el agua”. “Me agarraban contracciones y tenía miedo”. 
+                                    “Estaba nerviosa, parecía que nos íbamos a morir”.
+                                     
+                                    “Caminaba y me dolía, y me faltaba un mes todavía para tener al bebé”.
+                                </p>
+                                <p class="curso__descripcion">
+                                
+                                “A las 20 horas teníamos el agua por el pecho”. 
+                                “Vino el hermano de mi suegra con un carrito y nos pudo sacar. Subimos todos arriba del carro. Ató el carro como pudo, salimos para la otra cuadra. Ahí nos quedamos toda la noche”.
+                                
+                                </p>
+                                <p class="curso__descripcion">
+                                    “No paraba de llover. Yo lloraba y le pedía a Dios, fue horrible”. 
+                                    “No sabía si mis nenas estaban inundadas o no”. 
+                                    “Ellas estaban del otro lado del zanjón donde está el campo. Ahí no llegó el agua, pero no lo supe hasta el otro día que bajó el agua un poco y salí corriendo a verlas”. “…Ellos estaban bien, no les había pasado nada”.                                    
+                                </p>
+                                <p class="curso__descripcion">
+                                    “Pero esa noche fue horrible porque veía cómo la gente se subía arriba de los techos, con las criaturas, se tapaban con lonas”. 
+                                    “Gritaba la gente”. “…Y no apareció nadie a ayudar, para socorrer a la gente”. 
+                                </p>                           
+                              </fieldset>
+                            </div>
+                          </div>
+                          
+                        </div> 
+                        
+                    </div> <!--.curso-informacion-->
+                </div> <!--.curso -->
+                <div class="curso">
+                    <div class="curso__imagen">
+                        <img class="img-testimonio" src="img/section1/secciones/parte 2/4.png" alt="Imagen de Silvia Rivas">
+                    </div>
+                    <div class="curso__informacion">
+                        <h4 class="no-margin">Silvia Rivas</h4>
+                        <p class="curso__label">Edad: 
+                            <span class="curso__info">6 años.</span>
+                        </p>
+                        <p class="curso__label">Testimonio: 
+                            <span class="curso__info">Una mujer que quedó atrapada por horas en la cocina, con el agua al hombro.</span>
+                        </p>
+                        <p class="curso__descripcion">
+                            “Quedé atrapada en la cocina y no me pude mover como por tres horas”. 
+                            “Me subí a la mesada, a un gabinete. Pero se hacía de noche y estaba sola”.
+                                                        
+                        </p>
+                        <p class="curso__descripcion">
+                            “Mi hijo y mi ex pareja estaban del otro lado tratando de abrir la puerta”.
+                            “Yo quedé toda moretoneada de tanta fuerza que hice con esa heladera, para poder destrabarla”. “…Hasta que se pudo hacer una rendijita, por esa rendijita ellos pusieron el cuerpo e hicieron fuerza y abrieron la puerta. ¡¡Ahí pude salir!!”.                             
+                        </p>
+                        <!-- leer mas -->
+                          
+
+                        <div  class="accordion">
+                            
+                          <button type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Silvia Rivas." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect4" id="accordion1id">
+                            <span class="accordion-title">
+                              Conocer más sobre el testimonio de Silvia Rivas
+                              <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                                <polygon points="1 0, 11 0, 6 8"></polygon>
+                              </svg>
+                            </span>
+                          </button>
+                        
+                        <div id="sect4" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
+                          <div>
+                            <!-- Variable content within section, may include any type of markup or interactive widgets. -->
+                            <fieldset>
+                                <p class="curso__descripcion">
+                                “Eran las 8 horas y pico de la noche. Ya el agua me daba al hombro. Fui al dormitorio y estaba el colchón de la cama flotando, con mis dos perritos arriba. Los bajamos, uno cada uno. Me puse el celular en el hombro y nos fuimos arriba del techo”.
+ 
+                                “Se escuchaban llantos, gritos, …de todo”.
+                                </p>
+                                <p class="curso__descripcion">                         
+                                                            
+                                “Estuvimos bajo la lluvia hasta las 2 y pico de la mañana”. 
+                                “No pudimos bajar hasta las 10.” 
+                                “…Tiritando toda la noche!!. Con miedo por mi hijo que sufre de neumotórax espontáneo. Y … que los perritos no se caigan”. 
+                                
+                                </p>
+                                <p class="curso__descripcion">
+                                “Venía agarrándose de las paredes, por la vereda, un matrimonio de 80 años. Se quedaron aferrados a mis rejas. Si se soltaban, la correntada se los llevaba. Mi ex esposo con otro señor los agarraron y los subieron al techo”.
+                                “Ellos resistieron. El hijo vino a agradecernos porque los salvamos”. 
+                                </p>  
+                                <p class="curso__descripcion">
+                                    Pero no todos se pudieron salvar...
+                                </p>  
+                                <p class="curso__descripcion">
+                                    “Un vecino apareció en una boca de tormenta”. 
+                                    “Siento los gritos desgarradores de la hija para que se agarrara. Veía que al papá se lo llevaba la correntada”.
+                                </p>  
+                                <p class="curso__descripcion">
+                                    “Al frente de mi casa había un señor acostado por un postoperatorio. Se le cayó una pared encima…”
+                                    “Y… ocho personas más. Toda gente conocida. Los veíamos habitualmente”.
+                                    “Nuestra zona fue bastante castigada”.  
+                                </p>                           
+                            </fieldset>
+                          </div>
+                        </div>
+                        
+                      </div> 
+                        
+                    </div> <!--.curso-informacion-->
+                </div> <!--.curso -->
+            
+        <!-- End Tap Target Structure -->
+        <div class="main-container-boton">
+          <a class="boton verde-4" onclick="history.back()">
+              <div class="boton-info">
+                  <p>Go back</p> <img src="img/general/backArrow.svg" alt="backArrow">
+              </div>
+          </a>
+        </div>
+  </main>
+  
+  <!-- footer -->
+  <footer></footer>
+      <!-- script -->
+    <!-- barra de secciones -->
+    <script src="./js/lixtbox.js"></script>
+    <!-- menu de barra deslizante -->
+    <script src="./js/index.js"></script> 
+    <!-- ver mas del testimonio  -->
+    <script src="./js/acordeon.js"></script>
+</body>
+
+</html>
