@@ -33,7 +33,7 @@ if(listimgPop != null){
             download:false,
             speed: 500,
             addClass: 'lg-custom-thumbnails',
-            plugins: [lgZoom, lgThumbnail, lgVideo],
+            plugins: [lgThumbnail, lgVideo],
             mobileSettings:{ 
                 showCloseIcon: true,
             }

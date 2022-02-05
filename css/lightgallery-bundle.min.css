@@ -26,12 +26,13 @@
 }
 .lg-next,
 .lg-prev {
-  background-color: rgba(0, 0, 0, 0.45);
+  /* background-color: rgba(0, 0, 0, 0.45); */
+  background-color:#05241e;
   border-radius: 2px;
-  color: #999;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   display: block;
-  font-size: 22px;
+  font-size: 40px;
   margin-top: -10px;
   padding: 8px 10px 9px;
   position: absolute;
@@ -167,6 +168,7 @@
 }
 .lg-toolbar {
   z-index: 1082;
+  background-color:#05241e;
   left: 0;
   position: absolute;
   top: 0;
@@ -176,10 +178,10 @@
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 }
 .lg-toolbar .lg-icon {
-  color: #999;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   float: right;
-  font-size: 24px;
+  font-size: 45px;
   height: 47px;
   line-height: 27px;
   padding: 10px 0;
@@ -215,7 +217,8 @@
 }
 .lg-sub-html {
   color: #eee;
-  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.746);
+  /* font-size: 16px; */
   padding: 10px 40px;
   text-align: center;
   z-index: 1080;
@@ -226,13 +229,13 @@
 }
 .lg-sub-html h4 {
   margin: 0;
-  font-size: 13px;
+  /* font-size: 13px; */
   font-weight: 700;
 }
 .lg-sub-html p {
-  font-size: 12px;
+  /* font-size: 12px; */
   margin: 5px 0 0;
-}
+} 
 .lg-sub-html a {
   color: inherit;
 }
@@ -257,12 +260,12 @@
   color: #999;
 }
 .lg-counter {
-  color: #999;
+  color: rgb(255, 255, 255);
   display: inline-block;
-  font-size: 16px;
+  font-size: 40px;
   padding-left: 20px;
-  padding-top: 12px;
-  height: 47px;
+  /* padding-top: 12px; */
+  /* height: 47px; */
   vertical-align: middle;
 }
 .lg-closing .lg-next,
@@ -319,7 +322,7 @@ body:not(.lg-from-hash)
   transform: scale3d(1, 1, 1);
 }
 .lg-outer .lg-thumb-outer {
-  background-color: #0d0a0a;
+  background-color:#05241e;
   width: 100%;
   max-height: 350px;
   overflow: hidden;
@@ -473,7 +476,7 @@ body:not(.lg-from-hash)
 }
 .lg-video-play-button {
   width: 18%;
-  max-width: 140px;
+  /* max-width: 140px; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -494,12 +497,13 @@ body:not(.lg-from-hash)
 .lg-video-play-button:hover .lg-video-play-icon-bg {
   opacity: 1;
 }
+/* icono de video */
 .lg-video-play-icon-bg {
-  fill: none;
-  stroke-width: 3%;
-  stroke: #fcfcfc;
-  opacity: 0.6;
-  will-change: opacity;
+  fill: #003d33;
+  /* stroke-width: 3%; */
+  stroke: #fcffff;
+  /* opacity: 0.6; */
+  /* will-change: opacity; */
   -webkit-transition: opacity 0.12s ease-in;
   -o-transition: opacity 0.12s ease-in;
   transition: opacity 0.12s ease-in;
@@ -1133,6 +1137,7 @@ body:not(.lg-from-hash)
   outline: 0;
   will-change: auto;
   overflow: hidden;
+
   -webkit-transition: opacity 0.15s ease 0s;
   -o-transition: opacity 0.15s ease 0s;
   transition: opacity 0.15s ease 0s;
@@ -1272,6 +1277,7 @@ body:not(.lg-from-hash)
   opacity: 1;
   transition: opacity 0.2s ease-out 0.15s;
 }
+/* color de fondo */
 .lg-backdrop {
   position: fixed;
   top: 0;
@@ -1279,7 +1285,7 @@ body:not(.lg-from-hash)
   right: 0;
   bottom: 0;
   z-index: 1040;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.849);
   opacity: 0;
   will-change: auto;
   -webkit-transition: opacity 333ms ease-in 0s;
