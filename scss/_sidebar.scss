@@ -10,6 +10,7 @@
     z-index: 999;
     max-width: 100%;
     background-color: #05241E;
+    color: #fff;
     transition: left 400ms ease-in-out;
 }
 
@@ -42,12 +43,14 @@
 }
 
 .sideBar-info h2{
-    text-align: center;
+    text-align: center;    
 }
 
 .sideBar-body{
-
+    text-align: center;
+    position: relative;
 }
+
 
 .sidebar-body-ul{
     /* background-color: coral; */

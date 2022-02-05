@@ -7,12 +7,27 @@
     text-align: center;
 }
 
+.header-container-nav{
+    display: flex; 
+    flex-direction: column;    
+}
+
+.header-container-nav nav {
+    line-height: 1.2;
+}
+
+
 @media (min-width: 768px){
     .header-container{
         padding: 0 3rem;
     }
-}
 
+    .header-container-nav{
+        // align-items: center;
+        flex-direction: row;
+        align-items: center;
+    }
+}
 
 .header-nav{
     display: flex;
@@ -26,24 +41,17 @@
     flex: 0 0 calc(40% - 1rem);
 }
 
-.header-nav-info{
-    flex: 0 0 calc(60% - 1rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}   
-
 
 @media (min-width: 768px){
     .header-nav-logo{
         flex: 0 0 calc(8% - 1rem);
     }
-    
-    .header-nav-info{
-        flex: 0 0 calc(92% - 1rem);
-    }    
 }
 
+
+.basis-33{
+    flex-basis: calc(33.3% - 1rem);
+}
 
 .container{
     width: 95%;
@@ -51,9 +59,22 @@
 }
 
 @media (min-width: 768px){
+
+    .container__div__card{
+        display: grid; 
+        grid-template-columns: 1fr .4fr; 
+        justify-content: space-between;
+    }
+
     .container{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        // @include background-template('../img/cruce_de_inundacion_2.png');
+    }
+
+    .basis-33{
+        flex-basis: auto
     }
 }

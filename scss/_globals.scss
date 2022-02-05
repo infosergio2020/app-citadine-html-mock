@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap');
-@import url('./_mixins.scss');
+@import url('./../scss/generics/_funciones.scss');
 
-
+ 
 html {
     box-sizing: border-box;
     font-size: 62.5%; /* Now 10px = 1rem! */
@@ -11,11 +11,13 @@ html {
   }
 
 body{
-    @include background-template('../img/cruce_de_inundacion_2.png');
+  
+    @include background-template('../img/cruce_de_inundacion_2.webp');
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px; /* px fallback */
-    font-size: 1.8rem; /* default font-size for document */
-    line-height: 1.5; /* a nice line-height */
+    // font-size: 16px; /* px fallback */
+    // font-size: 1.8rem; /* default font-size for document */
+    font-size: calc(.8em + 1vw);  //font responsive
+    line-height: 1.5;  // a nice line-height
 }
 
 a{
@@ -23,18 +25,67 @@ a{
     color: #ffffff;
 }
 
+// h1{
+//   font-size: 3.8rem;
+// }
+// h2{
+//   font-size: 3rem;
+// }
+// h3{
+//   font-size: 2.2rem;
+// }
+// h4{
+//   font-size: 2rem;
+// }
+
+h1,h2,h3,h4{
+  font-weight: bold;
+}
+
 h1{
-  font-size: 3.8rem;
+  font-size: calc(1.8em + 1vw);
 }
 h2{
-  font-size: 3rem;
+  font-size: calc(1.4em + 1vw)
 }
 h3{
-  font-size: 2.2rem;
+  font-size: calc(1em + 1vw);
 }
 h4{
-  font-size: 1.8rem;
+  font-size: calc(.8em + 1vw);
 }
+
+
+// nav ul a {
+//   font-size: 1.8rem;
+// }
+
+// small, .text_small {font-size: 1.4rem;}
+
+
+nav ul a {
+  font-size: calc(.8em + 1vw);
+}
+
+small, .text_small {
+  font-size: calc(.6em + 1vw);
+}
+
+@media (min-width: 720px) {
+  nav ul a {
+    font-size: calc(.08em + 1vw);
+  }
+  
+  small, .text_small {
+    font-size: calc(.06em + 1vw);
+  }
+}
+
+
 img{
   max-width: 100%;
+}
+
+nav {
+  background-color: #003D33;
 }
