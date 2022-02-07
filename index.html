@@ -45,7 +45,7 @@
     <div>
       <!-- logo de citadine -->
       <div class="header__img__h1">
-        <a  role="menuitem" href="index.html" aria-label="Presione enter para ir a la pagina principal.">
+        <a tabindex="0" role="menuitem" href="index.html" aria-label="Presione enter para ir a la pagina principal.">
           <div class="item__img__h1 txt_white">
             <img class="wh-88" src="img/general/flooded-house.png" alt="Logo de citadine.">
             <h1>Generar <span>con</span>ciencia</h1>
@@ -60,7 +60,7 @@
  
       <!-- barra de secciones y boton -->
       <div class="header__nav__menu">
-        <button class="boton__2 verde-4" aria-label="Presione enter para obtener mas informacion." id="logo">
+        <button tabindex="0" class="boton__2 verde-4" aria-label="Presione enter para obtener mas informacion." id="logo">
           <img src="img/general/menu.svg" alt="Citadine brand">
         </button>
         <nav class="header-container-nav-row" id="nav-id" aria-label="Barra de navegacion.">
@@ -68,7 +68,7 @@
           <ul class="menubar-navigation" role="menubar" aria-label="Barra de navegacion.">
             <!-- boton 1 -->
             <li role="none">
-              <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+              <a tabindex="0" class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
                 aria-haspopup="true" aria-expanded="false" href="#academics">
                 <img class="wh-30" src="img/general/secciones/1.webp" alt="seccion">
                 <div class="navegacion__enlace--info">
@@ -80,11 +80,11 @@
               </a>
               <ul role="menu" aria-label="1">
                 <li role="none">
-                  <a role="menuitem" href="testimonio1.html" aria-label="Presione enter para conocer: ">1- Known our
+                  <a tabindex="-1" role="menuitem" href="testimonio1.html" aria-label="Presione enter para conocer: ">1- Known our
                     testimonies: Before the flood</a>
                 </li>
                 <li role="none">
-                  <a role="menuitem" href="the-news-of-the-day.html" aria-label="Presione enter para conocer: ">2- The
+                  <a tabindex="-1" role="menuitem" href="the-news-of-the-day.html" aria-label="Presione enter para conocer: ">2- The
                     news of the
                     day</a>
                 </li>
@@ -93,7 +93,7 @@
             </li>
             <!-- boton 2 -->
             <li role="none">
-              <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+              <a tabindex="0" class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
                 aria-haspopup="true" aria-expanded="false" href="#academics">
 
                 <img class="wh-30" src="img/general/secciones/2.webp" alt="seccion">
@@ -273,14 +273,14 @@
   <div class="menu-deslizante-realtivo">
     <div id="menuIcono" class="sideBar">
       <div class="sideBar-header">
-        <img class="boton-close " tabindex="0" id="close-sideBar" src="./img/general/circle-x.svg" alt="haga click, o presione enter para cerrar el sidebar.">
+        <img class="boton-close "  id="close-sideBar" src="./img/general/circle-x.svg" alt="haga click, o presione enter para cerrar el sidebar.">
         <div class="sideBar-img" aria-labelledby="posts-heading">
           <img src="../../img/general/flooded-house.png" alt="expo citadine logo">
           <!-- <a href="/"><img src="./img/general/menu-deslizante/technical-support.png" alt="expo citadine logo"></a> -->
           <!-- <a href="/"><img src="./img/general/menu-deslizante/options.png" alt="expo citadine logo"></a> -->
           <!-- <a href="/"><img src="./img/general/menu-deslizante/choose.png" alt="expo citadine logo"></a> -->
         </div>
-        <div class="sideBar-info header__img__h4" tabindex="0" id="posts-heading">
+        <div class="sideBar-info header__img__h4"  id="posts-heading">
           <h4>Elija una <span >op</span>ción</h4>
           <p>Descubra más del evento.</p>
         </div>
@@ -289,40 +289,40 @@
         <section>
           <ul class="sidebar-body-ul" role="menu">
             <!-- NOTA: Las secciones no estan en la vista del PC -->
-            <a href="./menu-deslizante/sections.html">
-              <li tabindex="0" class="sidebar-link" role="menuitem"
+            <a tabindex="-1" href="./menu-deslizante/sections.html">
+              <li class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a las secciones">
                 <img class="wh-42" src="./img/general/menu-deslizante/secciones.png" alt="calendario-image">
                 <p class="no-margin">sections</p>
                 <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
               </li>
             </a>
-            <a href="./menu-deslizante/anounce.html">
-              <li tabindex="0" class="sidebar-link" role="menuitem"
+            <a tabindex="-1" href="./menu-deslizante/anounce.html">
+              <li  class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a Announcements">
                 <img class="wh-42" src="./img/general/menu-deslizante/calendar.webp" alt="calendario-image">
                 <p class="no-margin">Announcements</p>
                 <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
               </li>
             </a>
-            <a href="./menu-deslizante/covid.html">
-              <li tabindex="0" class="sidebar-link" role="menuitem"
+            <a tabindex="-1" href="./menu-deslizante/covid.html">
+              <li  class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a COVID protocols">
                 <img class="wh-42" src="./img/general/menu-deslizante/virus.webp" alt="virus-image">
                 <p class="no-margin">COVID protocols </p>
                 <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
               </li>
             </a>
-            <a href="./menu-deslizante/about.html">
-              <li tabindex="0" class="sidebar-link" role="menuitem"
+            <a tabindex="-1" href="./menu-deslizante/about.html">
+              <li  class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a hacerca de citadine">
                 <img class="wh-42" src="./img/general/menu-deslizante/Citadine.webp" alt="informacion-image">
                 <p class="no-margin">About Citadine </p>
                 <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
               </li>
             </a>
-            <a href="./menu-deslizante/languaje.html">
-              <li tabindex="0" class="sidebar-link" role="menuitem"
+            <a tabindex="-1" href="./menu-deslizante/languaje.html">
+              <li  class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a hacerca de citadine">
                 <img class="wh-42" src="./img/general/menu-deslizante/languages.webp" alt="lenguajes-image">
                 <p class="no-margin">Languajes </p>
