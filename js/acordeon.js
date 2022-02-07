@@ -10,7 +10,9 @@ document.getElementById("accordion1id").addEventListener("click", () => openAcor
 
 const openAcordeon = (e)=>{
   let boton_acordeon=document.getElementById("amina-mas");
+  boton_acordeon.focus()
   boton_acordeon.setAttribute("tabindex",0)
+
 }
 
 class Accordion {
