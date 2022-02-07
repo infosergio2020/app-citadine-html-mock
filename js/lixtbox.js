@@ -80,6 +80,10 @@ class MenubarNavigation {
         var i, s;
         return t === this.lastMenuitem[e] ? i = this.firstMenuitem[e] : (s = this.menuitemGroups[e].indexOf(t), i = this.menuitemGroups[e][s + 1]), this.setFocusToMenuitem(e, i), i
     }
+    setFocusToNextMenuitemTab(e, t) {
+        var i, s;
+        return t === this.lastMenuitem[e] ? (this.openPopups = !1, this.setMenubarDataExpanded("false"),  i = this.firstMenuitem[e], this.setFocusToMenuitem(e, i), i, this.closePopup(n)) : (s = this.menuitemGroups[e].indexOf(t), i = this.menuitemGroups[e][s + 1]), this.setFocusToMenuitem(e, i), i
+    }
     setFocusByFirstCharacter(e, t, i) {
         var s, n;
         i = i.toLowerCase(), (s = this.menuitemGroups[e].indexOf(t) + 1) >= this.menuitemGroups[e].length && (s = 0), -1 === (n = this.getIndexFirstChars(e, s, i)) && (n = this.getIndexFirstChars(e, 0, i)), n > -1 && this.setFocusToMenuitem(e, this.menuitemGroups[e][n])
@@ -219,7 +223,13 @@ class MenubarNavigation {
                 this.setFocusToLastMenuitem(u, n), r = !0;
                 break;
             case "Tab":
-                this.openPopups = !1, this.setMenubarDataExpanded("false"), this.closePopup(n);
+                // this.openPopups = !1, this.setMenubarDataExpanded("false"), this.closePopup(n);
+                // break;
+                this.isMenuHorizontal(u) ? (s = this.setFocusToNextMenuitemTab(u, n), (this.isAnyPopupOpen() || this.isMenubarDataExpandedTrue()) && this.openPopup(u, s)) : this.hasPopup(n) ? (i = this.openPopup(u, n), this.setFocusToFirstMenuitem(i)) : (s = this.closePopout(n), t = this.getMenuId(s), s = this.setFocusToNextMenuitemTab(t, s), this.openPopup(t, s)), r = !0;
+                
+                    
+            
+
                 break;
             default:
                 this.isPrintableCharacter(o) && (this.setFocusByFirstCharacter(u, n, o), r = !0)

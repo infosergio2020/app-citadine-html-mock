@@ -63,9 +63,9 @@
         <button tabindex="0" class="boton__2 verde-4" aria-label="Presione enter para obtener mas informacion." id="logo">
           <img src="img/general/menu.svg" alt="Citadine brand">
         </button>
-        <nav class="header-container-nav-row" id="nav-id" aria-label="Barra de navegacion.">
+        <nav  class="header-container-nav-row" id="nav-id" aria-label="Barra de navegacion.">
 
-          <ul class="menubar-navigation" role="menubar" aria-label="Barra de navegacion.">
+          <ul tabindex="-1" class="menubar-navigation" role="menubar" aria-label="Barra de navegacion.">
             <!-- boton 1 -->
             <li role="none">
               <a tabindex="0" class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
@@ -289,7 +289,7 @@
         <section>
           <ul class="sidebar-body-ul" role="menu">
             <!-- NOTA: Las secciones no estan en la vista del PC -->
-            <a tabindex="-1" href="./menu-deslizante/sections.html">
+            <a id="tab-secciones" href="./menu-deslizante/sections.html">
               <li class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a las secciones">
                 <img class="wh-42" src="./img/general/menu-deslizante/secciones.png" alt="calendario-image">
@@ -297,7 +297,7 @@
                 <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
               </li>
             </a>
-            <a tabindex="-1" href="./menu-deslizante/anounce.html">
+            <a class="tab-novedades" tabindex="-1" href="./menu-deslizante/anounce.html">
               <li  class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a Announcements">
                 <img class="wh-42" src="./img/general/menu-deslizante/calendar.webp" alt="calendario-image">
@@ -344,8 +344,8 @@
       <div>
         <div class="main-card">
           <div class="main-card-body">
-            <img src="./img/portada/Republica_de_los_ninos-scaled.webp" alt="image republica de los niños" width="100%">
-            <div class="main-card-info generar_conciencia span">
+            <img tabindex="0" aria-labelledby="bienvenido" src="./img/portada/Republica_de_los_ninos-scaled.webp" alt="image republica de los niños" width="100%">
+            <div id="bienvenido" class="main-card-info generar_conciencia span">
               <div class="text__center">
                 <b>¡Bienvenido a la exhibición Generar <span>CON</span>CIENCIA</b>
                 <b> Experiencias y conocimientos sobre la Inundación de La Plata!</b>
@@ -378,8 +378,8 @@
       <div>
         <div class="main-card" style="background-color: #011b17d8;">
           <div class="main-card-body">
-            <img loading="lazy" src="img/portada/ayuda.webp" alt="imagen blog">
-            <div class="main-card-info no-padding txt_left">
+            <img tabindex="0" aria-labelledby="ayuda" loading="lazy" src="img/portada/ayuda.webp" alt="imagen blog">
+            <div id="ayuda" class="main-card-info no-padding txt_left">
               <h3>¡Ayuda! No sé por dónde empezar.</h3>
               <p>
                 Si quieres conocer más, pregúntale a nuestro asistente virtual que te dará una mano en tus inquietudes.

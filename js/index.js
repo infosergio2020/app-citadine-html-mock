@@ -8,6 +8,12 @@ window.addEventListener("DOMContentLoaded", () => {
 const toggleMenu = () => {
     document.getElementById("menuIcono").classList.toggle("active")
     document.getElementById("logo").classList.toggle("boton-active")
+    let tab_secciones=document.querySelector('#tab-secciones');
+    tab_secciones.setAttribute('tabindex', 0);
+    document.getElementById('#tab-secciones').focus();
+    
+    
+    console.log(tab_secciones)
 };
 
 // LIGHT GALLERY
