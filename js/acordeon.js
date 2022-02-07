@@ -6,6 +6,12 @@
  */
 
 'use strict';
+document.getElementById("accordion1id").addEventListener("click", () => openAcordeon());
+
+const openAcordeon = (e)=>{
+  let boton_acordeon=document.getElementById("amina-mas");
+  boton_acordeon.setAttribute("tabindex",0)
+}
 
 class Accordion {
   constructor(domNode) {
@@ -19,7 +25,7 @@ class Accordion {
 
     // add event listeners
     this.buttonEl.addEventListener('click', this.onButtonClick.bind(this));
-  }
+}
 
   onButtonClick() {
     this.toggle(!this.open);
@@ -36,6 +42,7 @@ class Accordion {
 
     // handle DOM updates
     this.buttonEl.setAttribute('aria-expanded', `${open}`);
+
     if (open) {
       this.contentEl.removeAttribute('hidden');
     } else {
@@ -46,6 +53,8 @@ class Accordion {
   // Add public open and close methods for convenience
   open() {
     this.toggle(true);
+
+
   }
 
   close() {

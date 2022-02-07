@@ -203,6 +203,7 @@ class MenubarNavigation {
                 this.isMenuHorizontal(u) ? this.hasPopup(n) && (this.openPopups = !0, i = this.openPopup(u, n), this.setFocusToLastMenuitem(i)) : this.setFocusToPreviousMenuitem(u, n), r = !0;
                 break;
             case "ArrowDown":
+    
             case "Down":
                 this.isMenuHorizontal(u) ? this.hasPopup(n) && (this.openPopups = !0, i = this.openPopup(u, n), this.setFocusToFirstMenuitem(i)) : this.setFocusToNextMenuitem(u, n), r = !0;
                 break;
