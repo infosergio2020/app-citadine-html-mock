@@ -3,8 +3,29 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("logo").addEventListener("click", () => toggleMenu()), 
     // document.getElementById("menuIcono").addEventListener("click", () => toggleMenu())
     document.getElementById("close-sideBar").addEventListener("click", () => toggleMenu())
+    document.getElementById("close-sideBar").addEventListener("keydown", (e) => onkey_tab(e))
+    // agregar manejador en evento press
+    // let lista = document.getElementsByClassName("sidebar-body-ul")[0].children;
+    // for (let i = 0; i < lista.length; i++) {   lista[i].addEventListener("onkeydown", () => onkey_tab())  }
 
 });
+const onkey_tab = (e)=>{
+    switch (e.keyCode) {
+        case 13:
+        case 27:
+            document.getElementsByClassName("sidebar-body-ul")[0].setAttribute("tabindex",-1);
+            document.getElementsByClassName("sidebar-body-ul")[0].blur();
+            toggleMenu();
+            break;
+        case 9:
+            document.getElementById("close-sideBar").blur();
+            document.getElementsByClassName("sidebar-body-ul")[0].setAttribute("tabindex",1);
+            document.getElementsByClassName("sidebar-body-ul")[0].focus();
+        default:
+            break;
+    }
+}
+
 const toggleMenu = () => {
     document.getElementById("menuIcono").classList.toggle("active")
     document.getElementById("logo").classList.toggle("boton-active")
@@ -16,25 +37,25 @@ const toggleMenu = () => {
 
 
     let lista=document.getElementsByClassName("sidebar-body-ul")[0].children;
-    if(lista[0].getAttribute('tabindex')==-1){
-        for (let i = 0; i < lista.length; i++) {
-            console.log(lista[i].getAttribute("tabindex"));
-            lista[i].setAttribute("tabindex",0);
-            document.getElementById('tab-secciones').focus();
-            console.log(lista[i].getAttribute("tabindex"));
-        }
-        
-    }
-    else{
-        for (let i = 0; i < lista.length; i++) {
-            console.log(lista[i].getAttribute("tabindex"));
+
+    for (let i = 0; i < lista.length; i++) {
+        aux = i+1;
+        if (lista[i].getAttribute("tabindex") == -1){
+            lista[i].setAttribute("tabindex", aux);
+        } else {
             lista[i].setAttribute("tabindex",-1);
-            document.getElementById('tab-secciones').blur();
-            console.log(lista[i].getAttribute("tabindex"));
         }
-        // tab_secciones.setAttribute('tabindex', -1);
-        // document.getElementById('tab-secciones').blur();
     }
+
+    if(lista[0].getAttribute('tabindex') != -1){
+        lista[0].focus();
+        document.getElementById("close-sideBar").setAttribute("tabindex",lista.length + 1);
+    } else{
+        document.getElementById("close-sideBar").setAttribute("tabindex", -1 );
+        document.getElementById("close-sideBar").blur();
+    }
+    
+
 
 };
 

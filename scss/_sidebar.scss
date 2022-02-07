@@ -88,7 +88,13 @@
     padding: 1rem;
 }
 
-.sidebar-link:hover{
+.sidebar-link:hover,.sidebar-link:focus, .sidebar-link:focus-within{
+    border-radius: 2rem;
+    background-color: #083d33;
+    border: 1px solid #cccbcb;
+}
+
+.sidebar-body-ul a:hover,.sidebar-body-ul a:focus, .sidebar-body-ul a:focus-within{
     border-radius: 2rem;
     background-color: #083d33;
     border: 1px solid #cccbcb;
