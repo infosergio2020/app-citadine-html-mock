@@ -47,6 +47,9 @@ class Accordion {
 
     if (open) {
       this.contentEl.removeAttribute('hidden');
+      console.log(this.contentEl.children[0].children[0].children);
+      // forzando el foco al parrafo
+      this.contentEl.children[0].children[0].children[0].focus();
     } else {
       this.contentEl.setAttribute('hidden', '');
     }

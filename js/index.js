@@ -8,6 +8,28 @@ window.addEventListener("DOMContentLoaded", () => {
     // let lista = document.getElementsByClassName("sidebar-body-ul")[0].children;
     // for (let i = 0; i < lista.length; i++) {   lista[i].addEventListener("onkeydown", () => onkey_tab())  }
 
+
+    // enfoque para la carga de secciones
+    if (document.getElementById("covid")){
+        document.getElementById("covid").focus();
+    }
+
+    if (document.getElementById("anounce")){
+        document.getElementById("anounce").focus();
+    }
+
+    if (document.getElementById("about")){
+        document.getElementById("about").focus();
+    }
+
+    if (document.getElementById("languaje")){
+        document.getElementById("languaje").focus();
+    }
+
+    if (document.getElementById("header")){
+        document.getElementById("header").focus();
+    }
+
 });
 const onkey_tab = (e)=>{
     switch (e.keyCode) {
