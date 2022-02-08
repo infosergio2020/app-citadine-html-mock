@@ -51,6 +51,7 @@ h4 {
 .curso {
   display: grid;
   padding: 3rem 0;
+  justify-items: center;
 }
 
 .curso::after{
