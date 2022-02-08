@@ -6,14 +6,14 @@
  */
 
 'use strict';
-document.getElementById("accordion1id").addEventListener("click", () => openAcordeon());
+// document.getElementsByClassName("accordion-trigger").addEventListener("click", () => openAcordeon());
 
-const openAcordeon = (e)=>{
-  let boton_acordeon=document.getElementById("amina-mas");
-  boton_acordeon.focus()
-  boton_acordeon.setAttribute("tabindex",0)
+// const openAcordeon = (e)=>{
+//   let boton_acordeon=document.getElementById("amina-mas");
+//   boton_acordeon.focus()
+//   boton_acordeon.setAttribute("tabindex",0)
 
-}
+// }
 
 class Accordion {
   constructor(domNode) {
