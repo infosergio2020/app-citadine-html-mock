@@ -345,14 +345,14 @@
   <main class="contenedor-testimonio">
   
             <div class="afiche__head">
-              <h3 class="centrar-texto text-shadow"> Known our testimonies: During the flood.</h3>
+              <h3 tabindex="0" class="centrar-texto text-shadow"> Known our testimonies: During the flood.</h3>
             </div>
 
                 <div class="curso">
                     <div class="curso__imagen">
                         <img class="img-testimonio"  src="img/section1/secciones/parte 2/1.webp" alt="Imagen de Amina Suarez">
                     </div>
-                    <div class="curso__informacion">
+                    <div tabindex="0" class="curso__informacion">
                         <h4 class="no-margin">Amina Suarez</h4>
                         <p class="curso__label">Edad: 
                             <span class="curso__info">En la inundación tenía 12 años.</span>
@@ -369,7 +369,7 @@
 
                           <div  class="accordion">
                             
-                              <button type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Amina Suarez." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect1" id="accordion1id">
+                              <button tabindex="0" type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Amina Suarez." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect1" aria-labelledby="accordion1id">
                                 <span class="accordion-title">
                                   Conocer más sobre el testimonio de Amina Suarez
                                   <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
@@ -378,10 +378,11 @@
                                 </span>
                               </button>
                             
-                            <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
+                            <div id="sect1" role="region" id="accordion1id" class="accordion-panel"  aria-label="boton expandido." hidden>
                               <div>
                                 <!-- Variable content within section, may include any type of markup or interactive widgets. -->
-                                <fieldset>
+                                <fieldset >
+                                  <div tabindex="0">
                                     <p class="curso__descripcion"> “Recuerdo que la calle 9 era un arroyo, tenía corriente y todo”. “Los autos se fueron con el agua”. 
                                     “En medio de la noche escuchamos una chica gritando. Estaba agarrada de un  árbol de la calle de enfrente. Sale nuestro vecino con un kayak a rescatar a esta chica y cuando llega a la esquina para auxiliarla, ¡se lo lleva la corriente!. Al otro día, vimos al kayak todo destruido. El vecino por suerte estaba vivo. No le pasó nada.”
                                     </p>
@@ -402,7 +403,9 @@
                                         “Me importaba también los álbumes de fotos, tal vez recuerdos de mis abuelos, ropa, no sé, algún colchón. Bueno, la televisión, todas cosas muy materiales”. 
                                         “También había una preocupación por los que estaban ahí conmigo y por los que no”. “Tengo una amiga que vive a una cuadra. Por suerte estaba bien, pero yo en ese momento no sabía cómo estaba”. “Tal vez en ese momento no era tan conciente de la situación que estaba viviendo. Sí fui más conciente en el después”.  
                                         
-                                    </p>                                
+                                    </p> 
+                                  </div>
+                                                               
                                 </fieldset>
                               </div>
                             </div>
@@ -417,7 +420,7 @@
                     <div class="curso__imagen">
                         <img class="img-testimonio" src="img/section1/secciones/parte 2/2.png" alt="Imagen de Alejandro Fernandez">
                     </div>
-                    <div class="curso__informacion">
+                    <div tabindex="0" class="curso__informacion">
                         <h4 class="no-margin">Alejandro Fernandez</h4>
                         <p class="curso__label">Edad: 
                             <span class="curso__info">26 años.</span>
@@ -437,7 +440,7 @@
 
                          <div  class="accordion">
                             
-                          <button type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Alejandro Fernandez." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect2" id="accordion1id">
+                          <button tabindex="0" type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Alejandro Fernandez." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect2" aria-labelledby="accordion1id">
                             <span class="accordion-title">
                               Conocer más sobre el testimonio de Alejandro Fernandez
                               <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
@@ -446,10 +449,11 @@
                             </span>
                           </button>
                         
-                        <div id="sect2" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
+                        <div id="sect2" role="region" id="accordion1id" class="accordion-panel"  aria-label="boton expandido." hidden>
                           <div>
                             <!-- Variable content within section, may include any type of markup or interactive widgets. -->
-                            <fieldset>
+                            <fieldset >
+                              <div tabindex="0">
                               <p class="curso__descripcion">
                                 “Era toda una situación difícil. Las horas transcurrían y no amainaba. Cada vez era peor. Donde había 1,40 o 1,60 metros de agua, a la hora, ¡¡ya había 2 metros!!”.                             
                                 “La correntada era tan fuerte que el bote no avanzaba por el peso que tenía. Veníamos 12 personas y mi embarcación es para 6. Encima, se enreda un cable en la hélice del bote y se para el motor. ¡Se para!”. 
@@ -482,7 +486,8 @@
                                 _No, loco, vos me vas a dejar, no venís más. ¡Lleváte mis hijos, lleváte a mis hijos!, yo ya estoy hecho. Aunque no te conozca, si te los llevás van a estar vivos”. 
                                 “Fui a mi casa, agarré las herramientas y volví. Saqué a todos”.
                                   
-                              </p>                              
+                              </p>  
+                            </div>                            
                             </fieldset>
                           </div>
                         </div>
@@ -498,7 +503,7 @@
                     <div class="curso__imagen">
                         <img class="img-testimonio" src="img/section1/secciones/parte 2/3.png" alt="Imagen de Romina Carrozas">
                     </div>
-                    <div class="curso__informacion">
+                    <div tabindex="0" class="curso__informacion">
                         <h4 class="no-margin">Romina Carrozas</h4>
                         <p class="curso__label">Edad: 
                             <span class="curso__info">30 años.</span>
@@ -519,7 +524,7 @@
 
                           <div  class="accordion">
                             
-                            <button type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Romina Carrozas." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect3" id="accordion1id">
+                            <button tabindex="0" type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Romina Carrozas." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect3" aria-labelledby="accordion1id">
                               <span class="accordion-title">
                                 Conocer más sobre el testimonio de Romina Carrozas
                                 <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
@@ -528,10 +533,11 @@
                               </span>
                             </button>
                           
-                          <div id="sect3" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
+                          <div id="sect3" role="region" id="accordion1id" class="accordion-panel"  aria-label="boton expandido." hidden>
                             <div>
                               <!-- Variable content within section, may include any type of markup or interactive widgets. -->
-                              <fieldset>
+                              <fieldset >
+                                <div tabindex="0">
                                 <p class="curso__descripcion">
                                     “Ellos me sostenían y yo llorando porque parecía que iba a tener al bebé en el agua”. “Me agarraban contracciones y tenía miedo”. 
                                     “Estaba nerviosa, parecía que nos íbamos a morir”.
@@ -552,7 +558,8 @@
                                 <p class="curso__descripcion">
                                     “Pero esa noche fue horrible porque veía cómo la gente se subía arriba de los techos, con las criaturas, se tapaban con lonas”. 
                                     “Gritaba la gente”. “…Y no apareció nadie a ayudar, para socorrer a la gente”. 
-                                </p>                           
+                                </p>   
+                              </div>                        
                               </fieldset>
                             </div>
                           </div>
@@ -565,7 +572,7 @@
                     <div class="curso__imagen">
                         <img class="img-testimonio" src="img/section1/secciones/parte 2/4.png" alt="Imagen de Silvia Rivas">
                     </div>
-                    <div class="curso__informacion">
+                    <div tabindex="0" class="curso__informacion">
                         <h4 class="no-margin">Silvia Rivas</h4>
                         <p class="curso__label">Edad: 
                             <span class="curso__info">6 años.</span>
@@ -587,7 +594,7 @@
 
                         <div  class="accordion">
                             
-                          <button type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Silvia Rivas." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect4" id="accordion1id">
+                          <button tabindex="0" type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Silvia Rivas." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect4" aria-labelledby="accordion1id">
                             <span class="accordion-title">
                               Conocer más sobre el testimonio de Silvia Rivas
                               <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
@@ -596,10 +603,11 @@
                             </span>
                           </button>
                         
-                        <div id="sect4" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
+                        <div id="sect4" role="region" id="accordion1id" class="accordion-panel"  aria-label="boton expandido." hidden>
                           <div>
                             <!-- Variable content within section, may include any type of markup or interactive widgets. -->
-                            <fieldset>
+                            <fieldset >
+                              <div tabindex="0">
                                 <p class="curso__descripcion">
                                 “Eran las 8 horas y pico de la noche. Ya el agua me daba al hombro. Fui al dormitorio y estaba el colchón de la cama flotando, con mis dos perritos arriba. Los bajamos, uno cada uno. Me puse el celular en el hombro y nos fuimos arriba del techo”.
  
@@ -627,7 +635,8 @@
                                     “Al frente de mi casa había un señor acostado por un postoperatorio. Se le cayó una pared encima…”
                                     “Y… ocho personas más. Toda gente conocida. Los veíamos habitualmente”.
                                     “Nuestra zona fue bastante castigada”.  
-                                </p>                           
+                                </p>  
+                              </div>                         
                             </fieldset>
                           </div>
                         </div>
@@ -639,7 +648,7 @@
             
         <!-- End Tap Target Structure -->
         <div class="main-container-boton">
-          <a class="boton verde-4" onclick="history.back()">
+          <a tabindex="0" aria-label="Botón para volver atrás." class="boton verde-4" onclick="history.back()">
               <div class="boton-info">
                   <p>Go back</p> <img src="img/general/backArrow.svg" alt="backArrow">
               </div>

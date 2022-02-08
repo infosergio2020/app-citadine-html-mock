@@ -349,11 +349,11 @@
         <div class="main-card">
           <div class="main-card-body">
             <div class="afiche__head">
-                <h3 class="centrar-texto">The news of the day</h3>
+                <h3 tabindex="0" class="centrar-texto">The news of the day</h3>
             </div>
             <div class="contenedor-video">
                 <div class="px-video-container" id="myvid">
-                    <div class="px-video-img-captions-container">
+                    <div tabindex="0" aria-label="Este es el reproductor de video." class="px-video-img-captions-container">
                         <div class="px-video-captions hide" aria-hidden="true"></div>
                         <video width="640" height="360" poster="media/foo.jpg" controls>
                             <!-- video files -->
@@ -373,8 +373,8 @@
                     <div class="px-video-controls"></div>
                 </div>
                 <!-- detalles del video -->
-                <div class="video__informacion">
-                    <h4 class="no-margin"><span>
+                <div tabindex="0" class="video__informacion">
+                    <h4  class="no-margin"><span>
                         Video detail:
                     </span> </h4>
                     
@@ -390,7 +390,7 @@
       
         <!-- End Tap Target Structure -->
         <div class="main-container-boton">
-          <a class="boton verde-4" onclick="history.back()">
+          <a tabindex="0" aria-label="Botón para volver atrás." class="boton verde-4" onclick="history.back()">
               <div class="boton-info">
                   <p>Go back</p> <img src="img/general/backArrow.svg" alt="backArrow">
               </div>

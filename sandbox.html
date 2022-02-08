@@ -350,9 +350,9 @@
         <div class="main-card">
           <div class="main-card-body">
             <div class="afiche__head">
-              <h3 class="centrar-texto">Sandbox</h3>
+              <h3 tabindex="0" class="centrar-texto">Sandbox</h3>
             </div>
-            <div class="contenedor-video">
+            <div tabindex="0" aria-label="Reproductor de video" class="contenedor-video">
                 <div class="px-video-container" id="myvid">
                     <iframe width="100%" 
                                 height="100%" 
@@ -364,7 +364,7 @@
                     </iframe>
                 </div>
                 <!-- detalles del video -->
-                <div class="video__informacion">
+                <div tabindex="0" class="video__informacion">
                     <h4 class="no-margin"><span>
                         Video detail:
                     </span> </h4>
@@ -385,7 +385,7 @@
       
         <!-- End Tap Target Structure -->
         <div class="main-container-boton">
-          <a class="boton verde-4" onclick="history.back()">
+          <a tabindex="0" aria-label="Botón para volver atrás." class="boton verde-4" onclick="history.back()">
               <div class="boton-info">
                   <p>Go back</p> <img src="img/general/backArrow.svg" alt="backArrow">
               </div>
