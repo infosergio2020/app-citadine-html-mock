@@ -16,6 +16,15 @@
     right: 0;
 }
 
+.go-up {
+    padding: 1rem 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .link__skip--item a:focus-within{
     top: 0;
 }
