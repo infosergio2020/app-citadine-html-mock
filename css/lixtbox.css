@@ -7,7 +7,7 @@
 
 .navegacion__enlace--info{
   display: flex;
-  align-items: center;
+  align-items: center; 
 }
 
 .navegacion__enlace--info p {
@@ -18,12 +18,14 @@
 .menubar-navigation {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 43px;
 }
 
 
 @media (min-width: 768px){
   .menubar-navigation {
     display: flex;
+    margin: 0!important;
   }
 }
 
@@ -143,7 +145,6 @@
   outline: none;
   background-color: #003D33;
   color: #fff;
-  border: none;
 }
 
 
@@ -186,4 +187,5 @@
   /* border: 2px solid red; */
   padding: .5rem;
   height: fit-content;
+  margin: 0 auto;
 }
