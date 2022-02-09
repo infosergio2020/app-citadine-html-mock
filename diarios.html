@@ -349,7 +349,7 @@
                 </div>
                 <div class="main-card-info">    
                     <div class="card-container">
-                        <div class="card blue__grad-1" tabindex="2" aria-labelledby="diario-1">
+                        <div class="card blue__grad-1" tabindex="2" aria-labelledby="diario el dia" alt="Tapa del diario El Dia">
                             <!-- <img src="./img/diarios/tapas/EL-DIA.png" alt=""> -->
                             <!-- <div class="card__info">
                                 <h3>Diario - 1</h3>
@@ -358,7 +358,7 @@
                                 <button onclick="window.location.href='https://www.eldia.com/nota/2013-4-3--el-agua-ya-esta-en-un-metro-y-medio-por-favor-que-alguien-nos-mande-botes'" class="button__custom--fit verde-1"> El Día</button>
                             </div>
                         </div>
-                        <div class="card blue__grad-2" tabindex="4" aria-labelledby="diario-2">
+                        <div class="card blue__grad-2" tabindex="4" aria-labelledby="diario hoy" alt="Tapa del diario Hoy">
                             <!-- <img src="./img/diarios/Hoy_logo.png" alt="">
                             <div class="card__info">
                                 <h3>Diario - 1</h3>
@@ -372,7 +372,7 @@
                                 <button onclick="window.location.href='https://diariohoy.net/adjuntos/archivos/000/024/0000024100.pdf'" class="button__custom--fit verde-1"> Hoy</button>
                             </div>
                         </div>
-                        <div class="card blue__grad-3" tabindex="6" aria-labelledby="diario-3">
+                        <div class="card blue__grad-3" tabindex="6" aria-labelledby="diario Clarín" alt="Tapa del diario Clarin">
                             <!-- <img src="./img/diarios/Diagoanles_logo.png" alt="">
                             <div class="card__info">
                                 <h3>Diario - 1</h3>
@@ -386,7 +386,7 @@
                                 <button onclick="window.location.href='https://www.clarin.com/ciudades/critica-situacion-plata-cientos-evacuados_0_S19zAYFiDXg.html'" class="button__custom--fit verde-1"> Clarín</button>
                             </div>
                         </div>
-                        <div class="card blue__grad-4" tabindex="8" aria-labelledby="diario-4">
+                        <div class="card blue__grad-4" tabindex="8" aria-labelledby="diario La Nación" alt="Tapa del diario La Nación">
                             <!-- <img src="./img/diarios/pregon_logo.jpg" alt="">
                             <div class="card__info">
                                 <h3>Diario - 1</h3>
@@ -404,16 +404,16 @@
                     </div>
                     <div class="card-container hide_btn">
                         <div class="button__container">
-                            <button onclick="window.location.href='https://www.eldia.com/nota/2013-4-3--el-agua-ya-esta-en-un-metro-y-medio-por-favor-que-alguien-nos-mande-botes'" tabindex="3" class="button__custom--fit verde-1" id="diario-1"> El Día </button>
+                            <button role="button" aria-label="Acceda al diario El Dia" onclick="window.location.href='https://www.eldia.com/nota/2013-4-3--el-agua-ya-esta-en-un-metro-y-medio-por-favor-que-alguien-nos-mande-botes'" tabindex="3" class="button__custom--fit verde-1" id="diario-1"> El Día </button>
                         </div>
                         <div class="button__container">
-                            <button onclick="window.location.href='https://diariohoy.net/adjuntos/archivos/000/024/0000024100.pdf'" tabindex="5" class="button__custom--fit verde-1" id="diario-2"> Hoy </button>
+                            <button role="button" aria-label="Acceda al diario Hoy" onclick="window.location.href='https://diariohoy.net/adjuntos/archivos/000/024/0000024100.pdf'" tabindex="5" class="button__custom--fit verde-1" id="diario-2"> Hoy </button>
                         </div>
                         <div class="button__container">
-                            <button onclick="window.location.href='https://www.clarin.com/ciudades/critica-situacion-plata-cientos-evacuados_0_S19zAYFiDXg.html'" tabindex="7" class="button__custom--fit verde-1" id="diario-3"> Clarín </button>
+                            <button role="button" aria-label="Acceda al diario Clarin" onclick="window.location.href='https://www.clarin.com/ciudades/critica-situacion-plata-cientos-evacuados_0_S19zAYFiDXg.html'" tabindex="7" class="button__custom--fit verde-1" id="diario-3"> Clarín </button>
                         </div>
                         <div class="button__container">
-                            <button onclick="window.location.href='https://es.kiosko.net/ar/2013-04-03/np/nacion.html'" tabindex="9" class="button__custom--fit verde-1" id="diario-4"> La Nación </button>
+                            <button role="button" aria-label="Acceda al diario La Nación" onclick="window.location.href='https://es.kiosko.net/ar/2013-04-03/np/nacion.html'" tabindex="9" class="button__custom--fit verde-1" id="diario-4"> La Nación </button>
                         </div>
                     </div>
                 </div>
@@ -421,7 +421,7 @@
       </div>
 
     </div>
-    <div class="main-container-boton">
+    <div role="button" class="main-container-boton">
       <a tabindex="10" aria-label="Botón para volver atrás." class="boton verde-4" onclick="history.back()">
         <div class="boton-info">
           <p>Go back</p> <img src="img/general/backArrow.svg" alt="backArrow">
