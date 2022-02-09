@@ -268,14 +268,14 @@
   <div class="menu-deslizante-realtivo">
     <div id="menuIcono" class="sideBar">
       <div class="sideBar-header">
-        <img class="boton-close " tabindex="0" id="close-sideBar" src="../img/general/circle-x.svg" alt="haga click, o presione enter para cerrar el sidebar.">
+        <img class="boton-close "  id="close-sideBar" src="../img/general/circle-x.svg" alt="haga click, o presione enter para cerrar el sidebar.">
         <div class="sideBar-img" aria-labelledby="posts-heading">
-          <img src="../img/general/flooded-house.png" alt="expo citadine logo">
+          <img src="../../img/general/flooded-house.png" alt="expo citadine logo">
           <!-- <a href="/"><img src="./img/general/menu-deslizante/technical-support.png" alt="expo citadine logo"></a> -->
           <!-- <a href="/"><img src="./img/general/menu-deslizante/options.png" alt="expo citadine logo"></a> -->
           <!-- <a href="/"><img src="./img/general/menu-deslizante/choose.png" alt="expo citadine logo"></a> -->
         </div>
-        <div class="sideBar-info header__img__h4" tabindex="0" id="posts-heading">
+        <div class="sideBar-info header__img__h4"  id="posts-heading">
           <h4>Elija una <span >op</span>ción</h4>
           <p>Descubra más del evento.</p>
         </div>
@@ -284,32 +284,40 @@
         <section>
           <ul class="sidebar-body-ul" role="menu">
             <!-- NOTA: Las secciones no estan en la vista del PC -->
-            <a href="../menu-deslizante/anounce.html">
-              <li tabindex="0" class="sidebar-link" role="menuitem"
+            <a tabindex="-1" id="tab-secciones" href="../menu-deslizante/sections.html">
+              <li class="sidebar-link" role="menuitem"
+                aria-label="Estas dentro del menu deslizante. Haga click si decea entrar a las secciones">
+                <img class="wh-42" src="../img/general/menu-deslizante/secciones.png" alt="calendario-image">
+                <p class="no-margin">sections</p>
+                <img class="wh-42" src="../img/general/menu-deslizante/arrow.png" alt="flecha-image">
+              </li>
+            </a>
+            <a tabindex="-1" id="tab-novedades" href="../menu-deslizante/anounce.html">
+              <li  class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a Announcements">
                 <img class="wh-42" src="../img/general/menu-deslizante/calendar.webp" alt="calendario-image">
                 <p class="no-margin">Announcements</p>
                 <img class="wh-42" src="../img/general/menu-deslizante/arrow.png" alt="flecha-image">
               </li>
             </a>
-            <a href="../menu-deslizante/covid.html">
-              <li tabindex="0" class="sidebar-link" role="menuitem"
+            <a tabindex="-1" id="tab-covid" href="../menu-deslizante/covid.html">
+              <li  class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a COVID protocols">
                 <img class="wh-42" src="../img/general/menu-deslizante/virus.webp" alt="virus-image">
                 <p class="no-margin">COVID protocols </p>
                 <img class="wh-42" src="../img/general/menu-deslizante/arrow.png" alt="flecha-image">
               </li>
             </a>
-            <a href="../menu-deslizante/about.html">
-              <li tabindex="0" class="sidebar-link" role="menuitem"
+            <a tabindex="-1" href="../menu-deslizante/about.html">
+              <li  class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a hacerca de citadine">
                 <img class="wh-42" src="../img/general/menu-deslizante/Citadine.webp" alt="informacion-image">
                 <p class="no-margin">About Citadine </p>
                 <img class="wh-42" src="../img/general/menu-deslizante/arrow.png" alt="flecha-image">
               </li>
             </a>
-            <a href="../menu-deslizante/languaje.html">
-              <li tabindex="0" class="sidebar-link" role="menuitem"
+            <a tabindex="-1" href="../menu-deslizante/languaje.html">
+              <li  class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a hacerca de citadine">
                 <img class="wh-42" src="../img/general/menu-deslizante/languages.webp" alt="lenguajes-image">
                 <p class="no-margin">Languajes </p>
@@ -328,11 +336,11 @@
       <div class="main-card">
         <div class="main-card-body">
           <div class="afiche__head">
-            <h3 class="centrar-texto text-shadow"> TSUNAMI CHILE 2010.</h3>
+            <h3 tabindex="0" class="centrar-texto text-shadow"> TSUNAMI CHILE 2010.</h3>
           </div>
 
           <div class="grid__container">
-            <div class="grid__columna">
+            <div tabindex="0" class="grid__columna">
               <h4> ¿Qué es un tsunami y cómo se genera? </h4>
               <div class="grid__texto">
                 <p>
@@ -357,7 +365,7 @@
                 </p>
               </div>
               <div class="grid__image">
-                <img src="../img/afiches/chile-1.jpg" alt="imagen de desatre en chile 1, edificios destruidos."
+                <img role="img" aria-label="imagen de desatre en chile 1, edificios destruidos." src="../img/afiches/chile-1.jpg" alt="imagen de desatre en chile 1, edificios destruidos."
                   title="Fotos: Globovisión, Flickr, CC BY-NC 2.0">
                 <small>Fotos: Globovisión, Flickr, CC BY-NC 2.0</small>
               </div>
@@ -379,7 +387,7 @@
             </div>
             <!-- Fin columna-1 -->
 
-            <div class="grid__columna">
+            <div tabindex="0" class="grid__columna">
               <div class="grid__texto">
                 <h4>¿Qué pasó en Chile en ese momento?</h4>
                 <p>
@@ -390,7 +398,7 @@
               </div>
 
               <div class="grid__image">
-                <img src="../img/afiches/chile-3.jpg" alt="">
+                <img role="img" aria-label="imagen de desatre en chile 1, edificios destruidos." alt="" src="../img/afiches/chile-3.jpg" alt="">
                 <small>Foto: Alagos, Flickr, CC BY-NC-SA 2.0</small>
               </div>
               <!-- imagen-2 -->
@@ -418,7 +426,7 @@
               </div>
 
               <div class="grid__image">
-                <img src="../img/afiches/chile-4.png" alt="">
+                <img role="img" aria-label="imagen de desatre en chile 1, edificios destruidos." src="../img/afiches/chile-4.png" alt="">
                 <small>Foto: Globovisión, Flickr, CC BY-NC 2.0</small>
               </div>
               <!-- imagen-3 -->
@@ -441,12 +449,13 @@
       </div>
     </div>
     <!-- End Tap Target Structure -->
-    <div class="main-container-boton">
-      <a class="boton verde-4" onclick="history.back()">
+    <div class="main-container-boton tooltip">
+      <a role="button" tabindex="0" aria-label="Volver atrás." class="boton verde-4" onclick="history.back()">
         <div class="boton-info">
           <p>Go back</p> <img src="../img/general/backArrow.svg" alt="backArrow">
         </div>
       </a>
+      <span class="tooltiptext">Botón volver atrás.</span>
     </div>
   </main>
   <!-- footer -->
