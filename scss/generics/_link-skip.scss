@@ -1,0 +1,21 @@
+.link__skip{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    top: 0;
+    left: 0;
+}
+
+.link__skip--item a{
+    position: absolute;
+    color: white;
+    background-color: black;
+    padding: .5rem;
+    top: -3em;
+    right: 0;
+}
+
+.link__skip--item a:focus-within{
+    top: 0;
+}
