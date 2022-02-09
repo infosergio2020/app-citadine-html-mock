@@ -343,7 +343,7 @@
     <main>
         <div class="main-card">
             <div class="main-card-body">               
-                <div class="afiche__head">
+                <div id="afiche-header" class="afiche__head">
                     <h3 class="centrar-texto">Conclusiones del evento</h3>
                 </div>
                 <div class="main-card-info">
@@ -389,16 +389,16 @@
                     </div>
                     <div class="card-container hide_btn">
                         <div class="button__container">
-                            <a href="conclusion-del-evento/la-importancia-de-la-solidaridad.html" tabindex="2" class="button__custom--fit verde-1" id="diario-1"> La importancia de la soliradidad. </a>
+                            <a role="button" href="conclusion-del-evento/la-importancia-de-la-solidaridad.html" tabindex="2" class="button__custom--fit verde-1" id="diario-1"> La importancia de la soliradidad. </a>
                         </div>
                         <div class="button__container">
-                            <a href="conclusion-del-evento/reflexiones-de-los-entrevistados.html" tabindex="4" class="button__custom--fit verde-1" id="diario-2"> Reflexiones de los entrevistados. </a>
+                            <a role="button" href="conclusion-del-evento/reflexiones-de-los-entrevistados.html" tabindex="4" class="button__custom--fit verde-1" id="diario-2"> Reflexiones de los entrevistados. </a>
                         </div>
                         <div class="button__container">
-                            <a href="conclusion-del-evento/legado-memoria.html" tabindex="6" class="button__custom--fit verde-1" id="diario-3"> El legado de la memoria. </a>
+                            <a role="button" href="conclusion-del-evento/legado-memoria.html" tabindex="6" class="button__custom--fit verde-1" id="diario-3"> El legado de la memoria. </a>
                         </div>
                         <div class="button__container">
-                          <a href="conclusion-del-evento/la-ayuda-de-la-radio.html" tabindex="6" class="button__custom--fit verde-1" id="diario-3"> La ayuda de la radio. </a>
+                          <a role="button" href="conclusion-del-evento/la-ayuda-de-la-radio.html" tabindex="6" class="button__custom--fit verde-1" id="diario-3"> La ayuda de la radio. </a>
                         </div>
                         
                     </div>
@@ -407,6 +407,12 @@
       </div>
 
     </div>
+    <!-- boton para ir arriba -->
+    <div class="go-up">
+      <a role="button" tabindex="0" aria-label="Regresar al encabezado."  alt="Botón para regresar al encabezado." href="#afiche-header">
+          <img loading="lazy" src="../img/general/arrow-up.svg"  alt="imagen del botón para regresar al encabezado.">
+      </a>
+    </div>    
     <div class="main-container-boton">
       <a role="button" tabindex="0" aria-label="Botón para volver atrás."  class="boton verde-4" onclick="history.back()">
         <div class="boton-info">

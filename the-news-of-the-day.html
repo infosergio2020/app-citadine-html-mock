@@ -348,7 +348,7 @@
    
         <div class="main-card">
           <div class="main-card-body">
-            <div class="afiche__head">
+            <div id="afiche-header" class="afiche__head">
                 <h3 tabindex="0" class="centrar-texto">The news of the day</h3>
             </div>
             <div class="contenedor-video">
@@ -388,6 +388,12 @@
         
 
       
+        <!-- boton para ir arriba -->
+        <div class="go-up">
+          <a role="button" tabindex="0" aria-label="Regresar al encabezado."  alt="Botón para regresar al encabezado." href="#afiche-header">
+              <img loading="lazy" src="../img/general/arrow-up.svg"  alt="imagen del botón para regresar al encabezado.">
+          </a>
+        </div>    
         <!-- End Tap Target Structure -->
         <div role="button" class="main-container-boton">
           <a tabindex="0" aria-label="Botón para volver atrás." class="boton verde-4" onclick="history.back()">
