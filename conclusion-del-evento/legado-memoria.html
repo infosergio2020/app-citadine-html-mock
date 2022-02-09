@@ -283,14 +283,14 @@
   <div class="menu-deslizante-realtivo">
     <div id="menuIcono" class="sideBar">
       <div class="sideBar-header">
-        <img class="boton-close " tabindex="0" id="close-sideBar" src="../img/general/circle-x.svg" alt="haga click, o presione enter para cerrar el sidebar.">
+        <img class="boton-close "  id="close-sideBar" src="../img/general/circle-x.svg" alt="haga click, o presione enter para cerrar el sidebar.">
         <div class="sideBar-img" aria-labelledby="posts-heading">
-          <img src="../img/general/flooded-house.png" alt="expo citadine logo">
+          <img src="../../img/general/flooded-house.png" alt="expo citadine logo">
           <!-- <a href="/"><img src="./img/general/menu-deslizante/technical-support.png" alt="expo citadine logo"></a> -->
           <!-- <a href="/"><img src="./img/general/menu-deslizante/options.png" alt="expo citadine logo"></a> -->
           <!-- <a href="/"><img src="./img/general/menu-deslizante/choose.png" alt="expo citadine logo"></a> -->
         </div>
-        <div class="sideBar-info header__img__h4" tabindex="0" id="posts-heading">
+        <div class="sideBar-info header__img__h4"  id="posts-heading">
           <h4>Elija una <span >op</span>ción</h4>
           <p>Descubra más del evento.</p>
         </div>
@@ -299,32 +299,40 @@
         <section>
           <ul class="sidebar-body-ul" role="menu">
             <!-- NOTA: Las secciones no estan en la vista del PC -->
-            <a href="../menu-deslizante/anounce.html">
-              <li tabindex="0" class="sidebar-link" role="menuitem"
+            <a tabindex="-1" id="tab-secciones" href="../menu-deslizante/sections.html">
+              <li class="sidebar-link" role="menuitem"
+                aria-label="Estas dentro del menu deslizante. Haga click si decea entrar a las secciones">
+                <img class="wh-42" src="../img/general/menu-deslizante/secciones.png" alt="calendario-image">
+                <p class="no-margin">sections</p>
+                <img class="wh-42" src="../img/general/menu-deslizante/arrow.png" alt="flecha-image">
+              </li>
+            </a>
+            <a tabindex="-1" id="tab-novedades" href="../menu-deslizante/anounce.html">
+              <li  class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a Announcements">
                 <img class="wh-42" src="../img/general/menu-deslizante/calendar.webp" alt="calendario-image">
                 <p class="no-margin">Announcements</p>
                 <img class="wh-42" src="../img/general/menu-deslizante/arrow.png" alt="flecha-image">
               </li>
             </a>
-            <a href="../menu-deslizante/covid.html">
-              <li tabindex="0" class="sidebar-link" role="menuitem"
+            <a tabindex="-1" id="tab-covid" href="../menu-deslizante/covid.html">
+              <li  class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a COVID protocols">
                 <img class="wh-42" src="../img/general/menu-deslizante/virus.webp" alt="virus-image">
                 <p class="no-margin">COVID protocols </p>
                 <img class="wh-42" src="../img/general/menu-deslizante/arrow.png" alt="flecha-image">
               </li>
             </a>
-            <a href="../menu-deslizante/about.html">
-              <li tabindex="0" class="sidebar-link" role="menuitem"
+            <a tabindex="-1" href="../menu-deslizante/about.html">
+              <li  class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a hacerca de citadine">
                 <img class="wh-42" src="../img/general/menu-deslizante/Citadine.webp" alt="informacion-image">
                 <p class="no-margin">About Citadine </p>
                 <img class="wh-42" src="../img/general/menu-deslizante/arrow.png" alt="flecha-image">
               </li>
             </a>
-            <a href="../menu-deslizante/languaje.html">
-              <li tabindex="0" class="sidebar-link" role="menuitem"
+            <a tabindex="-1" href="../menu-deslizante/languaje.html">
+              <li  class="sidebar-link" role="menuitem"
                 aria-label="haga click si decea entrar a hacerca de citadine">
                 <img class="wh-42" src="../img/general/menu-deslizante/languages.webp" alt="lenguajes-image">
                 <p class="no-margin">Languajes </p>
@@ -336,20 +344,19 @@
       </div>
     </div>
   </div>
-    
   
   <!-- Contenedor del testimonio -->
   <main class="contenedor-testimonio">
 
     <div id="afiche-header" class="afiche__head">
-      <h3 class="centrar-texto text-shadow"> 
+      <h3 tabindex="0" class="centrar-texto text-shadow"> 
         El legado de la memoria.
         
       </h3>
     </div>
     
     <!-- segundo componente -->
-     <div class="flex__container-column">
+     <div tabindex="0" class="flex__container-column">
         <div class="grid__texto">
             
             <div class="flex__container2">
@@ -363,7 +370,7 @@
         </div>
      </div>
     <!-- tercer componente  -->
-    <div class="grid__container">
+    <div tabindex="0" class="grid__container">
         <div class="grid__columna">
           <div class="grid__texto">
             <hr class="mg-top">
@@ -378,14 +385,14 @@
         </div>
         <div class="grid__columna grid__image">
           <div class="grid__image small caja5">
-            <img src="../img/afiches/memoria-Imagen1.png" alt="">
+            <img role="img" aria-label="Imagen." alt="Imagen ." src="../img/afiches/memoria-Imagen1.png">
             <small class="contenedor__text">Foto: Alagos, Flickr, CC BY-NC-SA 2.0</small>
           </div>
         </div>
    </div>
      
   <!-- columna 1 -->
-  <div class="grid__container">
+  <div tabindex="0" class="grid__container">
       <div class="grid__columna">
         <div class="grid__texto">
           <hr class="mg-top">
@@ -400,7 +407,7 @@
 
         <div class="grid__columna grid__image">
           <div class="grid__image small caja5">
-            <img src="../img/afiches/memoria-Imagen2.png" alt="">
+            <img role="img" aria-label="Imagen." alt="Imagen ." src="../img/afiches/memoria-Imagen2.png">
             <small class="contenedor__text">
               <a href="https://www.24con.com/nota/96150-instalaron-un-monumento-porlos-inundados/">
                 Foto: publicada en 24CN conurbano
@@ -413,7 +420,7 @@
   
   <!-- columna 2 -->
   <!-- <div class="grid__container"> -->
-    <div class="grid__columna">
+    <div tabindex="0" class="grid__columna">
       
     <div class="grid__texto">
       <hr class="mg-top">
@@ -427,7 +434,7 @@
 
     <div class="grid__columna grid__image">
         <div class="grid__image small">
-            <img src="../img/afiches/2413.png" alt="">
+            <img role="img" aria-label="Imagen." alt="Imagen ." src="../img/afiches/2413.png">
             <small class="contenedor__text">
             <a href="https://agenciadelacalle.com/2017/11/08/se-entregaran-los-premios-del-concurso-de-cortos-sobre-la-inundacion-2013/">
               Foto: Agencia de La Calle - Periodismo ciudadano para el desarrollo sustentable. 
@@ -440,7 +447,7 @@
     <!-- imagen-3 -->
       <!-- Fin columna-2 -->
     </div>
-  <div class="grid__container__3">
+  <div tabindex="0" class="grid__container__3">
     <div class="grid__texto">
       <hr class="mg-top">
       <h4>Expresiones culturales</h4>
@@ -455,7 +462,7 @@
     </div>
     <div class="grid__columna grid__image mg-bottom">
         <div class="grid__image small">
-            <img src="../img/afiches/memoria-Imagen4.jpg" alt="">
+            <img role="img" aria-label="Imagen." alt="Imagen ." src="../img/afiches/memoria-Imagen4.jpg">
             <small class="contenedor__text">
               <a href="https://archivo.argentina.indymedia.org/images/muralvecinosolidario.jpg">
                 Foto: 7 y 32 / Homenaje al vecinx solidario / Asamblea Barrio Norte
@@ -465,7 +472,7 @@
     </div>
     <div class="grid__columna grid__image mg-bottom">
         <div class="grid__image small">
-            <img src="../img/afiches/memoria-Imagen5.png" alt="">
+            <img role="img" aria-label="Imagen." alt="Imagen ." src="../img/afiches/memoria-Imagen5.png">
             <small class="contenedor__text">
               <a href="https://www.facebook.com/laplatanoolvida2deabril/photos/1025582847529903/">
                 Foto: 59 esquina 25 . Autor: Luxor. Foto: Romina Soliani
@@ -503,18 +510,19 @@
   </div>
 
   <div class="go-up">
-    <a  href="#afiche-header">
-        <img loading="lazy" src="../img/general/arrow-up.svg"  alt="">
+    <a role="button" tabindex="0" aria-label="Regresar al encabezado."  alt="Botón para regresar al encabezado." href="#afiche-header">
+        <img loading="lazy" src="../img/general/arrow-up.svg"  alt="imagen del botón para regresar al encabezado.">
     </a>
   </div>
 
     <!-- End Tap Target Structure -->
-    <div class="main-container-boton">
-      <a class="boton verde-4" onclick="history.back()">
-          <div class="boton-info">
-              <p>Go back</p> <img src="../img/general/backArrow.svg" alt="backArrow">
-          </div>
+    <div class="main-container-boton tooltip">
+      <a role="button" tabindex="0" aria-label="Volver a la página anterior."  alt="Botón para volver a la página anterior." class="boton verde-4" onclick="history.back()">
+        <div class="boton-info">
+          <p>Go back</p> <img src="../img/general/backArrow.svg" alt="backArrow">
+        </div>
       </a>
+      <span class="tooltiptext">Botón para volver a la página anterior.</span>
     </div>
   </main>
   <!-- footer -->
