@@ -234,7 +234,7 @@
     }
     .libro-container{
         display: grid;
-        grid-template-columns: 20rem 20rem;
+        grid-template-columns: 25rem;
         column-gap: 12rem;
         row-gap: 12rem;
         margin-top: 20rem; 
