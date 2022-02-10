@@ -65,7 +65,9 @@
 }
 
 .sideBar-body{
-    border-top: 2px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    
+    
     text-align: center;
     position: relative;
 }
@@ -92,12 +94,16 @@
     margin-top: 4.3rem;
 }
 
+#tab-secciones li{
+    margin-top: 0;
+}
+
 .sidebar-link:hover,.sidebar-link:focus, .sidebar-link:focus-within{
     border-radius: 2rem;
     background-color: #0e7a65da;
     border: 1px solid #cccbcb;
     transform: scale(1.02);
-    
+
 }
 
 .sidebar-body-ul a:hover,.sidebar-body-ul a:focus, .sidebar-body-ul a:focus-within{
