@@ -329,16 +329,16 @@
   <main>
     <div class="container">
       <div class="main-card">
-        <div id="about" class="main-card-body" tabindex="0">
+        <div id="about" class="main-card-body">
           
             <div class="afiche__head">
               <h2>About the event</h2>
             </div>
          
           <div class="main-card-img-container line-down">
-            <img class="main-section-icon" src="../img/general/otros/learn.webp" alt="img 1">
-            <img class="main-section-icon" src="../img/general/otros/discovery.webp" alt="img 2">
-            <img class="main-section-icon" src="../img/general/otros/joinUs.webp" alt="img 3">
+            <img tabindex="0" role="img"  aria-label="imagen de un niño con una idea." alt="imagen de un niño con una idea." class="main-section-icon" src="../img/general/otros/learn.webp" alt="img 1">
+            <img tabindex="0" role="img"  aria-label="imagen de una lupa." alt="imagen de una lupa." class="main-section-icon" src="../img/general/otros/discovery.webp" alt="img 2">
+            <img tabindex="0" role="img"  aria-label="imagen de un calendario." alt="imagen de un calendario." class="main-section-icon" src="../img/general/otros/joinUs.webp" alt="img 3">
           </div>
           <div tabindex="0" class="main-card-info h-460 overflow-y">
             
@@ -380,6 +380,11 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="go-up">
+        <a role="button" tabindex="0" aria-label="Regresar al encabezado."  alt="Botón para regresar al encabezado." href="#afiche-header">
+            <img loading="lazy" src="../img/general/arrow-up.svg"  alt="imagen del botón para regresar al encabezado.">
+        </a>
       </div>
       <div class="main-container-boton tooltip">
         <a role="button" tabindex="0" aria-label="Volver a la página anterior."  alt="Botón para volver la página anterior." class="boton verde-4" onclick="history.back()">

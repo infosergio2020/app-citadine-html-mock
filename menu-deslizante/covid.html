@@ -331,7 +331,7 @@
     <main>
         <div class="container">
             <div class="main-card">
-                <div id="covid" class="main-card-body" tabindex="1">
+                <div id="covid" class="main-card-body" >
                     
                     
                     <div class="afiche__head">
@@ -339,11 +339,11 @@
                     </div> 
                     <div class="main-card-img-container">
                         
-                      <img class="main-section-icon" src="../img/general/otros/covid1.png" height="88px" alt="img 1">
-                      <img class="main-section-icon" src="../img/general/otros/covid2.png" height="88px" alt="img 2">
-                      <img class="main-section-icon" src="../img/general/otros/covid3.png" height="88px" alt="img 3">
+                      <img tabindex="0" role="img" class="main-section-icon" src="../img/general/otros/covid1.png" height="88px" aria-label="imagen de labarse las manos." alt="imagen de labarse las manos.">
+                      <img tabindex="0" role="img" class="main-section-icon" src="../img/general/otros/covid2.png" height="88px" aria-label="imagen de barbijo." alt="imagen de barbijo.">
+                      <img tabindex="0" role="img" class="main-section-icon" src="../img/general/otros/covid3.png" height="88px" aria-label="imagen de colocarse alcohol." alt="imagen de colocarse alcohol.">
                     </div>                   
-                    <div class="main-card-info">
+                    <div class="main-card-info" tabindex="0">
                     <p>El propósito de este evento es como cierre del proyecto Citadine, 
                         realizar una exhibición que trate el tema de la inundación de La 
                     </p>
@@ -407,6 +407,11 @@
                     </p>
                     </div>
                 </div>
+            </div>
+            <div class="go-up">
+              <a role="button" tabindex="0" aria-label="Regresar al encabezado."  alt="Botón para regresar al encabezado." href="#afiche-header">
+                  <img loading="lazy" src="../img/general/arrow-up.svg"  alt="imagen del botón para regresar al encabezado.">
+              </a>
             </div>
             <div class="main-container-boton tooltip">
               <a role="button" tabindex="0" aria-label="Volver a la página anterior."  alt="Botón para volver la página anterior." class="boton verde-4" onclick="history.back()">
