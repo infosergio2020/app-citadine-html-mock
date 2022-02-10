@@ -74,7 +74,7 @@
 }
 
 
-img{width: 100%;}
+/*img{width: 100%;} si lo descomento el boton Go back se hace mas grande*/
 
 /*buttons*/
 
@@ -268,7 +268,7 @@ img{width: 100%;}
     }
     .libro-container{
         display: grid;
-        grid-template-columns: 20rem 20rem 20rem;
+        grid-template-columns: 20rem; /*0rem 20rem 20rem*/
         column-gap: 12rem;
         row-gap: 12rem;
         margin-top: 25rem; 
