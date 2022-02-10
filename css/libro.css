@@ -14,6 +14,11 @@
 }
 
 /*  images */
+.photo-not-border{
+    border-radius: 0rem !important;
+    max-width: 100%;
+    object-fit: cover;
+}
 .slick-list{
     position: relative;
     display: flex;
@@ -119,7 +124,7 @@
 	transform: translate(-50%,-50%) perspective(2000px);
 	box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
 	transition: 1s;
-
+    line-height: 0;
 }
 
 .card-libro .imgBox {
@@ -224,7 +229,7 @@
         transform: translate(-50%,-30%) perspective(2000px);
         box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
         transition: 1s;
-    
+        line-height: 0;
     }
 }
 /* table */
@@ -258,7 +263,7 @@
         transform: translate(-50%,-30%) perspective(2000px);
         box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
         transition: 1s;
-    
+        line-height: 0;    
     }
 }
 /* desktop */
