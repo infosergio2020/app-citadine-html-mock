@@ -56,7 +56,9 @@ class MenubarNavigation {
             this.menuitemGroups[n].push(s), 
             this.firstChars[n].push(s.textContent.trim().toLowerCase()[0]), 
             s.addEventListener("keydown", this.onKeydown.bind(this)), 
-            s.addEventListener("click", this.onMenuitemClick.bind(this), { capture: !0 }),         
+            // Se cambió el click por el tab para que mencione que esta desplegable 
+            // s.addEventListener("Click", this.onMenuitemClick.bind(this), { capture: !0 }),
+            s.addEventListener("Click", this.onMenuitemClick.bind(this), { capture: !0 }),         
             s.addEventListener("pointerover", this.onMenuitemPointerover.bind(this)), this.firstMenuitem[n] || (this.hasPopup(s) && (s.tabIndex = 0), this.firstMenuitem[n] = s), this.lastMenuitem[n] = s
         )
     }
@@ -157,6 +159,9 @@ class MenubarNavigation {
         "object" != typeof e && (e = !1);
         for (var t = 0; t < this.popups.length; t++) {
             var i = this.popups[t];
+            console.log("holaa")
+            console.log(i)
+     
             if (this.doesNotContain(i, e) && this.isOpen(i)) {
                 var s = i.nextElementSibling;
                 s && (i.setAttribute("aria-expanded", "false"), s.style.display = "none")
