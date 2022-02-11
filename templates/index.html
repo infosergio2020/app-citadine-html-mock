@@ -1,12 +1,485 @@
+<!-- esta es la version 2 de la rama PC -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola index</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- color e icono IOS -->
+  <meta name="theme-color" content="#317EFB"/>
+  <link rel="apple-touch-icon" href="img/general/flooded-house.png">
+  <meta
+  name="descripción"
+  content="Informarte sobre los desastres naturales en Polonia, Alemania, Republica Dominicana, Chile y Argentina. Descubre que pasó antes, durante y después de la inundación de la Plata en 2013.">
+  <!-- watson asistant -->
+  <link rel="stylesheet" href="./css/chat.css">
+  <!--Responsive Meta Tag-->
+  <link rel="shortcut icon" href="./img/general/otros/tree.webp" type="image/x-icon">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="preload" href="./css/normalize.css" as="style">
+  <link rel="stylesheet" href="./css/normalize.css">
+
+  <link rel="preload" href="./css/main.css" as="style">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <link rel="preload" href="./css/lixtbox.css" as="style">
+  <link rel="stylesheet" href="./css/lixtbox.css">
+
+
+  <!--Import jQuery Library-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script src="./js/index.js"></script>
+
+  <title>Mock</title>
 </head>
+<!-- <body class="animate__animated animate__fadeIn"> -->
+
 <body>
-    <h1>hola</h1>
+  <ul class="link__skip">
+    <li class="link__skip--item"><a href="#contenido">enlace, presione enter para ir al contenido principal de sitio.</a></li>
+  </ul>
+ <!-- <header class="header-container"> -->
+  <header class="header header-container">
+    <div>
+      <!-- logo de citadine -->
+      <div class="header__img__h1">
+        <a tabindex="0" role="menuitem" href="index.html" aria-label="Presione enter para ir a la pagina principal.">
+          <div role="img" class="item__img__h1 txt_white">
+            <img class="wh-88" src="img/general/flooded-house.png" alt="Logo de citadine.">
+            <h1>Generar <span>con</span>ciencia</h1>
+          </div>
+        </a>
+      </div>
+ 
+      <!-- barra de secciones y boton -->
+      <div class="header__nav__menu">
+        <button role="menu" tabindex="0" class="boton__2 verde-4" aria-label="Presione enter para obtener mas informacion del menu lateral." id="logo">
+          <img src="img/general/menu.svg" alt="icono de menu">
+        </button>
+      <!-- barra de navegación -->
+        <nav  class="header-container-nav-row" id="nav-id" aria-label="Barra de navegacion con 6 secciones.">
+          <ul tabindex="-1" class="menubar-navigation" role="menubar" >
+            <!-- boton 1 -->
+            <li role="none">
+              <a tabindex="0" class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones de la seccion 1."
+                aria-haspopup="true" aria-expanded="false" href="#">
+                <img class="wh-30" src="img/general/secciones/1.webp" alt="icono-seccion-1">
+                <div class="navegacion__enlace--info">
+                  <p>seccion 1</p>
+                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                  </svg>
+                </div>
+              </a>
+              <ul role="menu" aria-label="1">
+                <li role="none">
+                  <a tabindex="-1" role="menuitem" href="testimonio1.html" aria-label="Presione enter para conocer: Nuestros testimonios
+                  : antes de la inundación">1- Known our testimonies: Before the flood</a>
+                </li>
+                <li role="none">
+                  <a tabindex="-1" role="menuitem" href="the-news-of-the-day.html" aria-label="Presione enter para conocer: Las noticias del dia de la inundación">2- The news of the day</a>
+                </li>
+
+              </ul>
+            </li>
+            <!-- boton 2 -->
+            <li role="none">
+              <a tabindex="0" class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones de la seccion 2."
+                aria-haspopup="true" aria-expanded="false" href="#">
+                <img class="wh-30" src="img/general/secciones/2.webp" alt="icono-seccion-2">
+                <div class="navegacion__enlace--info">
+                  <p>seccion 2</p>
+                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                  </svg>
+                </div>
+              </a>
+              <ul role="menu" aria-label="2">
+                <li role="none">
+                  <a role="menuitem" href="#interview-map.html" aria-label="Presione enter para conocer: el mapa de entrevistas">1- Interview
+                    map</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="water-level-simulator.html" aria-label="Presione enter para conocer: el simulador de nivel de agua">2-
+                    Water level
+                    simulator</a>
+                </li>
+
+              </ul>
+            </li>
+            <!-- boton 3 -->
+            <li role="none">
+              <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones de la seccion 3."
+                aria-haspopup="true" aria-expanded="false" href="#">
+
+                <img class="wh-30" src="img/general/secciones/3.webp" alt="icono-seccion-3">
+
+
+                <div class="navegacion__enlace--info">
+                  <p>seccion 3</p>
+                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                  </svg>
+                </div>
+              </a>
+              <ul role="menu" aria-label="3">
+                <li role="none">
+                  <a role="menuitem" href="diarios.html" aria-label="Presione enter para conocer: Diarios.">1- Diarios</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="shocking-photos.html"
+                    aria-label="Presione enter para conocer: Fotos impactantes.">2- Shocking
+                    photos</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="testimonio2.html" aria-label="Presione enter para conocer: Testimonios: durante la inundación">3- Known our
+                    testimonies: During the flood</a>
+                </li>
+
+                <li role="none">
+                  <a role="menuitem" href="photo-album.html"
+                    aria-label="Presione enter para conocer: ">4- Photo album
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+            <!-- boton 4 -->
+            <li role="none">
+              <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones de la seccion 4."
+                aria-haspopup="true" aria-expanded="false" href="#">
+
+                <img class="wh-30" src="img/general/secciones/4.webp" alt="icono-seccion-4">
+
+
+                <div class="navegacion__enlace--info">
+                  <p>seccion 4</p>
+                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                  </svg>
+                </div>
+              </a>
+              <ul role="menu" aria-label="4">
+                <li role="none">
+                  <a role="menuitem" href="testimonio3.html" aria-label="Presione enter para conocer: Testimonios: despues de la inundacion.">1- Known our testimonies: After the flood</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="sandbox.html" aria-label="Presione enter para conocer: la Sandbox.">2- Sandbox</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="Why-do-we-flood.html"
+                    aria-label="Presione enter para conocer: Porque nos inundamos.">3- Why do we flood</a>
+                </li>
+
+              </ul>
+            </li>
+
+            <!-- botone 5 -->
+
+            <li role="none">
+              <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones de la seccion 5."
+                aria-haspopup="true" aria-expanded="false" href="#">
+
+                <img class="wh-30" src="img/general/secciones/5.webp" alt="icono-seccion-5">
+
+                <div class="navegacion__enlace--info">
+                  <p>seccion 5</p>
+                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                  </svg>
+                </div>
+              </a>
+              <ul role="menu" aria-label="5">
+                <li role="none">
+                  <a role="menuitem" href="/recomendacion-como-actuar.html" aria-label="Presione enter para conocer: las recomendaciones de como actuar.">1-
+                    recomendaciones de como actuar.</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#/smart-survival-backpak.html" aria-label="Presione enter para conocer: la mochila inteligente de supervivencia.">2-
+                    Smart
+                    survival backpak</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#/where-to-go.html" aria-label="Presione enter para conocer: A donde ir (refugios).">3- Where to
+                    go</a>
+                </li>
+
+                <li role="none">
+                  <a role="menuitem" href="#/educational-games.html" aria-label="Presione enter para conocer: Juegos educacionales.">4-
+                    Educational
+                    games</a>
+                </li>
+              </ul>
+            </li>
+            <!-- botone 6 -->
+
+            <li role="none">
+              <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones de la seccion 6."
+                aria-haspopup="true" aria-expanded="false" href="#">
+
+                <img class="wh-30" src="img/general/secciones/6.webp" alt="icono-seccion-6">
+
+                <div class="navegacion__enlace--info">
+                  <p>seccion 6</p>
+                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                  </svg>
+                </div>
+              </a>
+              <ul role="menu" aria-label="6">
+                <li role="none">
+                  <a role="menuitem" href="#/go citadine blue" aria-label="Presione enter para conocer: ir a citadine blue.">1- Go citadine
+                    blue.</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#/go citadine green" aria-label="Presione enter para conocer: ir a citadine green.">2-
+                    Go citadine green</a>
+                </li>
+                <li role="none">
+                  <!-- polonia alemania chile y republica dominicana
+                                    reutilizar la interfaz de los 4 casos -->
+                  <a role="menuitem" href="Inundaciones-en-el-exterior.html" aria-label="Presione enter para conocer: Inundaciones en el exterior.">3-
+                    Inundaciones en el exterior</a>
+                </li>
+                <li role="none">
+                  <!-- es un afiche de como se ayudaron los vecinos- cosas positivas -->
+                  <a role="menuitem" href="Conclusiones-del-evento.html" aria-label="Presione enter para conocer: Conclusiones del evento.">4-
+                    Conclusiones del evento</a>
+                </li>
+              </ul>
+            </li>
+            <!-- barra deslizante -->
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+  </header>
+  <!-- menu deslizante -->
+  <div class="menu-deslizante-realtivo">
+    <div id="menuIcono" class="sideBar">
+      <div class="sideBar-header">
+        <img class="boton-close "  id="close-sideBar" src="./img/general/circle-x.svg" alt="haga click, o presione enter para cerrar el sidebar.">
+        <div role="img" class="sideBar-img" aria-labelledby="posts-heading">
+          <img src="../../img/general/flooded-house.png" alt="expo citadine logo">
+          <!-- <a href="/"><img src="./img/general/menu-deslizante/technical-support.png" alt="expo citadine logo"></a> -->
+          <!-- <a href="/"><img src="./img/general/menu-deslizante/options.png" alt="expo citadine logo"></a> -->
+          <!-- <a href="/"><img src="./img/general/menu-deslizante/choose.png" alt="expo citadine logo"></a> -->
+        </div>
+        <div class="sideBar-info header__img__h4"  id="posts-heading">
+          <h4>Elija una <span >op</span>ción</h4>
+          <p>Descubra más del evento.</p>
+        </div>
+      </div>
+      <div class="sideBar-body" role="navigation">
+        <section>
+          <ul class="sidebar-body-ul" role="menu">
+            <!-- NOTA: Las secciones no estan en la vista del PC -->
+            <a tabindex="-1" id="tab-secciones" href="./menu-deslizante/sections.html">
+              <li class="sidebar-link" role="menuitem"
+                aria-label="Estas dentro del menu deslizante. Haga click si decea entrar a las secciones">
+                <img class="wh-42" src="./img/general/menu-deslizante/secciones.png" alt="calendario-image">
+                <p class="no-margin">sections</p>
+                <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+              </li>
+            </a>
+            <a tabindex="-1" id="tab-novedades" href="./menu-deslizante/anounce.html">
+              <li  class="sidebar-link" role="menuitem"
+                aria-label="haga click si decea entrar a Announcements">
+                <img class="wh-42" src="./img/general/menu-deslizante/calendar.webp" alt="calendario-image">
+                <p class="no-margin">Announcements</p>
+                <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+              </li>
+            </a>
+            <a tabindex="-1" id="tab-covid" href="./menu-deslizante/covid.html">
+              <li  class="sidebar-link" role="menuitem"
+                aria-label="haga click si decea entrar a COVID protocols">
+                <img class="wh-42" src="./img/general/menu-deslizante/virus.webp" alt="virus-image">
+                <p class="no-margin">COVID protocols </p>
+                <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+              </li>
+            </a>
+            <a tabindex="-1" href="./menu-deslizante/about.html">
+              <li  class="sidebar-link" role="menuitem"
+                aria-label="haga click si decea entrar a hacerca de citadine">
+                <img class="wh-42" src="./img/general/menu-deslizante/Citadine.webp" alt="informacion-image">
+                <p class="no-margin">About Citadine </p>
+                <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+              </li>
+            </a>
+            <a tabindex="-1" href="./menu-deslizante/languaje.html">
+              <li  class="sidebar-link" role="menuitem"
+                aria-label="haga click si decea entrar a hacerca de citadine">
+                <img class="wh-42" src="./img/general/menu-deslizante/languages.webp" alt="lenguajes-image">
+                <p class="no-margin">Languajes </p>
+                <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+              </li>
+            </a>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- main -->
+  <main>
+
+    <!-- bienvenido -->
+    <div class="container__div__card">
+
+      <div>
+        <div class="main-card">
+          <div id="contenido" class="main-card-body" aria-label="contenedor de bienvenida">
+            <img tabindex="0" aria-labelledby="bienvenido" src="./img/portada/Republica_de_los_ninos-scaled.webp" alt="image republica de los niños" width="100%">
+            <div id="bienvenido" class="main-card-info generar_conciencia span">
+              <div class="text__center">
+                <b>¡Bienvenido a la exhibición Generar <span>CON</span>CIENCIA</b>
+                <b> Experiencias y conocimientos sobre la Inundación de La Plata!</b>
+
+              </div>
+
+              <p>
+                Evento del proyecto Citadine,
+                Ciencia Ciudadana para la gestión de catástrofes. Aborda la inundación desde la mirada
+                y experiencia de los sobrevivientes y testigos. Cuenta con 6 secciones para recorrer en forma
+                cronológica, con material interactivo educativo, la mayoría realizados
+                por estudiantes de la UNLP.
+
+              </p>
+              <div class="verde__oscuro margin__franja">
+                <p>En la CASA DEL NIÑO- República de los niños. Del el 21 al 27 de marzo de 2022, de 14 a 18 hs. Entrada
+                  libre y gratuita.</p>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div role="button" class="main-container-boton">
+          <a class="boton verde-4" href="./menu-deslizante/sections.html">ENTER TO THE SAMPLE</a>
+
+        </div>
+      </div>
+
+      <div>
+        <div class="main-card" style="background-color: #011b17d8;">
+          <div class="main-card-body">
+            <img tabindex="0" aria-labelledby="ayuda" loading="lazy" src="img/portada/ayuda.webp" alt="imagen blog">
+            <div id="ayuda" class="main-card-info no-padding txt_left">
+              <h3>¡Ayuda! No sé por dónde empezar.</h3>
+              <p>
+                Si quieres conocer más, pregúntale a nuestro asistente virtual que te dará una mano en tus inquietudes.
+                Pero antes, si no sabes que preguntarle le aconsejamos las posibles preguntas que puede realizar:
+              </p>
+              <ol>
+                <li>¿Quiénes son?</li>
+                <li>¿Hay juegos?</li>
+                <li>¿Lugar y hora del evento?</li>
+                <li>Covid</li>
+              </ol>
+<!-- 
+              <button class="boton verde-4" onclick="$('.tap-target').tapTarget('open')"
+                aria-label="Presione enter para interactuar con el ">Asistente virtual</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- asistente -->
+          <div>
+              
+              <!-- Element Showed -->
+              <div id="menu" class="fixed-action-btn btn btn-floating" style="bottom: 42px; right: 40px;">
+                <!-- <a id="menu" class="btn btn-floating btn-large cyan"><i class="material-icons">menu</i></a> -->
+                <!-- <script src=https://assistant-web.watsonplatform.net/loadWatsonAssistantChat.js></script> -->
+                <!-- div que contiene el chat -->
+
+                <script>
+                  let scale = 0
+
+                  window.watsonAssistantChatOptions = {
+                      integrationID: "9464e06d-fb26-49af-9416-5b94ef7e3208", // The ID of this integration.
+                      region: "us-south", // The region your integration is hosted in.
+                      serviceInstanceID: "1c9f1756-12f6-44df-b4e0-94e86d7b437d", // The ID of your service instance.
+                      onLoad: function(instance) { 
+          //   BASE-font-size-extra-small: 8px;   se usa en:  -- 
+          //   BASE-font-size-small: 12px;    se usa en:  --  <b>, <div class sugerencias>
+          //   BASE-font-size-med: 14px;    se usa en:  -- li, div
+          //   BASE-font-size-large: 16px;    se usa en:  -- <div header chat> , titulos de sigerencias
+          //   BASE-font-size-xlarge: 20px;   se usa en:  -- i dunno :p
+                        instance.updateCSSVariables({
+                          //font-family
+                          'BASE-z-index': '8000',
+                          
+                          'BASE-font-size-extra-small': `calc( ${.08 + scale}em + 1vw)`,
+                          'BASE-font-size-small': `calc( ${.2 + scale}em + 1vw)`,
+                          'BASE-font-size-med': `calc( ${.4 + scale}em + 1vw)`,
+                          'BASE-font-size-large': `calc( ${.6 + scale}em + 1vw)`,
+                          'BASE-font-size-xlarge': `calc( ${1 + scale}em + 1vw)`,
+
+                          'BASE-font-family': '"Source Sans Pro", Times, serif',
+                          '$focus': '#ff0000',
+                          'BASE-width':'500px'
+                        });
+                        instance.updateHomeScreenConfig({
+                            
+                            bot_avatar_url: 'img/portada/bot.png'
+
+                            
+                            
+                          });
+                          // web chat makes an asynchronous request to get need data to render in spanish.
+                          instance.updateLocale('es').then(function() {
+                          
+                            instance.render();
+                          });
+                          
+                          instance.render(); },
+                      
+                    };
+                  setTimeout(function(){
+                    const t=document.createElement('script');
+                    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+                    document.head.appendChild(t);
+                  });
+                </script>
+              </div>
+
+
+  </main>
+  <!-- footer -->
+  <!-- <footer class="footer__portada">
+    <div class="footer__portada--logos">
+        <div class="footer__portada__logo--container">
+            <img src="https://www.info.unlp.edu.ar/wp-content/uploads/2019/07/logoo-300x300.jpg" alt="Facultad de informatica" width="100px" style="border-radius: 50%;">
+            <h3 style="margin: 0;">Facultad de Informatica</h3>
+        </div>
+        <div class="footer__portada__logo--container">
+            <h4>Autores</h4>
+            <div class="footer__portada__info--container">
+                <small>Ailigo Oriana</small>
+                <small>Aguilar Sergio</small>
+                <small>Tolaba Yanina</small>
+            </div>
+            <p>Todos los derechos reservados 2022&copy;</p>
+        </div>
+        <div class="footer__portada__logo--container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/UNLP_Logo_%28cropped%29.svg/1200px-UNLP_Logo_%28cropped%29.svg.png" alt="Facultad de informatica" width="80px">
+            <h3 style="margin: 0;">Universidad nacional de La Plata</h3>
+        </div>
+        
+        
+    </div>
+</footer>   -->
+  <!-- script -->
+  <script src="./js/lixtbox.js"></script>
+
 </body>
+
 </html>

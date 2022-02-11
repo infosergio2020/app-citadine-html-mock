@@ -1,0 +1,626 @@
+<!-- esta es la version 2 de la rama PC -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- color e icono IOS -->
+  <meta name="theme-color" content="#317EFB"/>
+  <link rel="apple-touch-icon" href="img/general/flooded-house.png">
+  <meta
+  name="descripción"
+  content="Informarte sobre los desastres naturales en Polonia, Alemania, Republica Dominicana, Chile y Argentina. Descubre que pasó antes, durante y después de la inundación de la Plata en 2013.">
+  
+  <!--Responsive Meta Tag-->
+  <link rel="shortcut icon" href="./img/tree.png" type="image/x-icon">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" crossorigin>
+
+  <link rel="shortcut icon" href="./css/tree.png" type="image/x-icon">
+  <link rel="preload" href="./css/normalize.css" as="style">
+  <link rel="stylesheet" href="./css/normalize.css">
+  
+  <link rel="preload" href="./css/main.css" as="style">
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <link rel="preload" href="./css/lixtbox.css" as="style">
+  <link rel="stylesheet" href="./css/lixtbox.css">
+  <!-- CSS del testimonio -->
+  <link rel="stylesheet" href="css/testimonios.css">
+  <!-- CSS del acordeon -->
+  <link rel="stylesheet" href="css/minAcordeon.css">
+
+  <!--Import jQuery Library-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!--Import materialize.js-->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+  
+
+  <title>Mock</title>
+</head>
+<!-- <body class="animate__animated animate__fadeIn"> -->
+
+<body>
+  <!-- <header class="header-container"> -->
+    <header class="header header-container">
+      <div>
+        <!-- logo de citadine -->
+        <div class="header__img__h1">
+          <a  role="menuitem" href="index.html" aria-label="Presione enter para ir a la pagina principal.">
+            <div class="item__img__h1 txt_white">
+              <img class="wh-88" src="img/general/flooded-house.png" alt="Logo de citadine.">
+              <h1>Generar <span>con</span>ciencia</h1>
+            </div>
+          </a>
+          <!-- <small> La muestra contará con 6 áreas o secciones de exhibición, que deben recorrerse en forma secuencial,
+            puesto que aborda la temática en forma cronológica.
+            Además, se analiza la inundación desde la perspectiva de 4 casos diferentes de personas que relatan sus
+            experiencias y lo sucedido antes, durante y después de vivenciarla.
+          </small> -->
+        </div>
+   
+        <!-- barra de secciones y boton -->
+        <div class="header__nav__menu">
+          <button class="boton__2 verde-4" aria-label="Presione enter para obtener mas informacion." id="logo">
+            <img src="img/general/menu.svg" alt="Citadine brand">
+          </button>
+          <nav class="header-container-nav-row" id="nav-id" aria-label="Barra de navegacion.">
+  
+            <ul class="menubar-navigation" role="menubar" aria-label="Barra de navegacion.">
+              <!-- boton 1 -->
+              <li role="none">
+                <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+                  aria-haspopup="true" aria-expanded="false" href="#academics">
+                  <img class="wh-30" src="img/general/secciones/1.webp" alt="seccion">
+                  <div class="navegacion__enlace--info">
+                    <p>seccion 1</p>
+                    <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                      <polygon points="1 0, 11 0, 6 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+                <ul role="menu" aria-label="1">
+                  <li role="none">
+                    <a role="menuitem" href="testimonio1.html" aria-label="Presione enter para conocer: ">1- Known our
+                      testimonies: Before the flood</a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" href="the-news-of-the-day.html" aria-label="Presione enter para conocer: ">2- The
+                      news of the
+                      day</a>
+                  </li>
+  
+                </ul>
+              </li>
+              <!-- boton 2 -->
+              <li role="none">
+                <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+                  aria-haspopup="true" aria-expanded="false" href="#academics">
+  
+                  <img class="wh-30" src="img/general/secciones/2.webp" alt="seccion">
+  
+  
+                  <div class="navegacion__enlace--info">
+                    <p>seccion 2</p>
+                    <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                      <polygon points="1 0, 11 0, 6 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+                <ul role="menu" aria-label="2">
+                  <li role="none">
+                    <a role="menuitem" href="#interview-map.html" aria-label="Presione enter para conocer: ">1- Interview
+                      map</a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" href="water-level-simulator.html" aria-label="Presione enter para conocer: ">2-
+                      Water level
+                      simulator</a>
+                  </li>
+  
+                </ul>
+              </li>
+              <!-- boton 3 -->
+              <li role="none">
+                <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+                  aria-haspopup="true" aria-expanded="false" href="#academics">
+  
+                  <img class="wh-30" src="img/general/secciones/3.webp" alt="seccion">
+  
+  
+                  <div class="navegacion__enlace--info">
+                    <p>seccion 3</p>
+                    <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                      <polygon points="1 0, 11 0, 6 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+                <ul role="menu" aria-label="3">
+                  <li role="none">
+                    <a role="menuitem" href="diarios.html" aria-label="Presione enter para conocer: ">1- Diarios</a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" href="shocking-photos.html"
+                      aria-label="Presione enter para conocer: ">2- Shocking
+                      photos</a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" href="testimonio2.html" aria-label="Presione enter para conocer: ">3- Known our
+                      testimonies: During the flood</a>
+                  </li>
+  
+                  <li role="none">
+                    <a role="menuitem" href="photo-album.html"
+                      aria-label="Presione enter para conocer: ">4- Photo album
+                    </a>
+                  </li>
+  
+                </ul>
+              </li>
+              <!-- boton 4 -->
+              <li role="none">
+                <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+                  aria-haspopup="true" aria-expanded="false" href="#academics">
+  
+                  <img class="wh-30" src="img/general/secciones/4.webp" alt="seccion">
+  
+  
+                  <div class="navegacion__enlace--info">
+                    <p>seccion 4</p>
+                    <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                      <polygon points="1 0, 11 0, 6 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+                <ul role="menu" aria-label="4">
+                  <li role="none">
+                    <a role="menuitem" href="testimonio3.html" aria-label="Presione enter para conocer: ">1- Known our
+                      testimonies: Before the flood</a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" href="sandbox.html" aria-label="Presione enter para conocer: ">2- Sandbox</a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" href="Why-do-we-flood.html"
+                      aria-label="Presione enter para conocer: ">3- Why do we flood</a>
+                  </li>
+  
+                </ul>
+              </li>
+  
+              <!-- botone 5 -->
+  
+              <li role="none">
+                <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+                  aria-haspopup="true" aria-expanded="false" href="#academics">
+  
+                  <img class="wh-30" src="img/general/secciones/5.webp" alt="seccion">
+  
+                  <div class="navegacion__enlace--info">
+                    <p>seccion 5</p>
+                    <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                      <polygon points="1 0, 11 0, 6 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+                <ul role="menu" aria-label="5">
+                  <li role="none">
+                    <a role="menuitem" href="/recomendacion-como-actuar.html" aria-label="Presione enter para conocer: ">1-
+                      recomendaciones de como actuar.</a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" href="#/smart-survival-backpak.html" aria-label="Presione enter para conocer: ">2-
+                      Smart
+                      survival backpak</a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" href="#/where-to-go.html" aria-label="Presione enter para conocer: ">3- Where to
+                      go</a>
+                  </li>
+  
+                  <li role="none">
+                    <a role="menuitem" href="#/educational-games.html" aria-label="Presione enter para conocer: ">4-
+                      Educational
+                      games</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- botone 6 -->
+  
+              <li role="none">
+                <a class="navegacion__enlace" role="menuitem" aria-label="Presione enter para conocer las opciones."
+                  aria-haspopup="true" aria-expanded="false" href="#academics">
+  
+                  <img class="wh-30" src="img/general/secciones/6.webp" alt="seccion">
+  
+                  <div class="navegacion__enlace--info">
+                    <p>seccion 6</p>
+                    <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down wh-12-9">
+                      <polygon points="1 0, 11 0, 6 8"></polygon>
+                    </svg>
+                  </div>
+                </a>
+                <ul role="menu" id="sub-menu-academics">
+                  <li role="none">
+                    <a role="menuitem" href="#/go citadine blue" aria-label="Presione enter para conocer: ">1- Go citadine
+                      blue.</a>
+                  </li>
+                  <li role="none">
+                    <a role="menuitem" href="#/go citadine green" aria-label="Presione enter para conocer: ">2-
+                      Go citadine green</a>
+                  </li>
+                  <li role="none">
+                    <!-- polonia alemania chile y republica dominicana
+                                      reutilizar la interfaz de los 4 casos -->
+                    <a role="menuitem" href="Inundaciones-en-el-exterior.html" aria-label="Presione enter para conocer: ">3-
+                      Inundaciones en el exterior</a>
+                  </li>
+                  <li role="none">
+                    <!-- es un afiche de como se ayudaron los vecinos- cosas positivas -->
+                    <a role="menuitem" href="Conclusiones-del-evento.html" aria-label="Presione enter para conocer: ">4-
+                      Conclusiones del evento</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- barra deslizante -->
+            </ul>
+          </nav>
+        </div>
+  
+      </div>
+  
+    </header>
+    <!-- menu deslizante -->
+    <div class="menu-deslizante-realtivo">
+      <div id="menuIcono" class="sideBar">
+        <div class="sideBar-header">
+          <img class="boton-close "  id="close-sideBar" src="./img/general/circle-x.svg" alt="haga click, o presione enter para cerrar el sidebar.">
+          <div class="sideBar-img" aria-labelledby="posts-heading">
+            <img src="../../img/general/flooded-house.png" alt="expo citadine logo">
+            <!-- <a href="/"><img src="./img/general/menu-deslizante/technical-support.png" alt="expo citadine logo"></a> -->
+            <!-- <a href="/"><img src="./img/general/menu-deslizante/options.png" alt="expo citadine logo"></a> -->
+            <!-- <a href="/"><img src="./img/general/menu-deslizante/choose.png" alt="expo citadine logo"></a> -->
+          </div>
+          <div class="sideBar-info header__img__h4"  id="posts-heading">
+            <h4>Elija una <span >op</span>ción</h4>
+            <p>Descubra más del evento.</p>
+          </div>
+        </div>
+        <div class="sideBar-body" role="navigation">
+          <section>
+            <ul class="sidebar-body-ul" role="menu">
+              <!-- NOTA: Las secciones no estan en la vista del PC -->
+              <a tabindex="-1" id="tab-secciones" href="./menu-deslizante/sections.html">
+                <li class="sidebar-link" role="menuitem"
+                  aria-label="Estas dentro del menu deslizante. Haga click si decea entrar a las secciones">
+                  <img class="wh-42" src="./img/general/menu-deslizante/secciones.png" alt="calendario-image">
+                  <p class="no-margin">sections</p>
+                  <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+                </li>
+              </a>
+              <a tabindex="-1" id="tab-novedades" href="./menu-deslizante/anounce.html">
+                <li  class="sidebar-link" role="menuitem"
+                  aria-label="haga click si decea entrar a Announcements">
+                  <img class="wh-42" src="./img/general/menu-deslizante/calendar.webp" alt="calendario-image">
+                  <p class="no-margin">Announcements</p>
+                  <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+                </li>
+              </a>
+              <a tabindex="-1" id="tab-covid" href="./menu-deslizante/covid.html">
+                <li  class="sidebar-link" role="menuitem"
+                  aria-label="haga click si decea entrar a COVID protocols">
+                  <img class="wh-42" src="./img/general/menu-deslizante/virus.webp" alt="virus-image">
+                  <p class="no-margin">COVID protocols </p>
+                  <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+                </li>
+              </a>
+              <a tabindex="-1" href="./menu-deslizante/about.html">
+                <li  class="sidebar-link" role="menuitem"
+                  aria-label="haga click si decea entrar a hacerca de citadine">
+                  <img class="wh-42" src="./img/general/menu-deslizante/Citadine.webp" alt="informacion-image">
+                  <p class="no-margin">About Citadine </p>
+                  <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+                </li>
+              </a>
+              <a tabindex="-1" href="./menu-deslizante/languaje.html">
+                <li  class="sidebar-link" role="menuitem"
+                  aria-label="haga click si decea entrar a hacerca de citadine">
+                  <img class="wh-42" src="./img/general/menu-deslizante/languages.webp" alt="lenguajes-image">
+                  <p class="no-margin">Languajes </p>
+                  <img class="wh-42" src="./img/general/menu-deslizante/arrow.png" alt="flecha-image">
+                </li>
+              </a>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  <!-- Contenedor del testimonio -->
+  <main>
+    <div class="contenedor-testimonio">   
+            
+                <div id="afiche-header" class="afiche__head">
+                  <h3 tabindex="0" class="centrar-texto text-shadow"> Known our testimonies: Before the flood.</h3>
+                </div>
+                <div class="curso">
+                    <div tabindex="0" class="curso__imagen">
+                        <img role="img" aria-label="Imagen de Amina Suarez." class="img-testimonio"  src="img/section1/secciones/parte 1/1.webp" alt="Imagen de Amina Suarez">
+                    </div>
+                    <div tabindex="0" class="curso__informacion">
+                        <h4 class="no-margin">Amina Suarez</h4>
+                        <p class="curso__label">Edad: 
+                            <span class="curso__info">En la inundación tenía 12 años.</span>
+                        </p>
+                        <p class="curso__label">Testimonio: 
+                            <span class="curso__info">Desde la mirada de una persona menor de edad.</span>
+                        </p>
+                        <p class="curso__descripcion">
+                          “Era un fin de semana largo por lo tanto mis papás y yo habíamos ido de viaje. No sé por qué se nos ocurrió volver a antes”. 
+                          “Justo ese día fue el de la inundación. <strong><em>Estaba mi hermana sola en casa, así que menos mal que volvimos”.</em></strong>
+                          <strong><em>“Fue bastante intenso todo, yo agradezco no haber estado sola</em></strong>. Estaba con mi papá, mis dos hermanas y el novio de una de mis hermanas”. 
+                          “Mi mamá no estaba, se había ido a trabajar…” </p>
+                          <!-- leer mas -->
+                          
+
+                          <div  class="accordion">
+                            
+                              <button role="button" tabindex="0" type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Amina Suarez." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect1" aria-labelledby="accordion1id">
+                                <span class="accordion-title">
+                                  Conocer más sobre el testimonio de Amina Suarez
+                                  <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                                    <polygon points="1 0, 11 0, 6 8"></polygon>
+                                  </svg>
+                                </span>
+                              </button>
+<!--                             
+                            <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel" aria-label="boton expandido." hidden> -->
+                            <div id="sect1" role="region" id="accordion1id" class="accordion-panel" aria-label="boton expandido." hidden>
+                              <div>
+                                <!-- Variable content within section, may include any type of markup or interactive widgets. -->
+                                <fieldset>
+                                  <div tabindex="0">
+                                  <p class="curso__descripcion"> “Los animales trataban de esconderse. No había mucho movimiento, ni de pájaros, ni de perros en la calle, ni nada”. 
+                                    “Era como… si estuviera desolado, cuando en mi barrio es normal que hayan pajaritos, perros en la calle o gatos”.
+                                   </p>
+                                   <p class="curso__descripcion">
+                                  “Era más o menos normal que llueva bastante y que llegue por ejemplo hasta el segundo o tercer escalón del garaje”.
+                                <b><em>“Pero, esta vez ,empezó a subir y no paró más”</em>. 
+                                  </p>
+                                  <p class="curso__descripcion"> “Tuvimos que subir varias cosas, medio arrancar cables, bajar la térmica”. <strong><em>“En un momento pasó que se cayó la heladera, ¡empezó a flotar!”<em></strong>.
+                                    “Varios vidrios de ventanales se rompieron por la presión del agua”. “Pusimos compuertas, un pedazo de madera para bloquear el agua. <strong><em>El agua pasó esa parte de la madera. Y, ¡volvío a entrar a la casa!”</em></strong>.                          
+                                 </p>    
+                                </div>                            
+                                </fieldset>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          
+                         
+                    </div> <!--.curso-informacion-->
+                </div> <!--.curso -->
+
+                <div class="curso">
+                    <div tabindex="0" class="curso__imagen">
+                        <img role="img" aria-label="Imagen de Alejandro Fernandez."class="img-testimonio" src="img/section1/secciones/parte 1/2.png" alt="Imagen de Alejandro Fernandez">
+                    </div>
+                    <div tabindex="0" class="curso__informacion">
+                        <h4 class="no-margin">Alejandro Fernandez</h4>
+                        <p class="curso__label">Edad: 
+                            <span class="curso__info">26 años.</span>
+                        </p>
+                        <p class="curso__label">Testimonio: 
+                            <span class="curso__info">Convirtiéndose en un rescatista que salvó a más de <b>100</b> vecinos de Tolosa.</span>
+                        </p>
+                        <p class="curso__descripcion">
+                          <strong><em>“Todos me conocen como Alef. Todos”.</em></strong> 
+                          “En la tarde del 2 de abril de 2013,  regresaba de trabajar para cenar en casa. Venía observando de qué manera crecía el agua. Alrededor de las 20 horas de la noche miro que había autos que ya estaban tapados por el agua.” 
+                          “No me inundé pero sí a 2 cuadras tuvieron un 1,90 y 2 metros de agua.”
+                        </p>
+                        <p class="curso__descripcion">
+                          “Así que dejé de cenar y decidí sacar mi bote y salir a la calle a ayudar”.
+                          “Es una lancha bote semi rígido, de 5 metros de largo, llamada Guajiro”. 
+                          “Mi  mujer me decía que la gente iba a pensar mal, que quizás piensen
+
+                          </p>
+                         <!-- leer mas -->
+                          
+
+                         <div  class="accordion">
+                            
+                          <button role="button" type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Alejandro Fernandez." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect2" aria-labelledby="accordion1id2">
+                            <span class="accordion-title">
+                              Conocer más sobre el testimonio de Alejandro Fernandez
+                              <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                                <polygon points="1 0, 11 0, 6 8"></polygon>
+                              </svg>
+                            </span>
+                          </button>
+                        
+                        <div id="sect2" role="region" id="accordion1id2" class="accordion-panel" aria-label="boton expandido." hidden>
+                          <div>
+                            <!-- Variable content within section, may include any type of markup or interactive widgets. -->
+                            <fieldset>
+                            <div tabindex="0">
+                              <p class="curso__descripcion">
+                                que «salía a pasear»”.
+                                “Ni bien encendí la lancha, rápidamente un hombre me pidió que lo llevara a su casa, quería volver con sus hijos y su mujer, y no podía llegar”. 
+                                “¡Me preguntó cuánto le cobraba!. Le dije que ¡no!,  que estaba para darle una mano”. 
+                                “Lo trasladé y al arribo, el hombre comenzó a llorar, emocionado”.   
+                              </p>
+                              <p class="curso__descripcion">
+                                “Otros vecinos empezaron a pedir ayuda. Por momentos fue un caos”. 
+                                “Y ahí empezó la travesía de salir a rescatar gente y traerla a casa, que no paró hasta las  8  horas de la mañana del día siguiente”.  
+                              </p>  
+                            </div>                            
+                            </fieldset>
+                          </div>
+                        </div>
+                        
+                      </div> 
+                        
+                        
+
+                    </div> <!--.curso-informacion-->
+                </div> <!--.curso -->
+
+                <div class="curso">
+                    <div tabindex="0" class="curso__imagen">
+                        <img role="img" aria-label="Imagen de Romina Carrozas." class="img-testimonio" src="img/section1/secciones/parte 1/3.png" alt="Imagen de Romina Carrozas">
+                    </div>
+                    <div tabindex="0" class="curso__informacion">
+                        <h4 class="no-margin">Romina Carrozas</h4>
+                        <p class="curso__label">Edad: 
+                            <span class="curso__info">En la inundación tenía 25 años.</span>
+                        </p>
+                        <p class="curso__label">Testimonio: 
+                            <span class="curso__info">Una mujer que en la inundación cursaba 8 meses de embarazo…</span>
+                        </p>
+                        <p class="curso__descripcion">
+                          <strong><em>“Yo estaba embarazada, me faltaba un mes para tener al bebé”.</em></strong>
+                          “Empezó a llover temprano. El primero que se empezó a inundar fue el vecino de al lado”. 
+                          “Yo no pensé que me iba a inundar porque yo estaba alto. Pero, para las 7 horas de la tarde yo ya tenía el agua por arriba de las rodillas...”
+                           
+                        </p>
+                        <p class="curso__descripcion">
+                          “Mi marido hacía un mes que había tenido un accidente con la moto y tenía el pie quebrado”. 
+                          “Él alcanzó a salir a caballo por un amigo que nos ayudaba a trabajar, y trajo la yegua”. 
+                        </p>
+                          <!-- leer mas -->
+                          
+
+                          <div  class="accordion">
+                            
+                            <button role="button" type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Romina Carrozas." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect3" aria-labelledby="accordion1id3">
+                              <span class="accordion-title">
+                                Conocer más sobre el testimonio de Romina Carrozas
+                                <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                                  <polygon points="1 0, 11 0, 6 8"></polygon>
+                                </svg>
+                              </span>
+                            </button>
+                          
+                          <div id="sect3" role="region" id="accordion1id3" class="accordion-panel" aria-label="boton expandido." hidden>
+                            <div>
+                              <!-- Variable content within section, may include any type of markup or interactive widgets. -->
+                              <fieldset>
+                                <div tabindex="0">
+                                <p class="curso__descripcion">
+                                  “Se pudo llevar a las nenas y a la yegua de tiro”. 
+                                  “La yegua se asustaba por tanta correntada”. 
+        
+                                  “Empecé a juntar ropa y los documentos de los chicos. Ponía las cosas lo más alto que podía… <strong><em>pero ya no se podía más”</em></strong>.
+                                </p>
+                                <p class="curso__descripcion">
+                                  “Venía mucha correntada por el zanjón del arroyo Maldonado. Cuando mi marido quiso volver a buscarme a mí, ya no pudo”. 
+                                  “Ahí salgo a mirar y veo que ¡el agua se lleva la casa de al lado completa!”.
+                                </p>    
+                              </div>                       
+                              </fieldset>
+                            </div>
+                          </div>
+                          
+                        </div> 
+                        
+                    </div> <!--.curso-informacion-->
+                </div> <!--.curso -->
+                <div class="curso">
+                    <div tabindex="0" class="curso__imagen">
+                        <img role="img" aria-label="Silvia Rivas." class="img-testimonio" src="img/section1/secciones/parte 1/4.png" alt="Imagen de Silvia Rivas">
+                    </div>
+                    <div tabindex="0" class="curso__informacion">
+                        <h4 class="no-margin">Silvia Rivas</h4>
+                        <p class="curso__label">Edad: 
+                            <span class="curso__info">En la inundación tenía 58 años.</span>
+                        </p>
+                        <p class="curso__label">Testimonio: 
+                            <span class="curso__info">Una mujer que quedó atrapada por horas en la cocina, con el agua al hombro.</span>
+                        </p>
+                        <p class="curso__descripcion">
+                          “Soy diseñadora de moda y vivía en calle 22 entre 33 y 34. 
+                          El taller lo tenía cerca, en calle 21 entre 33 y 34”.
+                          
+                          “A raíz de la inundación perdí las dos cosas, el hogar y el trabajo”.
+                          
+                          “Aparte de perder lo material del hogar, perdí lo de mi empleo como máquinas, telas, todo”.
+                          
+                        </p>
+                        <!-- leer mas -->
+                          
+
+                        <div  class="accordion">
+                            
+                          <button role="button" type="button" aria-label="Presiona enter si desea conocer mas sobre el testimonio de Silvia Rivas." aria-expanded="false" class="accordion-trigger boton-acordeon" aria-controls="sect4" aria-labelledby="accordion1id4">
+                            <span class="accordion-title">
+                              Conocer más sobre el testimonio de Silvia Rivas
+                              <svg id="campo" xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                                <polygon points="1 0, 11 0, 6 8"></polygon>
+                              </svg>
+                            </span>
+                           </button>
+                        
+                        <div id="sect4" role="region" id="accordion1id4" class="accordion-panel" aria-label="boton expandido." hidden>
+                          <div>
+                            <!-- Variable content within section, may include any type of markup or interactive widgets. -->
+                            <fieldset>
+                              <div tabindex="0">
+                              <p class="curso__descripcion">
+                                “Yo vivía sola con mi hijo”.
+                                “Ese día era un feriado. Yo estaba haciendo una torta y empezó a subir el agua”. 
+                                “Pusimos unas compuertas que ya teníamos porque una vez entró agua desde la calle”.
+                                “Pero, llegó un momento en que el agua pasó las compuertas, pasó las ventanas y siguió entrando”.
+                              </p>
+                              <p class="curso__descripcion">                         
+                                “Lo primero que atinamos fue a cortar la luz y a tapar… para que no entrara, pero fue imposible”.
+                              </p>
+                              <p class="curso__descripcion">
+                                “Yo me fui para el lado de mi cocina, donde tengo una puerta que separa cocina y comedor”, comenta Silvia.
+                                “Resulta ser que subió el nivel del agua y la heladera, se subió y se acostó contra la puerta de salida de la cocina. 
+                                ¡Quedó trabada!
+                                Para colmo tengo rejas para el fondo”.
+                              </p>  
+                            </div>                         
+                            </fieldset>
+                          </div>
+                        </div>
+                        
+                      </div> 
+                        
+                    </div> <!--.curso-informacion-->
+                </div> <!--.curso -->
+  </div>
+             
+          <!-- boton para ir arriba -->
+      <div class="buttons">
+        <div class="go-up">
+          <a role="button" tabindex="0" aria-label="Regresar al encabezado."  alt="Botón para regresar al encabezado." href="#afiche-header">
+              <img loading="lazy" src="../img/general/arrow-up.svg"  alt="imagen del botón para regresar al encabezado.">
+          </a>
+        </div>   
+        <!-- End Tap Target Structure -->
+        <div class="main-container-boton tooltip">
+          <a role="button" tabindex="0" aria-label="Volver a la página anterior."  alt="Botón para volver la página anterior." class="boton verde-4" onclick="history.back()">
+            <div class="boton-info">
+              <p>Go back</p> <img src="../img/general/backArrow.svg" alt="backArrow">
+            </div>
+          </a>
+          <span class="tooltiptext">Botón para volver a la página anterior.</span>
+        </div>             
+      </div>
+  </main>
+  
+  <!-- footer -->
+  <footer></footer>
+
+      <!-- script -->
+    <!-- barra de secciones -->
+    <script src="./js/lixtbox.js"></script>
+    <!-- menu de barra deslizante -->
+    <script src="./js/index.js"></script> 
+    <!-- ver mas del testimonio  -->
+    <script src="./js/acordeon.js"></script>
+</body>
+
+</html>
