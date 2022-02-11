@@ -58,7 +58,7 @@ class MenubarNavigation {
             s.addEventListener("keydown", this.onKeydown.bind(this)), 
             // Se cambió el click por el tab para que mencione que esta desplegable 
             // s.addEventListener("Click", this.onMenuitemClick.bind(this), { capture: !0 }),
-            s.addEventListener("Click", this.onMenuitemClick.bind(this), { capture: !0 }),         
+            s.addEventListener("click", this.onMenuitemClick.bind(this), { capture: !0 }),         
             s.addEventListener("pointerover", this.onMenuitemPointerover.bind(this)), this.firstMenuitem[n] || (this.hasPopup(s) && (s.tabIndex = 0), this.firstMenuitem[n] = s), this.lastMenuitem[n] = s
         )
     }
